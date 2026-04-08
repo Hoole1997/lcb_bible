@@ -1,14 +1,32 @@
 [versions]
 agp = "8.13.2"
-kotlin = "2.0.21"
-coreKtx = "1.18.0"
+kotlin = "2.2.0"
+coreKtx = "1.10.0"
 junit = "4.13.2"
 junitVersion = "1.3.0"
 espressoCore = "3.7.0"
 appcompat = "1.7.1"
-material = "1.13.0"
+material = "1.12.0"
 activity = "1.13.0"
 constraintlayout = "2.2.1"
+recyclerview = "1.3.2"
+viewpager2 = "1.1.0"
+lifecycleRuntimeKtx = "2.9.2"
+lifecycleProcess = "2.8.3"
+lifecycleViewmodelKtx = "2.9.2"
+fragmentKtx = "1.8.9"
+workRuntime = "2.9.0"
+startupRuntime = "1.1.1"
+coroutines = "1.10.1"
+roomRuntime = "2.7.2"
+databindingRuntime = "8.12.1"
+utilcodex = "1.31.1"
+gson = "2.10.1"
+glide = "4.16.0"
+lottie = "6.4.0"
+firebaseBom = "34.1.0"
+googleServices = "4.4.3"
+firebaseCrashlytics = "3.0.6"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -19,8 +37,37 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
+androidx-viewpager2 = { group = "androidx.viewpager2", name = "viewpager2", version.ref = "viewpager2" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-lifecycle-process = { group = "androidx.lifecycle", name = "lifecycle-process", version.ref = "lifecycleProcess" }
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
+androidx-fragment-ktx = { module = "androidx.fragment:fragment-ktx", version.ref = "fragmentKtx" }
+androidx-work-runtime = { module = "androidx.work:work-runtime", version.ref = "workRuntime" }
+androidx-work-runtime-ktx = { module = "androidx.work:work-runtime-ktx", version.ref = "workRuntime" }
+androidx-startup-runtime = { module = "androidx.startup:startup-runtime", version.ref = "startupRuntime" }
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntime" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomRuntime" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomRuntime" }
+androidx-databinding-runtime = { group = "androidx.databinding", name = "databinding-runtime", version.ref = "databindingRuntime" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+utilcodex = { module = "com.blankj:utilcodex", version.ref = "utilcodex" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+glide-compiler = { group = "com.github.bumptech.glide", name = "compiler", version.ref = "glide" }
+lottie = { group = "com.airbnb.android", name = "lottie", version.ref = "lottie" }
+firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom" }
+firebase-config = { group = "com.google.firebase", name = "firebase-config" }
+firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics" }
+firebase-messaging = { group = "com.google.firebase", name = "firebase-messaging" }
+firebase-crashlytics = { group = "com.google.firebase", name = "firebase-crashlytics" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
+room = { id = "androidx.room", version.ref = "roomRuntime" }
+google-services = { id = "com.google.gms.google-services", version.ref = "googleServices" }
+firebase-analytics = { id = "com.google.firebase.crashlytics", version.ref = "firebaseCrashlytics" }

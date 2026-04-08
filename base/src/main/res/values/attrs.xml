@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 圆角FrameLayout自定义属性 -->
+    <declare-styleable name="RemaxRoundedFrameLayout">
+        <!-- 圆角半径，单位dp -->
+        <attr name="remaxCornerRadius" format="dimension" />
+        <!-- 左上角圆角半径 -->
+        <attr name="remaxCornerRadiusTopLeft" format="dimension" />
+        <!-- 右上角圆角半径 -->
+        <attr name="remaxCornerRadiusTopRight" format="dimension" />
+        <!-- 左下角圆角半径 -->
+        <attr name="remaxCornerRadiusBottomLeft" format="dimension" />
+        <!-- 右下角圆角半径 -->
+        <attr name="remaxCornerRadiusBottomRight" format="dimension" />
+    </declare-styleable>
+</resources> 
