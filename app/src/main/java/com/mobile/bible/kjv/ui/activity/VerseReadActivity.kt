@@ -178,9 +178,9 @@ class VerseReadActivity : AppCompatActivity() {
 
     private fun resolveTaskBackground(taskOrder: Int): Int {
         return when (taskOrder % 3) {
-            0 -> R.mipmap.task_bg_1
-            1 -> R.mipmap.task_bg_2
-            else -> R.mipmap.task_bg_3
+            0 -> R.mipmap.img_read_bg
+            1 -> R.mipmap.img_read_bg
+            else -> R.mipmap.img_read_bg
         }
     }
 

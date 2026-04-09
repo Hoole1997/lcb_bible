@@ -6,7 +6,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@mipmap/img_verse_player_bg">
+        android:background="@mipmap/img_listen_bg">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/toolbar"

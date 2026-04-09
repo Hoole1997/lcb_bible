@@ -30,7 +30,7 @@
         app:layout_constraintBottom_toBottomOf="@id/image_bg"
         app:layout_constraintStart_toStartOf="@id/image_bg"
         app:layout_constraintEnd_toEndOf="@id/image_bg"
-        android:background="#33000000"/>
+        android:background="@drawable/bg_player_wall_card_hover"/>
 
     <TextView
         android:id="@+id/tv_user_name"

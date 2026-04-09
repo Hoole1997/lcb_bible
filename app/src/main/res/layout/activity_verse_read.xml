@@ -18,7 +18,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            tools:src="@mipmap/task_bg_1" />
+            tools:src="@mipmap/img_read_bg"/>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/toolbar"

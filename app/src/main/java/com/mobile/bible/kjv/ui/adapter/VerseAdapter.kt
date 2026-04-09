@@ -1,6 +1,7 @@
 package com.mobile.bible.kjv.ui.adapter
 
 import android.graphics.Color
+import android.graphics.Paint
 import android.graphics.Typeface
 import android.util.TypedValue
 import android.view.LayoutInflater
@@ -61,8 +62,12 @@ class VerseAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
                 holder.content.setTextSize(TypedValue.COMPLEX_UNIT_SP, verseTextSizeSp)
                 val isReading = position == currentReadingVerseIndex + 1
                 holder.content.setTextColor(if (isReading) COLOR_READING else COLOR_NORMAL)
-                // Always reset to a deterministic typeface to avoid recycled bold style leakage.
                 holder.content.typeface = if (isReading) Typeface.DEFAULT_BOLD else Typeface.DEFAULT
+                if (isReading) {
+                    holder.content.paintFlags = holder.content.paintFlags or Paint.UNDERLINE_TEXT_FLAG
+                } else {
+                    holder.content.paintFlags = holder.content.paintFlags and Paint.UNDERLINE_TEXT_FLAG.inv()
+                }
             }
         }
     }
@@ -102,6 +107,6 @@ class VerseAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         private const val VIEW_TYPE_TITLE = 1
         private const val VIEW_TYPE_VERSE = 2
         private val COLOR_NORMAL = Color.parseColor("#333333")
-        private val COLOR_READING = Color.parseColor("#DF9C67")
+        private val COLOR_READING = Color.parseColor("#D7AF78")
     }
 }
