@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="16dp">
+
+    <ImageView
+        android:id="@+id/image_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:minHeight="228dp"
+        android:background="@drawable/bg_player_wall_card_16"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        android:importantForAccessibility="no"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:src="@mipmap/img_player_card" />
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#FFFFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/image_bg"
+        app:layout_constraintTop_toTopOf="@id/image_bg"
+        tools:text="User Name" />
+
+    <TextView
+        android:id="@+id/tv_time_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:textColor="#FFFFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@id/image_bg"
+        app:layout_constraintTop_toTopOf="@id/tv_user_name"
+        app:layout_constraintBottom_toBottomOf="@id/tv_user_name"
+        tools:text="6 s. left" />
+
+    <TextView
+        android:id="@+id/tv_prayer_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginVertical="16dp"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/image_bg"
+        app:layout_constraintEnd_toEndOf="@id/image_bg"
+        app:layout_constraintTop_toBottomOf="@id/tv_user_name"
+        app:layout_constraintBottom_toTopOf="@id/icon_like"
+        tools:text="Please pray for my coaches wife who has cancer and is getting many scans and procedures soon, pray for her healing and strength and courage and for their family" />
+
+    <ImageView
+        android:id="@+id/icon_like"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/svg_like"
+        app:layout_constraintTop_toBottomOf="@id/tv_prayer_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_like_count"/>
+
+    <TextView
+        android:id="@+id/tv_like_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="#FFFFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/image_bg"
+        tools:text="2.4k" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

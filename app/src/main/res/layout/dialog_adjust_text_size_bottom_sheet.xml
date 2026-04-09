@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="316dp"
+    android:background="@drawable/bg_dialog_bible_adjust_text_size">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/adjust_text_size_title"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/slider_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintTop_toBottomOf="@id/text_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/text_small_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="T"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:layout_marginEnd="8dp"
+            tools:ignore="HardcodedText"/>
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/seekbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="20dp"
+            android:valueFrom="0"
+            android:valueTo="6"
+            android:stepSize="1"
+            android:value="2"
+            app:tickVisible="true"
+            app:tickColorActive="@android:color/white"
+            app:tickColorInactive="@android:color/black"
+            app:thumbRadius="10dp"
+            app:thumbColor="#DF9C67"
+            app:thumbStrokeColor="@android:color/white"
+            app:thumbStrokeWidth="2dp"
+            app:thumbElevation="0dp"
+            app:trackHeight="12dp"
+            app:trackColorActive="#DF9C67"
+            app:trackColorInactive="#f0f0f0"
+            app:haloColor="@android:color/transparent"
+            app:haloRadius="0dp"
+            app:labelStyle="@style/Widget.MaterialComponents.Tooltip"
+            app:labelBehavior="gone"/>
+
+        <TextView
+            android:id="@+id/text_big_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="T"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:layout_marginStart="8dp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        app:layout_constraintTop_toBottomOf="@id/slider_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

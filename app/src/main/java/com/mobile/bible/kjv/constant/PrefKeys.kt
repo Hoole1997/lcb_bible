@@ -1,0 +1,7 @@
+package com.mobile.bible.kjv.constant
+
+object PrefKeys {
+    const val HAS_SHOWN_GUIDE = "HAS_SHOWN_GUIDE"
+    const val HAS_SHOWN_FIRST_FLOATING_WINDOW_DIALOG = "HAS_SHOWN_FIRST_FLOATING_WINDOW_DIALOG"
+    const val HAS_PLAYED_OPEN_BIBLE_VIDEO = "HAS_PLAYED_OPEN_BIBLE_VIDEO"
+}

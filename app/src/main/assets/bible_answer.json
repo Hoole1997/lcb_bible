@@ -1,0 +1,2675 @@
+[
+  {
+    "level": 1,
+    "theme": "The Love of God",
+    "questions": [
+      {
+        "question_id": "L1Q1",
+        "question_text": "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have what?",
+        "options": ["A. Wealth", "B. Eternal life", "C. Power", "D. Fame"],
+        "answer_index": "B",
+        "reference": "John 3:16"
+      },
+      {
+        "question_id": "L1Q2",
+        "question_text": "What was the name of the first man created by God?",
+        "options": ["A. Cain", "B. Abel", "C. Noah", "D. Adam"],
+        "answer_index": "D",
+        "reference": "Genesis 2:7"
+      },
+      {
+        "question_id": "L1Q3",
+        "question_text": "The Sermon on the Mount is found primarily in which Gospel?",
+        "options": ["A. Mark", "B. Luke", "C. John", "D. Matthew"],
+        "answer_index": "D",
+        "reference": "Matthew 5-7"
+      }
+    ]
+  },
+  {
+    "level": 2,
+    "theme": "Faith and Trust",
+    "questions": [
+      {
+        "question_id": "L2Q1",
+        "question_text": "Hebrews 11:1 defines faith as the assurance of things hoped for and the what of things not seen?",
+        "options": ["A. Proof", "B. Substance", "C. Shadow", "D. Memory"],
+        "answer_index": "A",
+        "reference": "Hebrews 11:1"
+      },
+      {
+        "question_id": "L2Q2",
+        "question_text": "Who was the man commanded by God to build an ark to save his family from a global flood?",
+        "options": ["A. Abraham", "B. Moses", "C. Noah", "D. Job"],
+        "answer_index": "C",
+        "reference": "Genesis 6:14"
+      },
+      {
+        "question_id": "L2Q3",
+        "question_text": "In the Old Testament, the first five books are collectively known as the Pentateuch or the what?",
+        "options": ["A. Gospels", "B. Psalms", "C. Law (Torah)", "D. Prophets"],
+        "answer_index": "C",
+        "reference": "Old Testament Structure"
+      }
+    ]
+  },
+  {
+    "level": 3,
+    "theme": "The Holy Spirit",
+    "questions": [
+      {
+        "question_id": "L3Q1",
+        "question_text": "According to Galatians 5:22-23, what is the first fruit of the Spirit listed?",
+        "options": ["A. Joy", "B. Peace", "C. Love", "D. Patience"],
+        "answer_index": "C",
+        "reference": "Galatians 5:22"
+      },
+      {
+        "question_id": "L3Q2",
+        "question_text": "In the story of creation, on which day did God create the sun, moon, and stars?",
+        "options": ["A. Day 1", "B. Day 3", "C. Day 4", "D. Day 6"],
+        "answer_index": "C",
+        "reference": "Genesis 1:14-19"
+      },
+      {
+        "question_id": "L3Q3",
+        "question_text": "Which New Testament book immediately follows the four Gospels?",
+        "options": ["A. Romans", "B. Acts", "C. 1 Corinthians", "D. Revelation"],
+        "answer_index": "B",
+        "reference": "New Testament Structure"
+      }
+    ]
+  },
+  {
+    "level": 4,
+    "theme": "Sin and Forgiveness",
+    "questions": [
+      {
+        "question_id": "L4Q1",
+        "question_text": "Romans 3:23 states that all have sinned and fall short of the what of God?",
+        "options": ["A. Mercy", "B. Glory", "C. Wisdom", "D. Power"],
+        "answer_index": "B",
+        "reference": "Romans 3:23"
+      },
+      {
+        "question_id": "L4Q2",
+        "question_text": "Which Old Testament figure was sold into slavery by his jealous brothers and later became a high official in Egypt?",
+        "options": ["A. Isaac", "B. Jacob", "C. Joseph", "D. Benjamin"],
+        "answer_index": "C",
+        "reference": "Genesis 37, 41"
+      },
+      {
+        "question_id": "L4Q3",
+        "question_text": "What event marked the beginning of the Christian church, where the Holy Spirit descended on the disciples?",
+        "options": ["A. The Ascension", "B. Pentecost", "C. The Transfiguration", "D. The Baptism of Jesus"],
+        "answer_index": "B",
+        "reference": "Acts 2"
+      }
+    ]
+  },
+  {
+    "level": 5,
+    "theme": "The Nature of Christ",
+    "questions": [
+      {
+        "question_id": "L5Q1",
+        "question_text": "Colossians 1:17 says that in Christ, all things hold what?",
+        "options": ["A. Power", "B. Value", "C. Together", "D. Interest"],
+        "answer_index": "C",
+        "reference": "Colossians 1:17"
+      },
+      {
+        "question_id": "L5Q2",
+        "question_text": "Who was the younger brother of Moses who acted as his spokesman to Pharaoh?",
+        "options": ["A. Levi", "B. Joshua", "C. Aaron", "D. Caleb"],
+        "answer_index": "C",
+        "reference": "Exodus 4:14"
+      },
+      {
+        "question_id": "L5Q3",
+        "question_text": "How many books are there in the New Testament?",
+        "options": ["A. 39", "B. 27", "C. 66", "D. 22"],
+        "answer_index": "B",
+        "reference": "Biblical Canon"
+      }
+    ]
+  },
+  {
+    "level": 6,
+    "theme": "Prayer and Petition",
+    "questions": [
+      {
+        "question_id": "L6Q1",
+        "question_text": "Philippians 4:6 instructs believers to not be anxious about anything, but in everything, by prayer and what, to present requests to God?",
+        "options": ["A. Fasting", "B. Thanksgiving", "C. Singing", "D. Studying"],
+        "answer_index": "B",
+        "reference": "Philippians 4:6"
+      },
+      {
+        "question_id": "L6Q2",
+        "question_text": "Which king of Israel was known for his wisdom and his building of the First Temple in Jerusalem?",
+        "options": ["A. Saul", "B. David", "C. Rehoboam", "D. Solomon"],
+        "answer_index": "D",
+        "reference": "1 Kings 6"
+      },
+      {
+        "question_id": "L6Q3",
+        "question_text": "What is the shortest book in the New Testament by verse count?",
+        "options": ["A. 2 John", "B. 3 John", "C. Philemon", "D. Jude"],
+        "answer_index": "B",
+        "reference": "New Testament Structure"
+      }
+    ]
+  },
+  {
+    "level": 7,
+    "theme": "The Word of God",
+    "questions": [
+      {
+        "question_id": "L7Q1",
+        "question_text": "Psalm 119:105 says that God's word is a lamp to my feet and a what to my path?",
+        "options": ["A. Guide", "B. Light", "C. Map", "D. Shield"],
+        "answer_index": "B",
+        "reference": "Psalm 119:105"
+      },
+      {
+        "question_id": "L7Q2",
+        "question_text": "Who was the woman who gave birth to Jesus?",
+        "options": ["A. Elizabeth", "B. Salome", "C. Mary", "D. Martha"],
+        "answer_index": "C",
+        "reference": "Matthew 1:18"
+      },
+      {
+        "question_id": "L7Q3",
+        "question_text": "The letters of Paul that were written while he was imprisoned are known as the what Epistles?",
+        "options": ["A. Pastoral", "B. Prison", "C. General", "D. Minor"],
+        "answer_index": "B",
+        "reference": "New Testament Structure"
+      }
+    ]
+  },
+  {
+    "level": 8,
+    "theme": "The Resurrection",
+    "questions": [
+      {
+        "question_id": "L8Q1",
+        "question_text": "1 Corinthians 15:14 states that if Christ has not been raised, then our preaching is useless and so is your what?",
+        "options": ["A. Hope", "B. Faith", "C. Wealth", "D. Effort"],
+        "answer_index": "B",
+        "reference": "1 Corinthians 15:14"
+      },
+      {
+        "question_id": "L8Q2",
+        "question_text": "In the book of Judges, who was the hero who defeated the Midianites with only 300 men?",
+        "options": ["A. Samson", "B. Ehud", "C. Gideon", "D. Jephthah"],
+        "answer_index": "C",
+        "reference": "Judges 7"
+      },
+      {
+        "question_id": "L8Q3",
+        "question_text": "Which Gospel writer was a doctor and historian who also wrote the Book of Acts?",
+        "options": ["A. Matthew", "B. Mark", "C. Luke", "D. John"],
+        "answer_index": "C",
+        "reference": "Gospel of Luke"
+      }
+    ]
+  },
+  {
+    "level": 9,
+    "theme": "Worship and Adoration",
+    "questions": [
+      {
+        "question_id": "L9Q1",
+        "question_text": "John 4:24 states that God is Spirit, and his worshipers must worship in spirit and in what?",
+        "options": ["A. Fear", "B. Truth", "C. Silence", "D. Beauty"],
+        "answer_index": "B",
+        "reference": "John 4:24"
+      },
+      {
+        "question_id": "L9Q2",
+        "question_text": "Which prophet was thrown into a lion's den but survived?",
+        "options": ["A. Jeremiah", "B. Ezekiel", "C. Daniel", "D. Isaiah"],
+        "answer_index": "C",
+        "reference": "Daniel 6"
+      },
+      {
+        "question_id": "L9Q3",
+        "question_text": "The last book of the Bible, which contains prophecy about the end times, is named what?",
+        "options": ["A. Jude", "B. Hebrews", "C. Revelation", "D. Acts"],
+        "answer_index": "C",
+        "reference": "Book of Revelation"
+      }
+    ]
+  },
+  {
+    "level": 10,
+    "theme": "The Power of God",
+    "questions": [
+      {
+        "question_id": "L10Q1",
+        "question_text": "Jeremiah 32:27 declares, 'I am the LORD, the God of all mankind. Is anything too what for me?'",
+        "options": ["A. Hard", "B. Small", "C. Far", "D. Simple"],
+        "answer_index": "A",
+        "reference": "Jeremiah 32:27"
+      },
+      {
+        "question_id": "L10Q2",
+        "question_text": "Who was the first king of Israel?",
+        "options": ["A. David", "B. Saul", "C. Solomon", "D. Jeroboam"],
+        "answer_index": "B",
+        "reference": "1 Samuel 10"
+      },
+      {
+        "question_id": "L10Q3",
+        "question_text": "How many plagues did God send upon Egypt before Pharaoh released the Israelites?",
+        "options": ["A. 7", "B. 10", "C. 12", "D. 5"],
+        "answer_index": "B",
+        "reference": "Exodus 7-12"
+      }
+    ]
+  },
+  {
+    "level": 11,
+    "theme": "Eternal Perspective",
+    "questions": [
+      {
+        "question_id": "L11Q1",
+        "question_text": "2 Corinthians 4:18 tells us to fix our eyes not on what is seen, but on what is what?",
+        "options": ["A. Useful", "B. Eternal", "C. True", "D. Good"],
+        "answer_index": "B",
+        "reference": "2 Corinthians 4:18"
+      },
+      {
+        "question_id": "L11Q2",
+        "question_text": "What was the name of the mountain where Moses received the Ten Commandments?",
+        "options": ["A. Mount of Olives", "B. Mount Horeb (Sinai)", "C. Mount Carmel", "D. Mount Zion"],
+        "answer_index": "B",
+        "reference": "Exodus 19"
+      },
+      {
+        "question_id": "L11Q3",
+        "question_text": "The Book of Lamentations, traditionally attributed to Jeremiah, mourns the destruction of which city?",
+        "options": ["A. Nineveh", "B. Damascus", "C. Jerusalem", "D. Babylon"],
+        "answer_index": "C",
+        "reference": "Book of Lamentations"
+      }
+    ]
+  },
+  {
+    "level": 12,
+    "theme": "Spiritual Warfare",
+    "questions": [
+      {
+        "question_id": "L12Q1",
+        "question_text": "Ephesians 6:11 instructs believers to put on the full what of God?",
+        "options": ["A. Love", "B. Authority", "C. Armor", "D. Wisdom"],
+        "answer_index": "C",
+        "reference": "Ephesians 6:11"
+      },
+      {
+        "question_id": "L12Q2",
+        "question_text": "The man who walked with God and was later taken by God without experiencing death was whom?",
+        "options": ["A. Methuselah", "B. Enoch", "C. Abraham", "D. Elijah"],
+        "answer_index": "B",
+        "reference": "Genesis 5:24"
+      },
+      {
+        "question_id": "L12Q3",
+        "question_text": "Which New Testament book, written by Paul, is famous for its emphasis on justification by faith alone?",
+        "options": ["A. Acts", "B. Romans", "C. Hebrews", "D. James"],
+        "answer_index": "B",
+        "reference": "Book of Romans"
+      }
+    ]
+  },
+  {
+    "level": 13,
+    "theme": "The Nature of Wisdom",
+    "questions": [
+      {
+        "question_id": "L13Q1",
+        "question_text": "James 1:5 promises that if anyone lacks wisdom, they should ask whom, who gives generously to all without finding fault?",
+        "options": ["A. A priest", "B. God", "C. A friend", "D. An elder"],
+        "answer_index": "B",
+        "reference": "James 1:5"
+      },
+      {
+        "question_id": "L13Q2",
+        "question_text": "What was the name of the man who married Naomi's daughter-in-law Ruth?",
+        "options": ["A. Obed", "B. Jesse", "C. Boaz", "D. Salmon"],
+        "answer_index": "C",
+        "reference": "Ruth 4:13"
+      },
+      {
+        "question_id": "L13Q3",
+        "question_text": "Which Gospel is known for having a unique focus on Jesus' parables, especially the parable of the Prodigal Son?",
+        "options": ["A. Matthew", "B. Mark", "C. Luke", "D. John"],
+        "answer_index": "C",
+        "reference": "Gospel of Luke"
+      }
+    ]
+  },
+  {
+    "level": 14,
+    "theme": "The Importance of Peace",
+    "questions": [
+      {
+        "question_id": "L14Q1",
+        "question_text": "Colossians 3:15 instructs believers to let the what of Christ rule in their hearts?",
+        "options": ["A. Love", "B. Joy", "C. Word", "D. Peace"],
+        "answer_index": "D",
+        "reference": "Colossians 3:15"
+      },
+      {
+        "question_id": "L14Q2",
+        "question_text": "In the Old Testament, who was the prophet taken to heaven in a whirlwind by a chariot of fire?",
+        "options": ["A. Enoch", "B. Elijah", "C. Elisha", "D. Isaiah"],
+        "answer_index": "B",
+        "reference": "2 Kings 2:11"
+      },
+      {
+        "question_id": "L14Q3",
+        "question_text": "Which book of the New Testament begins with the words: 'In the beginning was the Word, and the Word was with God, and the Word was God'?",
+        "options": ["A. Matthew", "B. Luke", "C. Revelation", "D. John"],
+        "answer_index": "D",
+        "reference": "John 1:1"
+      }
+    ]
+  },
+  {
+    "level": 15,
+    "theme": "The Heart of the Law",
+    "questions": [
+      {
+        "question_id": "L15Q1",
+        "question_text": "Jesus summarized the Law and the Prophets into two great commandments: love God and love your what?",
+        "options": ["A. Family", "B. Nation", "C. Neighbor", "D. Self"],
+        "answer_index": "C",
+        "reference": "Matthew 22:37-40"
+      },
+      {
+        "question_id": "L15Q2",
+        "question_text": "Which of the 10 Commandments deals with honoring one's parents?",
+        "options": ["A. First", "B. Fourth", "C. Fifth", "D. Tenth"],
+        "answer_index": "C",
+        "reference": "Exodus 20:12"
+      },
+      {
+        "question_id": "L15Q3",
+        "question_text": "The Book of Acts records the missionary journeys of the Apostle Paul and whom else, who was Peter's right-hand man?",
+        "options": ["A. Silas", "B. Barnabas", "C. Timothy", "D. John Mark"],
+        "answer_index": "A",
+        "reference": "Acts 15:40"
+      }
+    ]
+  },
+  {
+    "level": 16,
+    "theme": "Salvation and Grace",
+    "questions": [
+      {
+        "question_id": "L16Q1",
+        "question_text": "Ephesians 2:8 states that we are saved by grace through what, and this is not from yourselves, it is the gift of God?",
+        "options": ["A. Works", "B. Faith", "C. Baptism", "D. Tradition"],
+        "answer_index": "B",
+        "reference": "Ephesians 2:8"
+      },
+      {
+        "question_id": "L16Q2",
+        "question_text": "Which Old Testament man was tested by God, being asked to sacrifice his son Isaac?",
+        "options": ["A. Jacob", "B. Abraham", "C. Lot", "D. Terah"],
+        "answer_index": "B",
+        "reference": "Genesis 22"
+      },
+      {
+        "question_id": "L16Q3",
+        "question_text": "The Book of Hebrews emphasizes the superiority of Christ's priesthood, comparing it to the Old Testament figure whom?",
+        "options": ["A. Aaron", "B. Melchizedek", "C. Moses", "D. David"],
+        "answer_index": "B",
+        "reference": "Hebrews 7"
+      }
+    ]
+  },
+  {
+    "level": 17,
+    "theme": "Truth and Integrity",
+    "questions": [
+      {
+        "question_id": "L17Q1",
+        "question_text": "Proverbs 12:22 teaches that the LORD delights in those who are what?",
+        "options": ["A. Rich", "B. Honest in their dealings", "C. Powerful", "D. Educated"],
+        "answer_index": "B",
+        "reference": "Proverbs 12:22"
+      },
+      {
+        "question_id": "L17Q2",
+        "question_text": "What was the initial job/occupation of the Apostle Peter before he followed Jesus?",
+        "options": ["A. Tax collector", "B. Tentmaker", "C. Fisherman", "D. Carpenter"],
+        "answer_index": "C",
+        "reference": "Matthew 4:18"
+      },
+      {
+        "question_id": "L17Q3",
+        "question_text": "Which book of the Old Testament is a poetic dialogue dealing with the complexity of human suffering and divine justice?",
+        "options": ["A. Psalms", "B. Proverbs", "C. Job", "D. Song of Solomon"],
+        "answer_index": "C",
+        "reference": "Book of Job"
+      }
+    ]
+  },
+  {
+    "level": 18,
+    "theme": "Mercy and Compassion",
+    "questions": [
+      {
+        "question_id": "L18Q1",
+        "question_text": "In the Beatitudes, Jesus said, 'Blessed are the what, for they will be shown mercy'?",
+        "options": ["A. Poor in spirit", "B. Meek", "C. Merciful", "D. Pure in heart"],
+        "answer_index": "C",
+        "reference": "Matthew 5:7"
+      },
+      {
+        "question_id": "L18Q2",
+        "question_text": "Who was the Old Testament prophet whose wife was unfaithful to him, serving as a metaphor for Israel's relationship with God?",
+        "options": ["A. Isaiah", "B. Hosea", "C. Micah", "D. Joel"],
+        "answer_index": "B",
+        "reference": "Book of Hosea"
+      },
+      {
+        "question_id": "L18Q3",
+        "question_text": "Which of Paul's letters contains the famous 'love chapter' (Chapter 13)?",
+        "options": ["A. Romans", "B. Ephesians", "C. 1 Corinthians", "D. Philippians"],
+        "answer_index": "C",
+        "reference": "1 Corinthians 13"
+      }
+    ]
+  },
+  {
+    "level": 19,
+    "theme": "Encouragement and Comfort",
+    "questions": [
+      {
+        "question_id": "L19Q1",
+        "question_text": "Isaiah 41:10 says, 'So do not fear, for I am with you; do not be dismayed, for I am your God. I will what you and help you...'",
+        "options": ["A. Challenge", "B. Strengthen", "C. Feed", "D. Educate"],
+        "answer_index": "B",
+        "reference": "Isaiah 41:10"
+      },
+      {
+        "question_id": "L19Q2",
+        "question_text": "The Israelites celebrated their freedom from slavery in Egypt with an annual festival called the what?",
+        "options": ["A. Feast of Tabernacles", "B. Pentecost", "C. Passover", "D. Yom Kippur"],
+        "answer_index": "C",
+        "reference": "Exodus 12"
+      },
+      {
+        "question_id": "L19Q3",
+        "question_text": "The Book of James is often referred to as a book of practical Christian what?",
+        "options": ["A. Doctrine", "B. Poetry", "C. Ethics/Wisdom", "D. History"],
+        "answer_index": "C",
+        "reference": "Book of James"
+      }
+    ]
+  },
+  {
+    "level": 20,
+    "theme": "The Way to God",
+    "questions": [
+      {
+        "question_id": "L20Q1",
+        "question_text": "Acts 4:12 states that salvation is found in no one else, for there is no other what given under heaven by which we must be saved?",
+        "options": ["A. Teaching", "B. Name", "C. Place", "D. Law"],
+        "answer_index": "B",
+        "reference": "Acts 4:12"
+      },
+      {
+        "question_id": "L20Q2",
+        "question_text": "What was the name of the garden where Jesus prayed before his arrest?",
+        "options": ["A. Eden", "B. Gethsemane", "C. Calvary", "D. Zion"],
+        "answer_index": "B",
+        "reference": "Matthew 26:36"
+      },
+      {
+        "question_id": "L20Q3",
+        "question_text": "The Old Testament book of Psalms is primarily a collection of what?",
+        "options": ["A. Laws", "B. Prophecies", "C. Songs and Prayers", "D. Historical Narratives"],
+        "answer_index": "C",
+        "reference": "Book of Psalms"
+      }
+    ]
+  },
+  {
+    "level": 21,
+    "theme": "The Importance of Deeds",
+    "questions": [
+      {
+        "question_id": "L21Q1",
+        "question_text": "Titus 3:8 teaches believers to be careful to devote themselves to doing what?",
+        "options": ["A. Good works", "B. Studying", "C. Debating", "D. Resting"],
+        "answer_index": "A",
+        "reference": "Titus 3:8"
+      },
+      {
+        "question_id": "L21Q2",
+        "question_text": "Which king of Israel was known as 'a man after God's own heart'?",
+        "options": ["A. Saul", "B. Solomon", "C. David", "D. Rehoboam"],
+        "answer_index": "C",
+        "reference": "Acts 13:22 (referencing 1 Samuel)"
+      },
+      {
+        "question_id": "L21Q3",
+        "question_text": "The Old Testament book of Nehemiah primarily describes the rebuilding of what?",
+        "options": ["A. The Temple", "B. The Walls of Jerusalem", "C. The Palace", "D. The Ark of the Covenant"],
+        "answer_index": "B",
+        "reference": "Book of Nehemiah"
+      }
+    ]
+  },
+  {
+    "level": 22,
+    "theme": "The Peace of God",
+    "questions": [
+      {
+        "question_id": "L22Q1",
+        "question_text": "Philippians 4:7 promises that the peace of God, which transcends all what, will guard your hearts and minds in Christ Jesus?",
+        "options": ["A. Logic", "B. Understanding", "C. Fear", "D. Emotion"],
+        "answer_index": "B",
+        "reference": "Philippians 4:7"
+      },
+      {
+        "question_id": "L22Q2",
+        "question_text": "Who was the son of Abraham and Sarah, born in their old age?",
+        "options": ["A. Ishmael", "B. Jacob", "C. Isaac", "D. Esau"],
+        "answer_index": "C",
+        "reference": "Genesis 21:3"
+      },
+      {
+        "question_id": "L22Q3",
+        "question_text": "How many tribes of Israel were there in total?",
+        "options": ["A. 10", "B. 12", "C. 7", "D. 9"],
+        "answer_index": "B",
+        "reference": "Genesis 49"
+      }
+    ]
+  },
+  {
+    "level": 23,
+    "theme": "Abiding in Christ",
+    "questions": [
+      {
+        "question_id": "L23Q1",
+        "question_text": "John 15:5 says, 'I am the vine; you are the branches. If you remain in me and I in you, you will bear much what?'",
+        "options": ["A. Gold", "B. Fruit", "C. Water", "D. Power"],
+        "answer_index": "B",
+        "reference": "John 15:5"
+      },
+      {
+        "question_id": "L23Q2",
+        "question_text": "In the Old Testament, who was the prophet whose scroll was publicly cut up and burned by King Jehoiakim?",
+        "options": ["A. Jeremiah", "B. Isaiah", "C. Daniel", "D. Micah"],
+        "answer_index": "A",
+        "reference": "Jeremiah 36"
+      },
+      {
+        "question_id": "L23Q3",
+        "question_text": "Which Gospel writer was a former tax collector, called by Jesus from his customs post?",
+        "options": ["A. Mark", "B. Luke", "C. Matthew", "D. John"],
+        "answer_index": "C",
+        "reference": "Matthew 9:9"
+      }
+    ]
+  },
+  {
+    "level": 24,
+    "theme": "Spiritual Gifts",
+    "questions": [
+      {
+        "question_id": "L24Q1",
+        "question_text": "1 Corinthians 12:4-6 explains that there are different kinds of gifts, but the same what?",
+        "options": ["A. Church", "B. Man", "C. Spirit", "D. Teaching"],
+        "answer_index": "C",
+        "reference": "1 Corinthians 12:4"
+      },
+      {
+        "question_id": "L24Q2",
+        "question_text": "What was the name of the place where Jesus was born?",
+        "options": ["A. Nazareth", "B. Jerusalem", "C. Bethlehem", "D. Capernaum"],
+        "answer_index": "C",
+        "reference": "Matthew 2:1"
+      },
+      {
+        "question_id": "L24Q3",
+        "question_text": "The Book of Ruth is categorized in the Old Testament as which type of book?",
+        "options": ["A. Law", "B. Prophetic", "C. Historical", "D. Poetic"],
+        "answer_index": "C",
+        "reference": "Old Testament Structure"
+      }
+    ]
+  },
+  {
+    "level": 25,
+    "theme": "The Nature of Temptation",
+    "questions": [
+      {
+        "question_id": "L25Q1",
+        "question_text": "James 1:13 states that when tempted, no one should say, 'God is tempting me,' because God cannot be tempted by what, nor does he tempt anyone?",
+        "options": ["A. Evil", "B. Flesh", "C. Riches", "D. Lies"],
+        "answer_index": "A",
+        "reference": "James 1:13"
+      },
+      {
+        "question_id": "L25Q2",
+        "question_text": "Which prophet was thrown into a pit/cistern but later rescued and continued to preach?",
+        "options": ["A. Daniel", "B. Ezekiel", "C. Jeremiah", "D. Isaiah"],
+        "answer_index": "C",
+        "reference": "Jeremiah 38:6"
+      },
+      {
+        "question_id": "L25Q3",
+        "question_text": "The majority of the book of Psalms is traditionally attributed to which author?",
+        "options": ["A. Solomon", "B. Moses", "C. David", "D. Asaph"],
+        "answer_index": "C",
+        "reference": "Book of Psalms"
+      }
+    ]
+  },
+  {
+    "level": 26,
+    "theme": "God's Steadfastness",
+    "questions": [
+      {
+        "question_id": "L26Q1",
+        "question_text": "Lamentations 3:22-23 says that the Lord's great love is new every what?",
+        "options": ["A. Year", "B. Day", "C. Hour", "D. Moment"],
+        "answer_index": "B",
+        "reference": "Lamentations 3:22-23"
+      },
+      {
+        "question_id": "L26Q2",
+        "question_text": "What was the physical object that Moses used to part the Red Sea?",
+        "options": ["A. His hand", "B. A trumpet", "C. His staff/rod", "D. A rock"],
+        "answer_index": "C",
+        "reference": "Exodus 14:16"
+      },
+      {
+        "question_id": "L26Q3",
+        "question_text": "Which of Paul's letters contains the famous 'Christ Hymn' describing Jesus' humiliation and exaltation?",
+        "options": ["A. Romans", "B. 1 Corinthians", "C. Ephesians", "D. Philippians"],
+        "answer_index": "D",
+        "reference": "Philippians 2:5-11"
+      }
+    ]
+  },
+  {
+    "level": 27,
+    "theme": "Hope in Suffering",
+    "questions": [
+      {
+        "question_id": "L27Q1",
+        "question_text": "Romans 12:12 tells believers to be joyful in hope, patient in affliction, and faithful in what?",
+        "options": ["A. Giving", "B. Work", "C. Prayer", "D. Study"],
+        "answer_index": "C",
+        "reference": "Romans 12:12"
+      },
+      {
+        "question_id": "L27Q2",
+        "question_text": "Who was the man who inherited Elijah's mantle and performed twice as many miracles as his predecessor?",
+        "options": ["A. Isaiah", "B. Elisha", "C. Jeremiah", "D. Jonah"],
+        "answer_index": "B",
+        "reference": "2 Kings 2:9-15"
+      },
+      {
+        "question_id": "L27Q3",
+        "question_text": "The Book of Revelation was written by the Apostle John while he was exiled on which island?",
+        "options": ["A. Malta", "B. Cyprus", "C. Patmos", "D. Crete"],
+        "answer_index": "C",
+        "reference": "Revelation 1:9"
+      }
+    ]
+  },
+  {
+    "level": 28,
+    "theme": "The Importance of Unity",
+    "questions": [
+      {
+        "question_id": "L28Q1",
+        "question_text": "Psalm 133:1 praises how good and pleasant it is when God's people live together in what?",
+        "options": ["A. Harmony/Unity", "B. Wealth", "C. Quietness", "D. Cities"],
+        "answer_index": "A",
+        "reference": "Psalm 133:1"
+      },
+      {
+        "question_id": "L28Q2",
+        "question_text": "Who was the first person to commit murder, according to the Bible?",
+        "options": ["A. Adam", "B. Esau", "C. Cain", "D. Nimrod"],
+        "answer_index": "C",
+        "reference": "Genesis 4:8"
+      },
+      {
+        "question_id": "L28Q3",
+        "question_text": "The Book of Haggai, a minor prophet, urged the returned exiles to focus on rebuilding what structure?",
+        "options": ["A. The Walls of Jerusalem", "B. The Temple", "C. Their homes", "D. The City Gates"],
+        "answer_index": "B",
+        "reference": "Book of Haggai"
+      }
+    ]
+  },
+  {
+    "level": 29,
+    "theme": "The Power of the Tongue",
+    "questions": [
+      {
+        "question_id": "L29Q1",
+        "question_text": "James 3:8 warns that the tongue is a restless what, full of deadly poison?",
+        "options": ["A. Weapon", "B. Evil", "C. Fire", "D. Viper"],
+        "answer_index": "B",
+        "reference": "James 3:8"
+      },
+      {
+        "question_id": "L29Q2",
+        "question_text": "The city of Jerusalem was often referred to by what name, meaning 'City of David'?",
+        "options": ["A. Zion", "B. Bethel", "C. Shechem", "D. Damascus"],
+        "answer_index": "A",
+        "reference": "2 Samuel 5:7"
+      },
+      {
+        "question_id": "L29Q3",
+        "question_text": "Which New Testament letter contains a list of requirements for church officers (elders and deacons)?",
+        "options": ["A. Romans", "B. 1 Timothy", "C. Hebrews", "D. Jude"],
+        "answer_index": "B",
+        "reference": "1 Timothy 3"
+      }
+    ]
+  },
+  {
+    "level": 30,
+    "theme": "God's Provision",
+    "questions": [
+      {
+        "question_id": "L30Q1",
+        "question_text": "Matthew 6:33 encourages believers to seek first the kingdom of God and his righteousness, and all these things will be what to you?",
+        "options": ["A. Delayed", "B. Explained", "C. Given (Added)", "D. Taken away"],
+        "answer_index": "C",
+        "reference": "Matthew 6:33"
+      },
+      {
+        "question_id": "L30Q2",
+        "question_text": "What was the name of the man who led the Israelites into the Promised Land after Moses died?",
+        "options": ["A. Caleb", "B. Aaron", "C. Joshua", "D. Eleazar"],
+        "answer_index": "C",
+        "reference": "Book of Joshua"
+      },
+      {
+        "question_id": "L30Q3",
+        "question_text": "Which Gospel ends with Jesus instructing the disciples to wait in Jerusalem for the Holy Spirit before beginning their mission?",
+        "options": ["A. Matthew", "B. Mark", "C. Luke", "D. John"],
+        "answer_index": "C",
+        "reference": "Luke 24:49"
+      }
+    ]
+  },
+  {
+    "level": 31,
+    "theme": "The Authority of Christ",
+    "questions": [
+      {
+        "question_id": "L31Q1",
+        "question_text": "In the Great Commission (Matthew 28:18), Jesus stated that all what in heaven and on earth has been given to him?",
+        "options": ["A. Riches", "B. People", "C. Authority", "D. Time"],
+        "answer_index": "C",
+        "reference": "Matthew 28:18"
+      },
+      {
+        "question_id": "L31Q2",
+        "question_text": "What was the name of the prostitute in Jericho who hid the Israelite spies?",
+        "options": ["A. Deborah", "B. Rahab", "C. Delilah", "D. Esther"],
+        "answer_index": "B",
+        "reference": "Joshua 2"
+      },
+      {
+        "question_id": "L31Q3",
+        "question_text": "The Book of Ecclesiastes famously concludes that the whole duty of man is to fear God and keep what?",
+        "options": ["A. The Sabbath", "B. The Ten Commandments", "C. His commandments", "D. The peace"],
+        "answer_index": "C",
+        "reference": "Ecclesiastes 12:13"
+      }
+    ]
+  },
+  {
+    "level": 32,
+    "theme": "Justification by Faith",
+    "questions": [
+      {
+        "question_id": "L32Q1",
+        "question_text": "Romans 4:3 asks what the Scripture says concerning Abraham, answering that he believed God, and it was credited to him as what?",
+        "options": ["A. Love", "B. Righteousness", "C. Power", "D. Wisdom"],
+        "answer_index": "B",
+        "reference": "Romans 4:3"
+      },
+      {
+        "question_id": "L32Q2",
+        "question_text": "Who was the man who killed his brother Abel?",
+        "options": ["A. Seth", "B. Enosh", "C. Cain", "D. Lamech"],
+        "answer_index": "C",
+        "reference": "Genesis 4:8"
+      },
+      {
+        "question_id": "L32Q3",
+        "question_text": "The Book of Ezekiel contains the famous vision of the valley of dry what?",
+        "options": ["A. Trees", "B. Bones", "C. Rivers", "D. Rocks"],
+        "answer_index": "B",
+        "reference": "Ezekiel 37"
+      }
+    ]
+  },
+  {
+    "level": 33,
+    "theme": "The Fruit of the Spirit",
+    "questions": [
+      {
+        "question_id": "L33Q1",
+        "question_text": "The 'Fruit of the Spirit' listed in Galatians 5:22-23 includes love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, and what else?",
+        "options": ["A. Self-control", "B. Riches", "C. Authority", "D. Prophecy"],
+        "answer_index": "A",
+        "reference": "Galatians 5:22-23"
+      },
+      {
+        "question_id": "L33Q2",
+        "question_text": "What was the name of the city that was destroyed by fire and brimstone, from which Lot and his family fled?",
+        "options": ["A. Ur", "B. Haran", "C. Sodom", "D. Nineveh"],
+        "answer_index": "C",
+        "reference": "Genesis 19"
+      },
+      {
+        "question_id": "L33Q3",
+        "question_text": "The Book of Romans was written by the Apostle Paul to the believers in the city of what?",
+        "options": ["A. Corinth", "B. Galatia", "C. Rome", "D. Ephesus"],
+        "answer_index": "C",
+        "reference": "Book of Romans"
+      }
+    ]
+  },
+  {
+    "level": 34,
+    "theme": "The Believer's Identity",
+    "questions": [
+      {
+        "question_id": "L34Q1",
+        "question_text": "1 Peter 2:9 states that believers are a chosen race, a royal priesthood, a holy nation, and a people belonging to whom?",
+        "options": ["A. The King", "B. God", "C. The Priest", "D. The Nation"],
+        "answer_index": "B",
+        "reference": "1 Peter 2:9"
+      },
+      {
+        "question_id": "L34Q2",
+        "question_text": "Who was the woman who became queen of Persia and saved her people from genocide?",
+        "options": ["A. Vashti", "B. Esther", "C. Jezebel", "D. Delilah"],
+        "answer_index": "B",
+        "reference": "Book of Esther"
+      },
+      {
+        "question_id": "L34Q3",
+        "question_text": "Which prophet is known for prophesying that the Messiah would be born in Bethlehem?",
+        "options": ["A. Isaiah", "B. Jeremiah", "C. Micah", "D. Daniel"],
+        "answer_index": "C",
+        "reference": "Micah 5:2"
+      }
+    ]
+  },
+  {
+    "level": 35,
+    "theme": "Endurance and Perseverance",
+    "questions": [
+      {
+        "question_id": "L35Q1",
+        "question_text": "Hebrews 12:1 encourages believers to run with perseverance the what marked out for us?",
+        "options": ["A. Race", "B. Path", "C. Journey", "D. Road"],
+        "answer_index": "A",
+        "reference": "Hebrews 12:1"
+      },
+      {
+        "question_id": "L35Q2",
+        "question_text": "What was the name of the man whose strength was tied to his hair?",
+        "options": ["A. Gideon", "B. Samson", "C. David", "D. Absalom"],
+        "answer_index": "B",
+        "reference": "Judges 16"
+      },
+      {
+        "question_id": "L35Q3",
+        "question_text": "Which Gospel writer opens their book with a detailed genealogy of Jesus, tracing his lineage through King David to Abraham?",
+        "options": ["A. Mark", "B. Luke", "C. John", "D. Matthew"],
+        "answer_index": "D",
+        "reference": "Matthew 1:1-17"
+      }
+    ]
+  },
+  {
+    "level": 36,
+    "theme": "The Church as the Body of Christ",
+    "questions": [
+      {
+        "question_id": "L36Q1",
+        "question_text": "1 Corinthians 12:27 states that believers are the what of Christ, and each one of you is a part of it?",
+        "options": ["A. Temple", "B. Body", "C. Family", "D. Army"],
+        "answer_index": "B",
+        "reference": "1 Corinthians 12:27"
+      },
+      {
+        "question_id": "L36Q2",
+        "question_text": "What type of food did God provide to the Israelites in the desert after they complained about having no food?",
+        "options": ["A. Bread and fish", "B. Manna and quail", "C. Honey and milk", "D. Dates and figs"],
+        "answer_index": "B",
+        "reference": "Exodus 16"
+      },
+      {
+        "question_id": "L36Q3",
+        "question_text": "The Old Testament book of Exodus primarily deals with the Israelites' freedom from what?",
+        "options": ["A. Famine", "B. Exile", "C. Slavery in Egypt", "D. War"],
+        "answer_index": "C",
+        "reference": "Book of Exodus"
+      }
+    ]
+  },
+  {
+    "level": 37,
+    "theme": "The Importance of Giving",
+    "questions": [
+      {
+        "question_id": "L37Q1",
+        "question_text": "2 Corinthians 9:7 teaches that God loves a cheerful what?",
+        "options": ["A. Worker", "B. Giver", "C. Singer", "D. Learner"],
+        "answer_index": "B",
+        "reference": "2 Corinthians 9:7"
+      },
+      {
+        "question_id": "L37Q2",
+        "question_text": "The Book of Judges primarily covers the period of Israel's history between Joshua and the establishment of the what?",
+        "options": ["A. Priesthood", "B. Monarchy (Kingship)", "C. Temple", "D. City of Jerusalem"],
+        "answer_index": "B",
+        "reference": "Book of Judges"
+      },
+      {
+        "question_id": "L37Q3",
+        "question_text": "Which Apostle wrote the Book of Revelation?",
+        "options": ["A. Peter", "B. Paul", "C. John", "D. James"],
+        "answer_index": "C",
+        "reference": "Revelation 1:1"
+      }
+    ]
+  },
+  {
+    "level": 38,
+    "theme": "The New Covenant",
+    "questions": [
+      {
+        "question_id": "L38Q1",
+        "question_text": "Jeremiah 31:33 describes the New Covenant as God putting his law into their minds and writing it on their what?",
+        "options": ["A. Scrolls", "B. Foreheads", "C. Hearts", "D. Hands"],
+        "answer_index": "C",
+        "reference": "Jeremiah 31:33"
+      },
+      {
+        "question_id": "L38Q2",
+        "question_text": "What was the name of the city where the Apostle Paul was converted on the road?",
+        "options": ["A. Jerusalem", "B. Antioch", "C. Damascus", "D. Tarsus"],
+        "answer_index": "C",
+        "reference": "Acts 9"
+      },
+      {
+        "question_id": "L38Q3",
+        "question_text": "The Book of Leviticus is primarily concerned with laws, sacrifices, and the what of the Israelite people?",
+        "options": ["A. Wars", "B. Genealogy", "C. Holiness", "D. Commerce"],
+        "answer_index": "C",
+        "reference": "Book of Leviticus"
+      }
+    ]
+  },
+  {
+    "level": 39,
+    "theme": "The Purpose of Life",
+    "questions": [
+      {
+        "question_id": "L39Q1",
+        "question_text": "Psalm 90:12 asks God to teach us to number our days, that we may gain a heart of what?",
+        "options": ["A. Wisdom", "B. Riches", "C. Power", "D. Courage"],
+        "answer_index": "A",
+        "reference": "Psalm 90:12"
+      },
+      {
+        "question_id": "L39Q2",
+        "question_text": "Who was the Old Testament prophet that publicly rebuked King David for his sin with Bathsheba?",
+        "options": ["A. Samuel", "B. Nathan", "C. Elijah", "D. Gad"],
+        "answer_index": "B",
+        "reference": "2 Samuel 12"
+      },
+      {
+        "question_id": "L39Q3",
+        "question_text": "The 'Book of the Twelve' (or Minor Prophets) begins with which prophet?",
+        "options": ["A. Jonah", "B. Malachi", "C. Hosea", "D. Micah"],
+        "answer_index": "C",
+        "reference": "Minor Prophets Structure"
+      }
+    ]
+  },
+  {
+    "level": 40,
+    "theme": "The Power of the Gospel",
+    "questions": [
+      {
+        "question_id": "L40Q1",
+        "question_text": "Romans 1:16 states that the Gospel is the power of God for salvation to everyone who does what?",
+        "options": ["A. Gives", "B. Teaches", "C. Believes", "D. Works"],
+        "answer_index": "C",
+        "reference": "Romans 1:16"
+      },
+      {
+        "question_id": "L40Q2",
+        "question_text": "Which of the Old Testament patriarchs was named Israel, which means 'he struggles with God'?",
+        "options": ["A. Abraham", "B. Isaac", "C. Jacob", "D. Esau"],
+        "answer_index": "C",
+        "reference": "Genesis 32:28"
+      },
+      {
+        "question_id": "L40Q3",
+        "question_text": "Which Gospel focuses heavily on Jesus' identity as the Son of God, using seven 'I Am' statements?",
+        "options": ["A. Matthew", "B. Mark", "C. Luke", "D. John"],
+        "answer_index": "D",
+        "reference": "Gospel of John"
+      }
+    ]
+  },
+  {
+    "level": 41,
+    "theme": "Love for God and Neighbor",
+    "questions": [
+      {
+        "question_id": "L41Q1",
+        "question_text": "The greatest demonstration of love, according to John 15:13, is laying down one's life for whom?",
+        "options": ["A. Family", "B. Friends", "C. Country", "D. The Poor"],
+        "answer_index": "B",
+        "reference": "John 15:13"
+      },
+      {
+        "question_id": "L41Q2",
+        "question_text": "Who was the Old Testament prophet who was a shepherd and a fig-picker before God called him?",
+        "options": ["A. Isaiah", "B. Amos", "C. Hosea", "D. Micah"],
+        "answer_index": "B",
+        "reference": "Amos 7:14"
+      },
+      {
+        "question_id": "L41Q3",
+        "question_text": "The Book of Numbers primarily documents the Israelites' journey and struggles in what location?",
+        "options": ["A. Canaan", "B. Mesopotamia", "C. The wilderness", "D. Egypt"],
+        "answer_index": "C",
+        "reference": "Book of Numbers"
+      }
+    ]
+  },
+  {
+    "level": 42,
+    "theme": "The Sovereignty of God",
+    "questions": [
+      {
+        "question_id": "L42Q1",
+        "question_text": "Psalm 135:6 declares that the LORD does whatever he pleases in the heavens, on the earth, and where else?",
+        "options": ["A. The king's palace", "B. The seas and all the depths", "C. The hearts of men", "D. The mountains"],
+        "answer_index": "B",
+        "reference": "Psalm 135:6"
+      },
+      {
+        "question_id": "L42Q2",
+        "question_text": "Which New Testament writer penned the shortest book in the Bible, warning against false teachers?",
+        "options": ["A. Jude", "B. John", "C. Peter", "D. James"],
+        "answer_index": "A",
+        "reference": "Book of Jude"
+      },
+      {
+        "question_id": "L42Q3",
+        "question_text": "The biblical hero Samson was known for his extraordinary what?",
+        "options": ["A. Wisdom", "B. Wealth", "C. Strength", "D. Patience"],
+        "answer_index": "C",
+        "reference": "Book of Judges"
+      }
+    ]
+  },
+  {
+    "level": 43,
+    "theme": "Christian Liberty",
+    "questions": [
+      {
+        "question_id": "L43Q1",
+        "question_text": "Galatians 5:1 states: 'It is for what that Christ has set us free'?",
+        "options": ["A. Riches", "B. Liberty", "C. Happiness", "D. Tradition"],
+        "answer_index": "B",
+        "reference": "Galatians 5:1"
+      },
+      {
+        "question_id": "L43Q2",
+        "question_text": "Who was the mother of Samuel, who prayed earnestly for a son?",
+        "options": ["A. Rachel", "B. Sarah", "C. Hannah", "D. Elizabeth"],
+        "answer_index": "C",
+        "reference": "1 Samuel 1"
+      },
+      {
+        "question_id": "L43Q3",
+        "question_text": "Which of the four Gospels begins with a focus on Jesus' eternal existence as the 'Word' (Logos)?",
+        "options": ["A. Matthew", "B. Mark", "C. Luke", "D. John"],
+        "answer_index": "D",
+        "reference": "John 1:1"
+      }
+    ]
+  },
+  {
+    "level": 44,
+    "theme": "Unity in Christ",
+    "questions": [
+      {
+        "question_id": "L44Q1",
+        "question_text": "According to 1 Corinthians 1:10, what quality should believers exhibit that prevents divisions?",
+        "options": ["A. Financial equality", "B. Perfect agreement in mind and thought", "C. Social isolation", "D. Political conformity"],
+        "answer_index": "B",
+        "reference": "1 Corinthians 1:10"
+      },
+      {
+        "question_id": "L44Q2",
+        "question_text": "The Jewish council that tried Jesus and condemned him was known as the what?",
+        "options": ["A. Sanhedrin", "B. Areopagus", "C. Knesset", "D. Synagogue"],
+        "answer_index": "A",
+        "reference": "Gospels"
+      },
+      {
+        "question_id": "L44Q3",
+        "question_text": "The Book of Habakkuk opens with the prophet complaining to God about what problem?",
+        "options": ["A. Foreign invasion", "B. Lack of rain", "C. Injustice in Judah", "D. Temple reconstruction"],
+        "answer_index": "C",
+        "reference": "Habakkuk 1"
+      }
+    ]
+  },
+  {
+    "level": 45,
+    "theme": "Christ's Supremacy",
+    "questions": [
+      {
+        "question_id": "L45Q1",
+        "question_text": "The Book of Colossians strongly emphasizes the superiority and headship of whom over the entire universe and the church?",
+        "options": ["A. The Holy Spirit", "B. Moses", "C. Jesus Christ", "D. The Apostle Paul"],
+        "answer_index": "C",
+        "reference": "Colossians 1:15-20"
+      },
+      {
+        "question_id": "L45Q2",
+        "question_text": "The story of Esther recounts how she saved the Jewish people from the plot of the wicked minister named what?",
+        "options": ["A. Mordecai", "B. Xerxes", "C. Haman", "D. Cyrus"],
+        "answer_index": "C",
+        "reference": "Book of Esther"
+      },
+      {
+        "question_id": "L45Q3",
+        "question_text": "What type of food did the Israelites eat in the wilderness that was supplied by God?",
+        "options": ["A. Barley", "B. Manna", "C. Honey", "D. Figs"],
+        "answer_index": "B",
+        "reference": "Exodus 16"
+      }
+    ]
+  },
+  {
+    "level": 46,
+    "theme": "Wisdom and Folly",
+    "questions": [
+      {
+        "question_id": "L46Q1",
+        "question_text": "The foundational truth of the Book of Proverbs is that the beginning of knowledge is the what?",
+        "options": ["A. Accumulation of wealth", "B. Fear of the LORD", "C. Pursuit of happiness", "D. Study of philosophy"],
+        "answer_index": "B",
+        "reference": "Proverbs 1:7"
+      },
+      {
+        "question_id": "L46Q2",
+        "question_text": "What was the occupation of the Apostle Peter before he followed Jesus?",
+        "options": ["A. Tentmaker", "B. Farmer", "C. Tax collector", "D. Fisherman"],
+        "answer_index": "D",
+        "reference": "Matthew 4:18"
+      },
+      {
+        "question_id": "L46Q3",
+        "question_text": "Which book of the Old Testament contains the famous story of a contest between God's power and human wealth/pride?",
+        "options": ["A. Ezra", "B. Daniel", "C. Joshua", "D. Malachi"],
+        "answer_index": "B",
+        "reference": "Book of Daniel"
+      }
+    ]
+  },
+  {
+    "level": 47,
+    "theme": "Humility and Exaltation",
+    "questions": [
+      {
+        "question_id": "L47Q1",
+        "question_text": "James 4:10 instructs believers to humble themselves before the Lord, and in return, he will do what?",
+        "options": ["A. Give them riches", "B. Exalt them", "C. Give them long life", "D. Send rain"],
+        "answer_index": "B",
+        "reference": "James 4:10"
+      },
+      {
+        "question_id": "L47Q2",
+        "question_text": "Who was the first person to see the resurrected Jesus, according to the Gospel of John?",
+        "options": ["A. Peter", "B. Mary Magdalene", "C. Thomas", "D. John"],
+        "answer_index": "B",
+        "reference": "John 20:11-18"
+      },
+      {
+        "question_id": "L47Q3",
+        "question_text": "The name of the priest who blessed Abraham after a battle and received a tithe from him was what?",
+        "options": ["A. Aaron", "B. Melchizedek", "C. Eleazar", "D. Eli"],
+        "answer_index": "B",
+        "reference": "Genesis 14"
+      }
+    ]
+  },
+  {
+    "level": 48,
+    "theme": "The Fruit of Righteousness",
+    "questions": [
+      {
+        "question_id": "L48Q1",
+        "question_text": "Philippians 1:11 describes the 'fruit of righteousness' as coming through whom?",
+        "options": ["A. The Law", "B. Jesus Christ", "C. Human effort", "D. The angels"],
+        "answer_index": "B",
+        "reference": "Philippians 1:11"
+      },
+      {
+        "question_id": "L48Q2",
+        "question_text": "Who led the Israelites into the Promised Land after Moses died?",
+        "options": ["A. Aaron", "B. Caleb", "C. Joshua", "D. Gideon"],
+        "answer_index": "C",
+        "reference": "Book of Joshua"
+      },
+      {
+        "question_id": "L48Q3",
+        "question_text": "Which prophet was thrown into a den of lions and miraculously delivered?",
+        "options": ["A. Jeremiah", "B. Ezekiel", "C. Daniel", "D. Jonah"],
+        "answer_index": "C",
+        "reference": "Daniel 6"
+      }
+    ]
+  },
+  {
+    "level": 49,
+    "theme": "The Nature of Prayer",
+    "questions": [
+      {
+        "question_id": "L49Q1",
+        "question_text": "Matthew 6:7 instructs that when you pray, you should not keep on doing what, like pagans do?",
+        "options": ["A. Standing", "B. Using meaningless repetition", "C. Fasting", "D. Shouting"],
+        "answer_index": "B",
+        "reference": "Matthew 6:7"
+      },
+      {
+        "question_id": "L49Q2",
+        "question_text": "What was the name of the high priest who questioned Jesus and presided over the Sanhedrin trial?",
+        "options": ["A. Annas", "B. Caiaphas", "C. Herod", "D. Nicodemus"],
+        "answer_index": "B",
+        "reference": "Matthew 26:57"
+      },
+      {
+        "question_id": "L49Q3",
+        "question_text": "Which Old Testament book contains the famous lines: 'For everything there is a season, and a time for every matter under heaven'?",
+        "options": ["A. Job", "B. Psalms", "C. Ecclesiastes", "D. Proverbs"],
+        "answer_index": "C",
+        "reference": "Ecclesiastes 3:1"
+      }
+    ]
+  },
+  {
+    "level": 50,
+    "theme": "The New Jerusalem",
+    "questions": [
+      {
+        "question_id": "L50Q1",
+        "question_text": "In Revelation 21:4, God promises to wipe away every what from their eyes in the New Jerusalem?",
+        "options": ["A. Sin", "B. Tear", "C. Doubt", "D. Memory"],
+        "answer_index": "B",
+        "reference": "Revelation 21:4"
+      },
+      {
+        "question_id": "L50Q2",
+        "question_text": "The two apostles known as 'Sons of Thunder' (Boanerges) were James and whom?",
+        "options": ["A. Peter", "B. John", "C. Thomas", "D. Philip"],
+        "answer_index": "B",
+        "reference": "Mark 3:17"
+      },
+      {
+        "question_id": "L50Q3",
+        "question_text": "The Book of Haggai is one of the post-exilic minor prophets that urged the people to rebuild what?",
+        "options": ["A. The walls of Jerusalem", "B. The Temple", "C. The Palace", "D. Their homes"],
+        "answer_index": "B",
+        "reference": "Book of Haggai"
+      }
+    ]
+  },
+  {
+    "level": 51,
+    "theme": "The Nature of Jesus",
+    "questions": [
+      {
+        "question_id": "L51Q1",
+        "question_text": "The Book of Hebrews argues that Jesus is superior to the Old Testament system, including the Law, the prophets, and whom else?",
+        "options": ["A. Kings", "B. Angels", "C. Disciples", "D. Roman Rulers"],
+        "answer_index": "B",
+        "reference": "Hebrews 1:4-5"
+      },
+      {
+        "question_id": "L51Q2",
+        "question_text": "Which king of Judah was miraculously granted 15 extra years of life after praying to God?",
+        "options": ["A. Manasseh", "B. Josiah", "C. Hezekiah", "D. Solomon"],
+        "answer_index": "C",
+        "reference": "2 Kings 20"
+      },
+      {
+        "question_id": "L51Q3",
+        "question_text": "The 'Golden Rule' of Christian ethics, stated by Jesus, is to treat others as you would want whom to treat you?",
+        "options": ["A. Friends", "B. Authorities", "C. Them", "D. Yourself"],
+        "answer_index": "D",
+        "reference": "Matthew 7:12"
+      }
+    ]
+  },
+  {
+    "level": 52,
+    "theme": "Salvation and Faith",
+    "questions": [
+      {
+        "question_id": "L52Q1",
+        "question_text": "Romans 10:9 states that if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead, you will be what?",
+        "options": ["A. Blessed", "B. Saved", "C. Prosperous", "D. Educated"],
+        "answer_index": "B",
+        "reference": "Romans 10:9"
+      },
+      {
+        "question_id": "L52Q2",
+        "question_text": "Who was the female military leader who collaborated with Barak to defeat the Canaanite army led by Sisera?",
+        "options": ["A. Ruth", "B. Abigail", "C. Deborah", "D. Esther"],
+        "answer_index": "C",
+        "reference": "Judges 4"
+      },
+      {
+        "question_id": "L52Q3",
+        "question_text": "The Book of Joel in the Old Testament warns of the coming 'Day of the Lord' using the imagery of what natural disaster?",
+        "options": ["A. Flood", "B. Earthquake", "C. Locust plague", "D. Wildfire"],
+        "answer_index": "C",
+        "reference": "Joel 1"
+      }
+    ]
+  },
+  {
+    "level": 53,
+    "theme": "Discipline and Training",
+    "questions": [
+      {
+        "question_id": "L53Q1",
+        "question_text": "1 Timothy 4:8 states that physical training is of some value, but what kind of training is of value in all things?",
+        "options": ["A. Vocational", "B. Spiritual", "C. Intellectual", "D. Social"],
+        "answer_index": "B",
+        "reference": "1 Timothy 4:8"
+      },
+      {
+        "question_id": "L53Q2",
+        "question_text": "What was the name of the place where Jesus was crucified?",
+        "options": ["A. Mount of Olives", "B. Bethany", "C. Golgotha (Calvary)", "D. Mount Tabor"],
+        "answer_index": "C",
+        "reference": "Gospels"
+      },
+      {
+        "question_id": "L53Q3",
+        "question_text": "The Book of Malachi, the last book of the Old Testament, strongly condemns the priests for neglecting what?",
+        "options": ["A. Their families", "B. Offering pure sacrifices", "C. Foreign policy", "D. Studying the Law"],
+        "answer_index": "B",
+        "reference": "Malachi 1:6-8"
+      }
+    ]
+  },
+  {
+    "level": 54,
+    "theme": "The Bread of Life",
+    "questions": [
+      {
+        "question_id": "L54Q1",
+        "question_text": "In John 6:35, Jesus declares, 'I am the Bread of Life.' He says those who come to him will never what?",
+        "options": ["A. Thirst", "B. Grow old", "C. Hunger", "D. Work"],
+        "answer_index": "C",
+        "reference": "John 6:35"
+      },
+      {
+        "question_id": "L54Q2",
+        "question_text": "What was the name of the place where the disciples were first called Christians?",
+        "options": ["A. Jerusalem", "B. Corinth", "C. Antioch", "D. Rome"],
+        "answer_index": "C",
+        "reference": "Acts 11:26"
+      },
+      {
+        "question_id": "L54Q3",
+        "question_text": "The Book of Deuteronomy is structured largely as a series of three farewell speeches given by whom?",
+        "options": ["A. Joshua", "B. Moses", "C. Aaron", "D. Samuel"],
+        "answer_index": "B",
+        "reference": "Book of Deuteronomy"
+      }
+    ]
+  },
+  {
+    "level": 55,
+    "theme": "Overcoming Fear",
+    "questions": [
+      {
+        "question_id": "L55Q1",
+        "question_text": "In the New Testament, what event is commonly understood as a sign that Jesus' ministry was approved by the Holy Spirit?",
+        "options": ["A. Walking on water", "B. The Feeding of the 5,000", "C. His baptism", "D. The Transfiguration"],
+        "answer_index": "C",
+        "reference": "Matthew 3:16-17"
+      },
+      {
+        "question_id": "L55Q2",
+        "question_text": "Which major prophet lived through the Babylonian exile and wrote letters of encouragement to the exiles?",
+        "options": ["A. Isaiah", "B. Ezekiel", "C. Jeremiah", "D. Daniel"],
+        "answer_index": "D",
+        "reference": "Book of Daniel"
+      },
+      {
+        "question_id": "L55Q3",
+        "question_text": "1 John 4:18 says that 'perfect love drives out what?'",
+        "options": ["A. Doubt", "B. Sin", "C. Fear", "D. Jealousy"],
+        "answer_index": "C",
+        "reference": "1 John 4:18"
+      }
+    ]
+  },
+  {
+    "level": 56,
+    "theme": "Witness and Evangelism",
+    "questions": [
+      {
+        "question_id": "L56Q1",
+        "question_text": "Acts 1:8 promises that believers will receive power when whom comes upon them, making them witnesses?",
+        "options": ["A. Jesus", "B. The High Priest", "C. The Holy Spirit", "D. The Angels"],
+        "answer_index": "C",
+        "reference": "Acts 1:8"
+      },
+      {
+        "question_id": "L56Q2",
+        "question_text": "What was the name of the pool in Jerusalem where Jesus healed a paralyzed man who had been ill for 38 years?",
+        "options": ["A. Siloam", "B. Bethesda", "C. Gennesaret", "D. Galilee"],
+        "answer_index": "B",
+        "reference": "John 5"
+      },
+      {
+        "question_id": "L56Q3",
+        "question_text": "The Book of Hosea uses the metaphor of an unfaithful marriage to describe God's relationship with whom?",
+        "options": ["A. The Gentiles", "B. The Church", "C. Israel", "D. The Priests"],
+        "answer_index": "C",
+        "reference": "Book of Hosea"
+      }
+    ]
+  },
+  {
+    "level": 57,
+    "theme": "The Second Coming",
+    "questions": [
+      {
+        "question_id": "L57Q1",
+        "question_text": "In the Olivet Discourse (Matthew 24-25), Jesus teaches that no one knows the day or hour of his return, except for whom?",
+        "options": ["A. The Angels", "B. The Son", "C. The Father", "D. The Prophets"],
+        "answer_index": "C",
+        "reference": "Matthew 24:36"
+      },
+      {
+        "question_id": "L57Q2",
+        "question_text": "Who was the wealthy Old Testament man whose patience was tested by Satan and the loss of his family and property?",
+        "options": ["A. Abraham", "B. Job", "C. Noah", "D. Moses"],
+        "answer_index": "B",
+        "reference": "Book of Job"
+      },
+      {
+        "question_id": "L57Q3",
+        "question_text": "Which letter of Paul is primarily concerned with addressing false teachings about Christ and the resurrection?",
+        "options": ["A. 1 Timothy", "B. Titus", "C. 2 Corinthians", "D. 2 Thessalonians"],
+        "answer_index": "D",
+        "reference": "2 Thessalonians"
+      }
+    ]
+  },
+  {
+    "level": 58,
+    "theme": "The Priesthood of Christ",
+    "questions": [
+      {
+        "question_id": "L58Q1",
+        "question_text": "The Book of Hebrews argues that Jesus serves as our eternal high priest, in the order of whom, rather than the Levitical priesthood?",
+        "options": ["A. Aaron", "B. Melchizedek", "C. Zadok", "D. Eli"],
+        "answer_index": "B",
+        "reference": "Hebrews 7"
+      },
+      {
+        "question_id": "L58Q2",
+        "question_text": "The 'Shema' (Deuteronomy 6:4), the central confession of Jewish faith, begins by declaring: 'The LORD our God, the LORD is what?'",
+        "options": ["A. Almighty", "B. Righteous", "C. One", "D. Merciful"],
+        "answer_index": "C",
+        "reference": "Deuteronomy 6:4"
+      },
+      {
+        "question_id": "L58Q3",
+        "question_text": "Who was the king whose heart was hardened by God, leading to the series of plagues on Egypt?",
+        "options": ["A. Nebuchadnezzar", "B. Pharaoh", "C. Darius", "D. Cyrus"],
+        "answer_index": "B",
+        "reference": "Exodus 4-14"
+      }
+    ]
+  },
+  {
+    "level": 59,
+    "theme": "The Light of the World",
+    "questions": [
+      {
+        "question_id": "L59Q1",
+        "question_text": "John 8:12 records Jesus declaring, 'I am the light of the world. Whoever follows me will never walk in what?'",
+        "options": ["A. Isolation", "B. Poverty", "C. Darkness", "D. Sadness"],
+        "answer_index": "C",
+        "reference": "John 8:12"
+      },
+      {
+        "question_id": "L59Q2",
+        "question_text": "What was the name of the river where the prophet Ezekiel received his extraordinary visions of God's glory and a new temple?",
+        "options": ["A. Tigris", "B. Euphrates", "C. Chebar", "D. Jordan"],
+        "answer_index": "C",
+        "reference": "Ezekiel 1"
+      },
+      {
+        "question_id": "L59Q3",
+        "question_text": "The Book of Titus gives instructions to the young church leader Titus concerning the proper ordering and selection of what church offices?",
+        "options": ["A. Deacons and Elders", "B. Apostles and Prophets", "C. Missionaries", "D. Singers"],
+        "answer_index": "A",
+        "reference": "Titus 1"
+      }
+    ]
+  },
+  {
+    "level": 60,
+    "theme": "The Call to Action",
+    "questions": [
+      {
+        "question_id": "L60Q1",
+        "question_text": "Matthew 5:16 tells believers to let their light shine before others so that they may see your good deeds and glorify whom?",
+        "options": ["A. Yourself", "B. The Church", "C. Your Father in heaven", "D. The Nation"],
+        "answer_index": "C",
+        "reference": "Matthew 5:16"
+      },
+      {
+        "question_id": "L60Q2",
+        "question_text": "The central message of the prophet John the Baptist was a call to what?",
+        "options": ["A. Build a new temple", "B. Pay taxes", "C. Repentance", "D. Study Greek"],
+        "answer_index": "C",
+        "reference": "Matthew 3:2"
+      },
+      {
+        "question_id": "L60Q3",
+        "question_text": "The historical books of the Old Testament end with the accounts of the Israelites returning from exile and rebuilding under Ezra and whom?",
+        "options": ["A. Zerubbabel", "B. Nehemiah", "C. Malachi", "D. Daniel"],
+        "answer_index": "B",
+        "reference": "Books of Ezra and Nehemiah"
+      }
+    ]
+  },
+  {
+    "level": 61,
+    "theme": "The Nature of Temptation",
+    "questions": [
+      {
+        "question_id": "L61Q1",
+        "question_text": "1 Corinthians 10:13 states that God will not let you be tempted beyond what you can bear, and with the temptation, he will also provide what?",
+        "options": ["A. A warning sign", "B. A path to escape", "C. A reward", "D. A helper"],
+        "answer_index": "B",
+        "reference": "1 Corinthians 10:13"
+      },
+      {
+        "question_id": "L61Q2",
+        "question_text": "What was the name of the place where Jesus told his disciples to wait for the Holy Spirit after his ascension?",
+        "options": ["A. Galilee", "B. Samaria", "C. Jerusalem", "D. Antioch"],
+        "answer_index": "C",
+        "reference": "Acts 1:4"
+      },
+      {
+        "question_id": "L61Q3",
+        "question_text": "Which book of the Old Testament is largely composed of the sayings and wise observations of King Solomon?",
+        "options": ["A. Job", "B. Psalms", "C. Ecclesiastes", "D. Proverbs"],
+        "answer_index": "D",
+        "reference": "Book of Proverbs"
+      }
+    ]
+  },
+  {
+    "level": 62,
+    "theme": "Restoration and Hope",
+    "questions": [
+      {
+        "question_id": "L62Q1",
+        "question_text": "Isaiah 40:31 promises that those who hope in the LORD will renew their what, soaring like eagles?",
+        "options": ["A. Wealth", "B. Mind", "C. Strength", "D. Plans"],
+        "answer_index": "C",
+        "reference": "Isaiah 40:31"
+      },
+      {
+        "question_id": "L62Q2",
+        "question_text": "What type of tree did Zacchaeus climb to see Jesus as He passed by?",
+        "options": ["A. Oak tree", "B. Sycamore-fig tree", "C. Olive tree", "D. Date palm"],
+        "answer_index": "B",
+        "reference": "Luke 19:4"
+      },
+      {
+        "question_id": "L62Q3",
+        "question_text": "The Book of 1 Samuel primarily covers the transition of Israel's leadership from the Judges to which new form of government?",
+        "options": ["A. Democracy", "B. Theocracy", "C. Monarchy (Kings)", "D. Oligarchy"],
+        "answer_index": "C",
+        "reference": "1 Samuel"
+      }
+    ]
+  },
+  {
+    "level": 63,
+    "theme": "Imitation of Christ",
+    "questions": [
+      {
+        "question_id": "L63Q1",
+        "question_text": "Ephesians 5:1 urges believers to be what of God, as dearly loved children?",
+        "options": ["A. Servants", "B. Imitators", "C. Prophets", "D. Worshippers"],
+        "answer_index": "B",
+        "reference": "Ephesians 5:1"
+      },
+      {
+        "question_id": "L63Q2",
+        "question_text": "What miracle of Jesus is recorded in all four Gospels?",
+        "options": ["A. Raising Lazarus", "B. Healing the blind man", "C. Feeding the five thousand", "D. Walking on water"],
+        "answer_index": "C",
+        "reference": "Gospels Comparison"
+      },
+      {
+        "question_id": "L63Q3",
+        "question_text": "Who was the female missionary associate of the Apostle Paul often mentioned as being 'in the Lord' and a fellow worker?",
+        "options": ["A. Priscilla", "B. Lydia", "C. Phoebe", "D. Junia"],
+        "answer_index": "A",
+        "reference": "Acts 18, Romans 16"
+      }
+    ]
+  },
+  {
+    "level": 64,
+    "theme": "The Sufficiency of Scripture",
+    "questions": [
+      {
+        "question_id": "L64Q1",
+        "question_text": "2 Timothy 3:16-17 states that all Scripture is God-breathed and useful for teaching, rebuking, correcting, and what else?",
+        "options": ["A. Storytelling", "B. Training in righteousness", "C. Financial planning", "D. Historical accuracy"],
+        "answer_index": "B",
+        "reference": "2 Timothy 3:16-17"
+      },
+      {
+        "question_id": "L64Q2",
+        "question_text": "Who was the Old Testament prophet whose life was miraculously preserved in a burning fiery furnace?",
+        "options": ["A. Daniel", "B. Shadrach, Meshach, and Abednego", "C. Elijah", "D. Elisha"],
+        "answer_index": "B",
+        "reference": "Daniel 3"
+      },
+      {
+        "question_id": "L64Q3",
+        "question_text": "What is the collective name for the letters written by James, Peter, John, and Jude that are not written by Paul?",
+        "options": ["A. Pastoral Epistles", "B. Prison Epistles", "C. General (Catholic) Epistles", "D. Minor Epistles"],
+        "answer_index": "C",
+        "reference": "New Testament Structure"
+      }
+    ]
+  },
+  {
+    "level": 65,
+    "theme": "God's Providence",
+    "questions": [
+      {
+        "question_id": "L65Q1",
+        "question_text": "Romans 8:28 promises that God works all things together for what, for those who love him and are called according to his purpose?",
+        "options": ["A. Our wealth", "B. Good", "C. Our fame", "D. Political power"],
+        "answer_index": "B",
+        "reference": "Romans 8:28"
+      },
+      {
+        "question_id": "L65Q2",
+        "question_text": "What was the first city the Israelites conquered after crossing the Jordan River into the Promised Land?",
+        "options": ["A. Ai", "B. Shechem", "C. Jerusalem", "D. Jericho"],
+        "answer_index": "D",
+        "reference": "Joshua 6"
+      },
+      {
+        "question_id": "L65Q3",
+        "question_text": "Which Gospel focuses heavily on Jesus' suffering and is thought to be written primarily to a Roman audience?",
+        "options": ["A. Matthew", "B. Mark", "C. Luke", "D. John"],
+        "answer_index": "B",
+        "reference": "Gospel Authorship"
+      }
+    ]
+  },
+  {
+    "level": 66,
+    "theme": "Stewardship of Gifts",
+    "questions": [
+      {
+        "question_id": "L66Q1",
+        "question_text": "1 Peter 4:10 teaches that each believer should use what they have received to serve others, as faithful what of God's grace?",
+        "options": ["A. Judges", "B. Stewards", "C. Masters", "D. Tax collectors"],
+        "answer_index": "B",
+        "reference": "1 Peter 4:10"
+      },
+      {
+        "question_id": "L66Q2",
+        "question_text": "Who was the prophet known for his elaborate prophecies and warnings about the destruction of Jerusalem, often conveyed through symbolic actions?",
+        "options": ["A. Isaiah", "B. Hosea", "C. Jeremiah", "D. Ezekiel"],
+        "answer_index": "D",
+        "reference": "Book of Ezekiel"
+      },
+      {
+        "question_id": "L66Q3",
+        "question_text": "Which disciple was known for being scholarly and was the only Gentile author in the New Testament?",
+        "options": ["A. Paul", "B. Timothy", "C. Luke", "D. Titus"],
+        "answer_index": "C",
+        "reference": "New Testament Authorship"
+      }
+    ]
+  },
+  {
+    "level": 67,
+    "theme": "The Power of Testimony",
+    "questions": [
+      {
+        "question_id": "L67Q1",
+        "question_text": "Revelation 12:11 states that the saints 'overcame him [Satan] by the blood of the Lamb and by the word of their what?'",
+        "options": ["A. Faith", "B. Testimony", "C. Deeds", "D. Singing"],
+        "answer_index": "B",
+        "reference": "Revelation 12:11"
+      },
+      {
+        "question_id": "L67Q2",
+        "question_text": "Who was the major Old Testament prophet that foretold the Messiah would be a suffering servant?",
+        "options": ["A. Ezekiel", "B. Daniel", "C. Isaiah", "D. Micah"],
+        "answer_index": "C",
+        "reference": "Isaiah 53"
+      },
+      {
+        "question_id": "L67Q3",
+        "question_text": "Which island did Paul and Barnabas visit first on their initial missionary journey?",
+        "options": ["A. Crete", "B. Rhodes", "C. Cyprus", "D. Malta"],
+        "answer_index": "C",
+        "reference": "Acts 13:4"
+      }
+    ]
+  },
+  {
+    "level": 68,
+    "theme": "Spiritual Battle",
+    "questions": [
+      {
+        "question_id": "L68Q1",
+        "question_text": "2 Corinthians 10:4 reminds believers that the weapons we fight with are not the weapons of the world, but have what kind of power to demolish strongholds?",
+        "options": ["A. Financial", "B. Divine", "C. Political", "D. Social"],
+        "answer_index": "B",
+        "reference": "2 Corinthians 10:4"
+      },
+      {
+        "question_id": "L68Q2",
+        "question_text": "The Book of Jonah serves as a primary example of God's compassion for what people group?",
+        "options": ["A. The Israelites", "B. The Assyrians (Nineveh)", "C. The Babylonians", "D. The Egyptians"],
+        "answer_index": "B",
+        "reference": "Book of Jonah"
+      },
+      {
+        "question_id": "L68Q3",
+        "question_text": "The doctrine of **original sin** traces its biblical origin to the actions of whom?",
+        "options": ["A. Moses", "B. Cain", "C. Adam and Eve", "D. King David"],
+        "answer_index": "C",
+        "reference": "Genesis 3, Romans 5"
+      }
+    ]
+  },
+  {
+    "level": 69,
+    "theme": "Fervent Prayer",
+    "questions": [
+      {
+        "question_id": "L69Q1",
+        "question_text": "James 5:16 teaches that the prayer of a righteous person is powerful and what?",
+        "options": ["A. Heard", "B. Effective", "C. Eloquent", "D. Short"],
+        "answer_index": "B",
+        "reference": "James 5:16"
+      },
+      {
+        "question_id": "L69Q2",
+        "question_text": "Who was the Moabite woman who chose to follow her mother-in-law Naomi back to Bethlehem and became an ancestor of David?",
+        "options": ["A. Orpah", "B. Jezebel", "C. Esther", "D. Ruth"],
+        "answer_index": "D",
+        "reference": "Book of Ruth"
+      },
+      {
+        "question_id": "L69Q3",
+        "question_text": "Which letter of Paul strongly combats the belief that Gentiles must be circumcised and follow the Law of Moses to be saved?",
+        "options": ["A. Romans", "B. Galatians", "C. Ephesians", "D. Philippians"],
+        "answer_index": "B",
+        "reference": "Book of Galatians"
+      }
+    ]
+  },
+  {
+    "level": 70,
+    "theme": "The Example of Christ",
+    "questions": [
+      {
+        "question_id": "L70Q1",
+        "question_text": "Philippians 2:5-8 encourages believers to have the same mindset as Christ Jesus, who humbled himself and became what?",
+        "options": ["A. A King", "B. A Servant", "C. A Teacher", "D. A Priest"],
+        "answer_index": "B",
+        "reference": "Philippians 2:5-8"
+      },
+      {
+        "question_id": "L70Q2",
+        "question_text": "The Book of Revelation refers to Jesus by what title, meaning the first and the last?",
+        "options": ["A. Lamb of God", "B. Alpha and Omega", "C. Son of Man", "D. King of Kings"],
+        "answer_index": "B",
+        "reference": "Revelation 22:13"
+      },
+      {
+        "question_id": "L70Q3",
+        "question_text": "In the Old Testament, the tribe of **Levi** was designated specifically for what hereditary task?",
+        "options": ["A. Kingship", "B. Military service", "C. Priesthood and Temple service", "D. Trading"],
+        "answer_index": "C",
+        "reference": "Book of Numbers"
+      }
+    ]
+  },
+  {
+    "level": 71,
+    "theme": "The Source of Life",
+    "questions": [
+      {
+        "question_id": "L71Q1",
+        "question_text": "Jesus taught in John 14:6, 'I am the way, and the truth, and the what?'",
+        "options": ["A. Justice", "B. Spirit", "C. Life", "D. Light"],
+        "answer_index": "C",
+        "reference": "John 14:6"
+      },
+      {
+        "question_id": "L71Q2",
+        "question_text": "Who was the first high priest of Israel, and Moses' brother?",
+        "options": ["A. Eleazar", "B. Aaron", "C. Nadab", "D. Caleb"],
+        "answer_index": "B",
+        "reference": "Exodus 28"
+      },
+      {
+        "question_id": "L71Q3",
+        "question_text": "The Book of Amos condemns Israel and surrounding nations primarily for what kind of sin?",
+        "options": ["A. Idolatry and false gods", "B. Social injustice and oppression of the poor", "C. Military weakness", "D. Temple neglect"],
+        "answer_index": "B",
+        "reference": "Book of Amos"
+      }
+    ]
+  },
+  {
+    "level": 72,
+    "theme": "Spiritual Inheritance",
+    "questions": [
+      {
+        "question_id": "L72Q1",
+        "question_text": "Galatians 3:29 states that if you belong to Christ, then you are Abraham's what, and heirs according to the promise?",
+        "options": ["A. Children", "B. Offspring", "C. Disciples", "D. Converts"],
+        "answer_index": "B",
+        "reference": "Galatians 3:29"
+      },
+      {
+        "question_id": "L72Q2",
+        "question_text": "Who was the king that had a feast where handwriting mysteriously appeared on the wall, predicting his downfall?",
+        "options": ["A. Darius", "B. Nebuchadnezzar", "C. Belshazzar", "D. Cyrus"],
+        "answer_index": "C",
+        "reference": "Daniel 5"
+      },
+      {
+        "question_id": "L72Q3",
+        "question_text": "Which Gospel focuses heavily on the theme of 'perfect prayer' and includes the most material about Jesus' ministry in Perea and Judea?",
+        "options": ["A. Matthew", "B. Mark", "C. Luke", "D. John"],
+        "answer_index": "C",
+        "reference": "Gospel of Luke"
+      }
+    ]
+  },
+  {
+    "level": 73,
+    "theme": "The Hope of Heaven",
+    "questions": [
+      {
+        "question_id": "L73Q1",
+        "question_text": "Colossians 3:2 instructs believers to 'set their minds' on things above, not on what?",
+        "options": ["A. Eternal things", "B. Earthly things", "C. Spiritual things", "D. Historical events"],
+        "answer_index": "B",
+        "reference": "Colossians 3:2"
+      },
+      {
+        "question_id": "L73Q2",
+        "question_text": "The Book of Joshua details the conquest of the Promised Land, starting with the battle of what city?",
+        "options": ["A. Jerusalem", "B. Ai", "C. Jericho", "D. Bethel"],
+        "answer_index": "C",
+        "reference": "Joshua 6"
+      },
+      {
+        "question_id": "L73Q3",
+        "question_text": "Which Old Testament book contains the famous scene where God speaks to a prophet in a 'gentle whisper' rather than a loud display?",
+        "options": ["A. Exodus", "B. 1 Kings", "C. Job", "D. Isaiah"],
+        "answer_index": "B",
+        "reference": "1 Kings 19 (Elijah)"
+      }
+    ]
+  },
+  {
+    "level": 74,
+    "theme": "Enduring Hardship",
+    "questions": [
+      {
+        "question_id": "L74Q1",
+        "question_text": "Romans 5:3-5 teaches that suffering produces what key spiritual quality that leads to hope?",
+        "options": ["A. Wealth", "B. Endurance (Perseverance)", "C. Joy", "D. Authority"],
+        "answer_index": "B",
+        "reference": "Romans 5:3-5"
+      },
+      {
+        "question_id": "L74Q2",
+        "question_text": "In the New Testament, who was the first Christian martyr, stoned to death after preaching a sermon?",
+        "options": ["A. James", "B. Stephen", "C. Philip", "D. Barnabas"],
+        "answer_index": "B",
+        "reference": "Acts 7"
+      },
+      {
+        "question_id": "L74Q3",
+        "question_text": "The Book of Philemon is a personal letter primarily dealing with the relationship between a slave owner and his runaway slave named what?",
+        "options": ["A. Epaphras", "B. Onesimus", "C. Timothy", "D. Tychicus"],
+        "answer_index": "B",
+        "reference": "Book of Philemon"
+      }
+    ]
+  },
+  {
+    "level": 75,
+    "theme": "The Foundation of the Church",
+    "questions": [
+      {
+        "question_id": "L75Q1",
+        "question_text": "Ephesians 2:20 describes the church as being built on the foundation of the apostles and whom?",
+        "options": ["A. Elders", "B. Kings", "C. Prophets", "D. Priests"],
+        "answer_index": "C",
+        "reference": "Ephesians 2:20"
+      },
+      {
+        "question_id": "L75Q2",
+        "question_text": "What was the name of the garden where Adam and Eve were placed before the Fall?",
+        "options": ["A. Babylon", "B. Gethsemane", "C. Eden", "D. Ophir"],
+        "answer_index": "C",
+        "reference": "Genesis 2"
+      },
+      {
+        "question_id": "L75Q3",
+        "question_text": "Which minor prophet is known for his emphasis on holiness and a vision of the coming Messianic kingdom?",
+        "options": ["A. Obadiah", "B. Nahum", "C. Zechariah", "D. Haggai"],
+        "answer_index": "C",
+        "reference": "Book of Zechariah"
+      }
+    ]
+  },
+  {
+    "level": 76,
+    "theme": "The Light of Revelation",
+    "questions": [
+      {
+        "question_id": "L76Q1",
+        "question_text": "The opening verses of the Book of Revelation state that the book is the revelation of whom?",
+        "options": ["A. God the Father", "B. The Holy Spirit", "C. Jesus Christ", "D. The Apostle John"],
+        "answer_index": "C",
+        "reference": "Revelation 1:1"
+      },
+      {
+        "question_id": "L76Q2",
+        "question_text": "Who was the female military leader and temptress who manipulated Samson to discover the secret of his strength?",
+        "options": ["A. Jael", "B. Delilah", "C. Jezebel", "D. Athaliah"],
+        "answer_index": "B",
+        "reference": "Judges 16"
+      },
+      {
+        "question_id": "L76Q3",
+        "question_text": "What did Jesus use to cleanse the temple (twice in his ministry), overturning the tables of money changers?",
+        "options": ["A. His hands", "B. A whip of cords", "C. A staff", "D. An appeal to the crowd"],
+        "answer_index": "B",
+        "reference": "John 2:15, Matthew 21:12"
+      }
+    ]
+  },
+  {
+    "level": 77,
+    "theme": "Praise and Acknowledgment",
+    "questions": [
+      {
+        "question_id": "L77Q1",
+        "question_text": "Psalm 100:4 encourages believers to 'Enter his gates with thanksgiving and his courts with what?'",
+        "options": ["A. Offerings", "B. Silence", "C. Praise", "D. Fear"],
+        "answer_index": "C",
+        "reference": "Psalm 100:4"
+      },
+      {
+        "question_id": "L77Q2",
+        "question_text": "Which Old Testament book details the Israelites' settlement and establishment in the land of Canaan, including the allocation of tribal territories?",
+        "options": ["A. Numbers", "B. Deuteronomy", "C. Judges", "D. Joshua"],
+        "answer_index": "D",
+        "reference": "Book of Joshua"
+      },
+      {
+        "question_id": "L77Q3",
+        "question_text": "The Book of 2 Corinthians is often seen as Paul's defense of his what, against challenges from false apostles?",
+        "options": ["A. Theology", "B. Personal wealth", "C. Apostolic authority", "D. Missionary strategy"],
+        "answer_index": "C",
+        "reference": "2 Corinthians 10-13"
+      }
+    ]
+  },
+  {
+    "level": 78,
+    "theme": "Peace with God",
+    "questions": [
+      {
+        "question_id": "L78Q1",
+        "question_text": "Romans 5:1 states that since we have been justified through faith, we have what with God through our Lord Jesus Christ?",
+        "options": ["A. Victory", "B. Peace", "C. Knowledge", "D. Authority"],
+        "answer_index": "B",
+        "reference": "Romans 5:1"
+      },
+      {
+        "question_id": "L78Q2",
+        "question_text": "What was the name of the wealthy, secretive member of the Sanhedrin who defended Jesus and helped bury him?",
+        "options": ["A. Lazarus", "B. Caiaphas", "C. Nicodemus", "D. Bartimaeus"],
+        "answer_index": "C",
+        "reference": "John 3, 19"
+      },
+      {
+        "question_id": "L78Q3",
+        "question_text": "The Book of Nahum is primarily a prophecy against which Assyrian city, predicting its total destruction?",
+        "options": ["A. Babylon", "B. Nineveh", "C. Damascus", "D. Tyre"],
+        "answer_index": "B",
+        "reference": "Book of Nahum"
+      }
+    ]
+  },
+  {
+    "level": 79,
+    "theme": "The Importance of Deeds",
+    "questions": [
+      {
+        "question_id": "L79Q1",
+        "question_text": "James 2:26 asserts that faith without what is dead?",
+        "options": ["A. Doctrine", "B. Hope", "C. Works (Deeds)", "D. Love"],
+        "answer_index": "C",
+        "reference": "James 2:26"
+      },
+      {
+        "question_id": "L79Q2",
+        "question_text": "Who was the Old Testament prophet whose main message was 'The righteous shall live by his faith'?",
+        "options": ["A. Habakkuk", "B. Zephaniah", "C. Joel", "D. Micah"],
+        "answer_index": "A",
+        "reference": "Habakkuk 2:4"
+      },
+      {
+        "question_id": "L79Q3",
+        "question_text": "Which of Paul's letters is written to a church battling over the resurrection of the dead and spiritual gifts?",
+        "options": ["A. Galatians", "B. Ephesians", "C. 1 Corinthians", "D. Colossians"],
+        "answer_index": "C",
+        "reference": "1 Corinthians"
+      }
+    ]
+  },
+  {
+    "level": 80,
+    "theme": "The Call to Watchfulness",
+    "questions": [
+      {
+        "question_id": "L80Q1",
+        "question_text": "Matthew 26:41 encourages believers to 'Watch and what,' so that they do not fall into temptation?",
+        "options": ["A. Fast", "B. Study", "C. Pray", "D. Act"],
+        "answer_index": "C",
+        "reference": "Matthew 26:41"
+      },
+      {
+        "question_id": "L80Q2",
+        "question_text": "The Book of Deuteronomy contains a re-telling and explanation of what key Old Testament events and laws?",
+        "options": ["A. The Creation Story", "B. The Exodus and Wilderness Journey", "C. The Exile", "D. The Conquest of Canaan"],
+        "answer_index": "B",
+        "reference": "Book of Deuteronomy"
+      },
+      {
+        "question_id": "L80Q3",
+        "question_text": "In the New Testament, who was the Roman centurion in Caesarea, known for his devotion and piety, whose household converted after Peter's visit?",
+        "options": ["A. Sergius Paulus", "B. Cornelius", "C. Felix", "D. Festus"],
+        "answer_index": "B",
+        "reference": "Acts 10"
+      }
+    ]
+  },
+  {
+    "level": 81,
+    "theme": "The Call to Serve",
+    "questions": [
+      {
+        "question_id": "L81Q1",
+        "question_text": "Jesus taught in Mark 10:45 that the Son of Man did not come to be served, but to serve, and to give his life as a what for many?",
+        "options": ["A. Teacher", "B. Ransom", "C. Example", "D. King"],
+        "answer_index": "B",
+        "reference": "Mark 10:45"
+      },
+      {
+        "question_id": "L81Q2",
+        "question_text": "Who was the younger brother of Moses and Aaron who assisted them in their ministry?",
+        "options": ["A. Miriam", "B. Hur", "C. Nadab", "D. Eldad"],
+        "answer_index": "B",
+        "reference": "Exodus 17:12"
+      },
+      {
+        "question_id": "L81Q3",
+        "question_text": "The Book of Obadiah is the shortest book in the Old Testament and is a prophecy primarily against which nation?",
+        "options": ["A. Babylon", "B. Edom", "C. Egypt", "D. Philistia"],
+        "answer_index": "B",
+        "reference": "Book of Obadiah"
+      }
+    ]
+  },
+  {
+    "level": 82,
+    "theme": "The New Birth",
+    "questions": [
+      {
+        "question_id": "L82Q1",
+        "question_text": "In John 3, Jesus tells Nicodemus that no one can see the kingdom of God unless they are born again of water and what else?",
+        "options": ["A. Fire", "B. The Spirit", "C. The Law", "D. Faith"],
+        "answer_index": "B",
+        "reference": "John 3:5"
+      },
+      {
+        "question_id": "L82Q2",
+        "question_text": "The covenant God made with Abraham involved a promise of descendants, land, and what else?",
+        "options": ["A. World peace", "B. Blessing to all nations", "C. Eternal life", "D. A new temple"],
+        "answer_index": "B",
+        "reference": "Genesis 12:1-3"
+      },
+      {
+        "question_id": "L82Q3",
+        "question_text": "Which of the four Gospels is known for its detailed genealogical record tracing Jesus' ancestry back to Adam?",
+        "options": ["A. Matthew", "B. Mark", "C. Luke", "D. John"],
+        "answer_index": "C",
+        "reference": "Luke 3:23-38"
+      }
+    ]
+  },
+  {
+    "level": 83,
+    "theme": "Spiritual Growth and Fullness",
+    "questions": [
+      {
+        "question_id": "L83Q1",
+        "question_text": "Ephesians 3:19 prays that believers may grasp the love of Christ and be filled to the measure of what?",
+        "options": ["A. All the fullness of God", "B. All wisdom", "C. All authority", "D. All wealth"],
+        "answer_index": "A",
+        "reference": "Ephesians 3:19"
+      },
+      {
+        "question_id": "L83Q2",
+        "question_text": "Who was the woman who killed the Canaanite general Sisera by driving a tent peg through his temple?",
+        "options": ["A. Deborah", "B. Jael", "C. Rahab", "D. Delilah"],
+        "answer_index": "B",
+        "reference": "Judges 4"
+      },
+      {
+        "question_id": "L83Q3",
+        "question_text": "The Book of Job primarily attempts to address the challenging theological question of what?",
+        "options": ["A. How to gain wealth", "B. Why the righteous suffer", "C. The nature of angels", "D. The best form of government"],
+        "answer_index": "B",
+        "reference": "Book of Job"
+      }
+    ]
+  },
+  {
+    "level": 84,
+    "theme": "Holiness and God's Dwelling",
+    "questions": [
+      {
+        "question_id": "L84Q1",
+        "question_text": "In the Old Testament, the **Tabernacle** and later the **Temple** served as the central place of what activity?",
+        "options": ["A. Military planning", "B. Worship and sacrifice", "C. Trade and commerce", "D. Political debate"],
+        "answer_index": "B",
+        "reference": "Exodus, 1 Kings"
+      },
+      {
+        "question_id": "L84Q2",
+        "question_text": "What was the name of the place in the Temple where the high priest entered only once a year on the Day of Atonement?",
+        "options": ["A. The Outer Court", "B. The Holy Place", "C. The Holy of Holies", "D. The Treasury"],
+        "answer_index": "C",
+        "reference": "Exodus 26"
+      },
+      {
+        "question_id": "L84Q3",
+        "question_text": "The first sermon recorded in the Book of Acts (on the Day of Pentecost) resulted in how many people being baptized?",
+        "options": ["A. About 120", "B. About 500", "C. About 3,000", "D. About 10,000"],
+        "answer_index": "C",
+        "reference": "Acts 2:41"
+      }
+    ]
+  },
+  {
+    "level": 85,
+    "theme": "The Church's Mission",
+    "questions": [
+      {
+        "question_id": "L85Q1",
+        "question_text": "In his letters, Paul often refers to the *ekklesia*, the Greek term for what organized group of believers?",
+        "options": ["A. The Family", "B. The Government", "C. The Church", "D. The Schools"],
+        "answer_index": "C",
+        "reference": "New Testament Terminology"
+      },
+      {
+        "question_id": "L85Q2",
+        "question_text": "Which New Testament book is addressed to Gaius, urging him to show hospitality to traveling missionaries?",
+        "options": ["A. 1 John", "B. 2 John", "C. 3 John", "D. Jude"],
+        "answer_index": "C",
+        "reference": "3 John 1:5-8"
+      },
+      {
+        "question_id": "L85Q3",
+        "question_text": "The covenant God made with King David promised that what would be established forever?",
+        "options": ["A. The Temple", "B. His Dynasty/Throne", "C. The Walls of Jerusalem", "D. The Priesthood"],
+        "answer_index": "B",
+        "reference": "2 Samuel 7"
+      }
+    ]
+  },
+  {
+    "level": 86,
+    "theme": "Discipleship and Sacrifice",
+    "questions": [
+      {
+        "question_id": "L86Q1",
+        "question_text": "In Luke 9:23, Jesus tells his followers that if anyone would come after him, he must take up his what daily and follow him?",
+        "options": ["A. Money bag", "B. Cross", "C. Tools", "D. Sword"],
+        "answer_index": "B",
+        "reference": "Luke 9:23"
+      },
+      {
+        "question_id": "L86Q2",
+        "question_text": "What was the name of the prostitute in Jericho who helped the Israelite spies and was saved when the city fell?",
+        "options": ["A. Delilah", "B. Rahab", "C. Ruth", "D. Jezebel"],
+        "answer_index": "B",
+        "reference": "Joshua 2, 6"
+      },
+      {
+        "question_id": "L86Q3",
+        "question_text": "The Book of Ecclesiastes is traditionally attributed to which wise king?",
+        "options": ["A. David", "B. Saul", "C. Solomon", "D. Hezekiah"],
+        "answer_index": "C",
+        "reference": "Ecclesiastes 1:1"
+      }
+    ]
+  },
+  {
+    "level": 87,
+    "theme": "The Great High Priest",
+    "questions": [
+      {
+        "question_id": "L87Q1",
+        "question_text": "Hebrews 4:14-16 assures us that we have a high priest (Jesus) who is able to do what, because he was tempted in every way, just as we are?",
+        "options": ["A. Judge us", "B. Forgive us", "C. Sympathize with our weaknesses", "D. Command legions of angels"],
+        "answer_index": "C",
+        "reference": "Hebrews 4:15"
+      },
+      {
+        "question_id": "L87Q2",
+        "question_text": "What was the central artifact contained within the Ark of the Covenant?",
+        "options": ["A. A Golden Crown", "B. The Tablets of the Covenant (Ten Commandments)", "C. The High Priest's Breastplate", "D. Scrolls of the Law"],
+        "answer_index": "B",
+        "reference": "Exodus 25:16"
+      },
+      {
+        "question_id": "L87Q3",
+        "question_text": "Which prophet's book is famous for containing 70 'weeks' that point to the timing of the Messiah's arrival and the end of time?",
+        "options": ["A. Isaiah", "B. Jeremiah", "C. Daniel", "D. Zechariah"],
+        "answer_index": "C",
+        "reference": "Daniel 9"
+      }
+    ]
+  },
+  {
+    "level": 88,
+    "theme": "The Fruit of Righteousness",
+    "questions": [
+      {
+        "question_id": "L88Q1",
+        "question_text": "In the Sermon on the Mount, Jesus taught that a good tree cannot bear bad fruit, nor can a bad tree bear good fruit. This relates to the quality of one's what?",
+        "options": ["A. Ancestry", "B. Inner character/life", "C. Wealth", "D. Education"],
+        "answer_index": "B",
+        "reference": "Matthew 7:17-18"
+      },
+      {
+        "question_id": "L88Q2",
+        "question_text": "Who was the Old Testament prophet known for his dramatic confrontation with 450 prophets of Baal on Mount Carmel?",
+        "options": ["A. Elisha", "B. Elijah", "C. Samuel", "D. Nathan"],
+        "answer_index": "B",
+        "reference": "1 Kings 18"
+      },
+      {
+        "question_id": "L88Q3",
+        "question_text": "The term **'Apostle'** primarily refers to a person who has been what?",
+        "options": ["A. Highly educated", "B. Sent out with a commission", "C. Elected by the people", "D. A good public speaker"],
+        "answer_index": "B",
+        "reference": "New Testament Terminology"
+      }
+    ]
+  },
+  {
+    "level": 89,
+    "theme": "The Unity of the Spirit",
+    "questions": [
+      {
+        "question_id": "L89Q1",
+        "question_text": "Ephesians 4:3 urges believers to make every effort to keep the unity of the Spirit through the bond of what?",
+        "options": ["A. Money", "B. Peace", "C. Doctrine", "D. Love"],
+        "answer_index": "B",
+        "reference": "Ephesians 4:3"
+      },
+      {
+        "question_id": "L89Q2",
+        "question_text": "Who was the Old Testament figure who famously wrestled with God/an angel at the river Jabbok and had his name changed to Israel?",
+        "options": ["A. Isaac", "B. Jacob", "C. Esau", "D. Joseph"],
+        "answer_index": "B",
+        "reference": "Genesis 32"
+      },
+      {
+        "question_id": "L89Q3",
+        "question_text": "Which of the following is considered a 'Pastoral Epistle' of Paul?",
+        "options": ["A. Galatians", "B. Ephesians", "C. Titus", "D. Philemon"],
+        "answer_index": "C",
+        "reference": "New Testament Structure"
+      }
+    ]
+  },
+  {
+    "level": 90,
+    "theme": "New Heaven and Earth",
+    "questions": [
+      {
+        "question_id": "L90Q1",
+        "question_text": "Revelation 21:1 foretells the creation of a new heaven and a new earth, where the first heaven and earth had passed away and there was no longer any what?",
+        "options": ["A. People", "B. Temple", "C. Sea", "D. Sun"],
+        "answer_index": "C",
+        "reference": "Revelation 21:1"
+      },
+      {
+        "question_id": "L90Q2",
+        "question_text": "In the Old Testament, who was the righteous man whom God translated (took up to heaven) without him dying?",
+        "options": ["A. Noah", "B. Adam", "C. Enoch", "D. Elijah"],
+        "answer_index": "C",
+        "reference": "Genesis 5:24"
+      },
+      {
+        "question_id": "L90Q3",
+        "question_text": "The Sermon on the Mount begins with a series of teachings on the character traits and blessings of believers, known as the what?",
+        "options": ["A. Miracles", "B. Parables", "C. Beatitudes", "D. Woes"],
+        "answer_index": "C",
+        "reference": "Matthew 5:3-12"
+      }
+    ]
+  },
+  {
+    "level": 91,
+    "theme": "The Fullness of Time",
+    "questions": [
+      {
+        "question_id": "L91Q1",
+        "question_text": "Galatians 4:4 says that God sent his Son when the fullness of what arrived, to redeem those under the law?",
+        "options": ["A. The harvest", "B. The prophecy", "C. The time", "D. The Spirit"],
+        "answer_index": "C",
+        "reference": "Galatians 4:4"
+      },
+      {
+        "question_id": "L91Q2",
+        "question_text": "What was the name of the valley where David defeated the giant Goliath?",
+        "options": ["A. Valley of Achor", "B. Valley of Hinnom", "C. Valley of Elah", "D. Valley of Sorek"],
+        "answer_index": "C",
+        "reference": "1 Samuel 17"
+      },
+      {
+        "question_id": "L91Q3",
+        "question_text": "The Book of Zephaniah primarily focuses on the description of the coming 'Day of the Lord' and calls for a remnant to seek what?",
+        "options": ["A. Wealth", "B. Righteousness and humility", "C. Military strength", "D. New allies"],
+        "answer_index": "B",
+        "reference": "Zephaniah 2:3"
+      }
+    ]
+  },
+  {
+    "level": 92,
+    "theme": "Rest in Christ",
+    "questions": [
+      {
+        "question_id": "L92Q1",
+        "question_text": "In Matthew 11:28, Jesus invites those who are weary and burdened to come to him, promising he will give them what?",
+        "options": ["A. Wealth", "B. Rest", "C. Fame", "D. A new house"],
+        "answer_index": "B",
+        "reference": "Matthew 11:28"
+      },
+      {
+        "question_id": "L92Q2",
+        "question_text": "Who was the Roman governor of Judea who heard Paul's defense and was 'almost persuaded' to become a Christian?",
+        "options": ["A. Festus", "B. Felix", "C. Agrippa II", "D. Gallio"],
+        "answer_index": "C",
+        "reference": "Acts 26"
+      },
+      {
+        "question_id": "L92Q3",
+        "question_text": "Which New Testament book is a letter primarily dealing with joy and gratitude despite persecution and imprisonment?",
+        "options": ["A. Colossians", "B. Philippians", "C. Galatians", "D. 1 Timothy"],
+        "answer_index": "B",
+        "reference": "Book of Philippians"
+      }
+    ]
+  },
+  {
+    "level": 93,
+    "theme": "The Great Commission",
+    "questions": [
+      {
+        "question_id": "L93Q1",
+        "question_text": "The Book of Matthew concludes with Jesus commissioning his disciples to go and make disciples of all what?",
+        "options": ["A. Cities", "B. Nations", "C. Leaders", "D. Families"],
+        "answer_index": "B",
+        "reference": "Matthew 28:19"
+      },
+      {
+        "question_id": "L93Q2",
+        "question_text": "What was the name of the place where Jesus was arrested after his period of fervent prayer?",
+        "options": ["A. Mount of Olives", "B. Gethsemane", "C. Bethany", "D. Kidron Valley"],
+        "answer_index": "B",
+        "reference": "Matthew 26:36"
+      },
+      {
+        "question_id": "L93Q3",
+        "question_text": "Which book is the first of the four major divisions of the Old Testament, containing the creation accounts?",
+        "options": ["A. Exodus", "B. Leviticus", "C. Genesis", "D. Numbers"],
+        "answer_index": "C",
+        "reference": "The Pentateuch"
+      }
+    ]
+  },
+  {
+    "level": 94,
+    "theme": "The Purity of Doctrine",
+    "questions": [
+      {
+        "question_id": "L94Q1",
+        "question_text": "2 John 1:10 warns against receiving into your house or greeting anyone who does not bring the true teaching (doctrine) of whom?",
+        "options": ["A. Paul", "B. The Apostles", "C. Christ", "D. Moses"],
+        "answer_index": "C",
+        "reference": "2 John 1:10"
+      },
+      {
+        "question_id": "L94Q2",
+        "question_text": "Who was the king who built the first permanent Temple for God in Jerusalem?",
+        "options": ["A. David", "B. Saul", "C. Solomon", "D. Rehoboam"],
+        "answer_index": "C",
+        "reference": "1 Kings 6"
+      },
+      {
+        "question_id": "L94Q3",
+        "question_text": "The central theme of the Book of **Titus** is the requirement for Christians to live what kind of lives, especially church leaders?",
+        "options": ["A. Wealthy", "B. Self-controlled/godly", "C. Political", "D. Isolated"],
+        "answer_index": "B",
+        "reference": "Titus 2:11-12"
+      }
+    ]
+  },
+  {
+    "level": 95,
+    "theme": "Spiritual Vision",
+    "questions": [
+      {
+        "question_id": "L95Q1",
+        "question_text": "Proverbs 29:18 famously states that 'Where there is no prophetic vision (or revelation), the people what?'",
+        "options": ["A. Prosper", "B. Perish (cast off restraint)", "C. Worship idols", "D. Fight wars"],
+        "answer_index": "B",
+        "reference": "Proverbs 29:18"
+      },
+      {
+        "question_id": "L95Q2",
+        "question_text": "In the New Testament, who was the tax collector who left his booth to follow Jesus and later wrote a Gospel?",
+        "options": ["A. Zacchaeus", "B. Levi (Matthew)", "C. Simon", "D. Judas"],
+        "answer_index": "B",
+        "reference": "Matthew 9:9"
+      },
+      {
+        "question_id": "L95Q3",
+        "question_text": "Which historical book recounts the splitting of the united Kingdom of Israel into the northern and southern kingdoms?",
+        "options": ["A. 1 Samuel", "B. 2 Samuel", "C. 1 Kings", "D. 2 Chronicles"],
+        "answer_index": "C",
+        "reference": "1 Kings 12"
+      }
+    ]
+  },
+  {
+    "level": 96,
+    "theme": "The Riches of Grace",
+    "questions": [
+      {
+        "question_id": "L96Q1",
+        "question_text": "Ephesians 2:7 states that God raised us up in Christ to show the incomparable what of his grace in the coming ages?",
+        "options": ["A. Depth", "B. Wealth", "C. Riches", "D. Power"],
+        "answer_index": "C",
+        "reference": "Ephesians 2:7"
+      },
+      {
+        "question_id": "L96Q2",
+        "question_text": "Who was the Old Testament prophet that was swallowed by a great fish after trying to flee from God's command to preach to Nineveh?",
+        "options": ["A. Jeremiah", "B. Jonah", "C. Hosea", "D. Amos"],
+        "answer_index": "B",
+        "reference": "Book of Jonah"
+      },
+      {
+        "question_id": "L96Q3",
+        "question_text": "Which New Testament book is concerned with Jesus' relationship to the Sabbath, divorce, and the coming judgment?",
+        "options": ["A. James", "B. Hebrews", "C. Mark", "D. Jude"],
+        "answer_index": "C",
+        "reference": "Gospel of Mark"
+      }
+    ]
+  },
+  {
+    "level": 97,
+    "theme": "The Testimony of the Spirit",
+    "questions": [
+      {
+        "question_id": "L97Q1",
+        "question_text": "Romans 8:16 states that the Spirit himself testifies with our spirit that we are what of God?",
+        "options": ["A. Servants", "B. Witnesses", "C. Children", "D. Apostles"],
+        "answer_index": "C",
+        "reference": "Romans 8:16"
+      },
+      {
+        "question_id": "L97Q2",
+        "question_text": "Which of the following books is NOT classified as one of the major prophetic books?",
+        "options": ["A. Isaiah", "B. Ezekiel", "C. Daniel", "D. Micah"],
+        "answer_index": "D",
+        "reference": "Prophetic Books Classification"
+      },
+      {
+        "question_id": "L97Q3",
+        "question_text": "What was the initial sign/miracle that confirmed the apostles' authority and the arrival of the Holy Spirit on the Day of Pentecost?",
+        "options": ["A. The sun darkening", "B. Speaking in other languages (tongues)", "C. Healing the sick", "D. A massive earthquake"],
+        "answer_index": "B",
+        "reference": "Acts 2:4"
+      }
+    ]
+  },
+  {
+    "level": 98,
+    "theme": "Worthy of God's Calling",
+    "questions": [
+      {
+        "question_id": "L98Q1",
+        "question_text": "1 Thessalonians 2:12 encourages believers to live lives worthy of God, who calls them into his own what and glory?",
+        "options": ["A. Kingdom", "B. Army", "C. Riches", "D. Law"],
+        "answer_index": "A",
+        "reference": "1 Thessalonians 2:12"
+      },
+      {
+        "question_id": "L98Q2",
+        "question_text": "In the Old Testament, the name **Elohim** is most commonly translated as what?",
+        "options": ["A. The Strong One", "B. The Creator", "C. God/Gods", "D. The Eternal"],
+        "answer_index": "C",
+        "reference": "Hebrew Names of God"
+      },
+      {
+        "question_id": "L98Q3",
+        "question_text": "Who was the son of David and Bathsheba who became the successor to David's throne?",
+        "options": ["A. Absalom", "B. Adonijah", "C. Amnon", "D. Solomon"],
+        "answer_index": "D",
+        "reference": "1 Kings 1"
+      }
+    ]
+  },
+  {
+    "level": 99,
+    "theme": "The Final Blessing",
+    "questions": [
+      {
+        "question_id": "L99Q1",
+        "question_text": "The final verse of the entire Bible (Revelation 22:21) concludes with a blessing of the grace of whom upon all?",
+        "options": ["A. The Holy Spirit", "B. The Father", "C. The Lord Jesus", "D. The Angels"],
+        "answer_index": "C",
+        "reference": "Revelation 22:21"
+      },
+      {
+        "question_id": "L99Q2",
+        "question_text": "What does the phrase **'Hallelujah'** mean?",
+        "options": ["A. God is good", "B. Praise the Lord", "C. Amen", "D. Peace be with you"],
+        "answer_index": "B",
+        "reference": "Biblical Terminology"
+      },
+      {
+        "question_id": "L99Q3",
+        "question_text": "What common item was the Apostle Paul working with when he earned a living on his missionary journeys?",
+        "options": ["A. Clay pottery", "B. Leather goods", "C. Tentmaking", "D. Fishing nets"],
+        "answer_index": "C",
+        "reference": "Acts 18:3"
+      }
+    ]
+  }
+]

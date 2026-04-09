@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_bible_adjust_text_size"
+    android:paddingStart="16dp"
+    android:paddingTop="30dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="38dp">
+
+    <LinearLayout
+        android:id="@+id/menu_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/row_sticky"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="24dp">
+
+            <ImageView
+                android:id="@+id/icon_sticky"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/svg_top"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <TextView
+                android:id="@+id/text_sticky"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/prayer_edit_menu_sticky_post"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@id/icon_sticky"
+                app:layout_constraintTop_toTopOf="@id/icon_sticky"
+                app:layout_constraintBottom_toBottomOf="@id/icon_sticky" />
+
+            <ImageView
+                android:id="@+id/icon_sticky_more"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/svg_more"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/icon_sticky"
+                app:layout_constraintBottom_toBottomOf="@id/icon_sticky" />
+
+            <TextView
+                android:id="@+id/text_sticky_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/prayer_edit_menu_pin_via_ad"
+                android:textColor="#DF9C67"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@id/icon_sticky_more"
+                app:layout_constraintTop_toTopOf="@id/icon_sticky"
+                app:layout_constraintBottom_toBottomOf="@id/icon_sticky" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/row_visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:minHeight="24dp">
+
+            <ImageView
+                android:id="@+id/icon_visible"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/svg_user_visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <TextView
+                android:id="@+id/text_visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/prayer_edit_menu_visible_to"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@id/icon_visible"
+                app:layout_constraintTop_toTopOf="@id/icon_visible"
+                app:layout_constraintBottom_toBottomOf="@id/icon_visible" />
+
+            <ImageView
+                android:id="@+id/icon_visible_more"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/svg_more"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/icon_visible"
+                app:layout_constraintBottom_toBottomOf="@id/icon_visible" />
+
+            <TextView
+                android:id="@+id/text_visible_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/prayer_edit_menu_visible_default"
+                android:textColor="#999999"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@id/icon_visible_more"
+                app:layout_constraintTop_toTopOf="@id/icon_visible"
+                app:layout_constraintBottom_toBottomOf="@id/icon_visible" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/row_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:minHeight="24dp">
+
+            <ImageView
+                android:id="@+id/icon_delete"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/svg_delete"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <TextView
+                android:id="@+id/text_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/prayer_edit_menu_delete"
+                android:textColor="#F4241E"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@id/icon_delete"
+                app:layout_constraintTop_toTopOf="@id/icon_delete"
+                app:layout_constraintBottom_toBottomOf="@id/icon_delete" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/button_cancel"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/bg_prayer_visible_cancel"
+        android:gravity="center"
+        android:text="@string/prayer_wall_edit_visible_cancel"
+        android:textColor="#666666"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/menu_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

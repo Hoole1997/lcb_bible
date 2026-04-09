@@ -1,0 +1,394 @@
+{
+  "prayer_verses_30days": [
+    {
+      "day": 1,
+      "morning": {
+        "verse": "They are new every morning; great is your faithfulness.",
+        "chapter": "Lamentations 3:23",
+        "version": "NIV"
+      },
+      "evening": {
+        "verse": "In peace I will lie down and sleep.",
+        "chapter": "Psalm 4:8",
+        "version": "NIV"
+      }
+    },
+    {
+      "day": 2,
+      "morning": {
+        "verse": "This is the day the Lord has made; let us rejoice.",
+        "chapter": "Psalm 118:24",
+        "version": "NIV"
+      },
+      "evening": {
+        "verse": "Cast all your anxiety on him because he cares for you.",
+        "chapter": "1 Peter 5:7",
+        "version": "NIV"
+      }
+    },
+    {
+      "day": 3,
+      "morning": {
+        "verse": "Be strong and courageous. Do not be afraid.",
+        "chapter": "Joshua 1:9",
+        "version": "NIV"
+      },
+      "evening": {
+        "verse": "Give thanks in all circumstances.",
+        "chapter": "1 Thessalonians 5:18",
+        "version": "NIV"
+      }
+    },
+    {
+      "day": 4,
+      "morning": {
+        "verse": "I can do all this through him who gives me strength.",
+        "chapter": "Philippians 4:13",
+        "version": "NIV"
+      },
+      "evening": {
+        "verse": "Be still, and know that I am God.",
+        "chapter": "Psalm 46:10",
+        "version": "NIV"
+      }
+    },
+    {
+      "day": 5,
+      "morning": {
+        "verse": "The Lord is my light and my salvation—whom shall I fear?",
+        "chapter": "Psalm 27:1",
+        "version": "NIV"
+      },
+      "evening": {
+        "verse": "Peace I leave with you; my peace I give you.",
+        "chapter": "John 14:27",
+        "version": "NIV"
+      }
+    },
+    {
+      "day": 6,
+      "morning": {
+        "verse": "Trust in the Lord with all your heart.",
+        "chapter": "Proverbs 3:5",
+        "version": "NIV"
+      },
+      "evening": {
+        "verse": "The Lord will keep you from all harm.",
+        "chapter": "Psalm 121:7",
+        "version": "NIV"
+      }
+    },
+    {
+      "day": 7,
+      "morning": {
+        "verse": "Arise, shine, for your light has come.",
+        "chapter": "Isaiah 60:1",
+        "version": "NIV"
+      },
+      "evening": {
+        "verse": "Come to me, I will give you rest.",
+        "chapter": "Matthew 11:28",
+        "version": "NIV"
+      }
+    },
+    {
+      "day": 8,
+      "morning": {
+        "verse": "The Lord is my strength and my shield.",
+        "chapter": "Psalm 28:7",
+        "version": "NIV"
+      },
+      "evening": {
+        "verse": "Do not be anxious about tomorrow.",
+        "chapter": "Matthew 6:34",
+        "version": "NIV"
+      }
+    },
+    {
+      "day": 9,
+      "morning": {
+        "verse": "My help comes from the Lord.",
+        "chapter": "Psalm 121:1-2",
+        "version": "NIV"
+      },
+      "evening": {
+        "verse": "You will keep in perfect peace.",
+        "chapter": "Isaiah 26:3",
+        "version": "NIV"
+      }
+    },
+    {
+      "day": 10,
+      "morning": {
+        "verse": "Rejoice in the Lord always.",
+        "chapter": "Philippians 4:4",
+        "version": "NIV"
+      },
+      "evening": {
+        "verse": "And the peace of God will guard your hearts.",
+        "chapter": "Philippians 4:7",
+        "version": "NIV"
+      }
+    },
+    {
+      "day": 11,
+      "morning": {
+        "verse": "The Lord will fight for you; be still.",
+        "chapter": "Exodus 14:14",
+        "version": "NIV"
+      },
+      "evening": {
+        "verse": "Pour out your hearts to God.",
+        "chapter": "Psalm 62:8",
+        "version": "NIV"
+      }
+    },
+    {
+      "day": 12,
+      "morning": {
+        "verse": "I know the plans I have for you, says the Lord.",
+        "chapter": "Jeremiah 29:11",
+        "version": "NIV"
+      },
+      "evening": {
+        "verse": "He will never leave you nor forsake you.",
+        "chapter": "Deuteronomy 31:6",
+        "version": "NIV"
+      }
+    },
+    {
+      "day": 13,
+      "morning": {
+        "verse": "Come to me, all you who are weary.",
+        "chapter": "Matthew 11:28",
+        "version": "NIV"
+      },
+      "evening": {
+        "verse": "I will praise you, Lord, for you have rescued me.",
+        "chapter": "Psalm 30:1",
+        "version": "NIV"
+      }
+    },
+    {
+      "day": 14,
+      "morning": {
+        "verse": "The joy of the Lord is your strength.",
+        "chapter": "Nehemiah 8:10",
+        "version": "NIV"
+      },
+      "evening": {
+        "verse": "The Lord is good to those who wait for him.",
+        "chapter": "Lamentations 3:25",
+        "version": "NIV"
+      }
+    },
+    {
+      "day": 15,
+      "morning": {
+        "verse": "I will go before you and level the mountains.",
+        "chapter": "Isaiah 45:2",
+        "version": "NIV"
+      },
+      "evening": {
+        "verse": "I will bless the Lord at all times.",
+        "chapter": "Psalm 34:1",
+        "version": "NIV"
+      }
+    },
+    {
+      "day": 16,
+      "morning": {
+        "verse": "My grace is sufficient for you.",
+        "chapter": "2 Corinthians 12:9",
+        "version": "NIV"
+      },
+      "evening": {
+        "verse": "The Lord is near to all who call on him.",
+        "chapter": "Psalm 145:18",
+        "version": "NIV"
+      }
+    },
+    {
+      "day": 17,
+      "morning": {
+        "verse": "The Lord is good, a refuge in times of trouble.",
+        "chapter": "Nahum 1:7",
+        "version": "NIV"
+      },
+      "evening": {
+        "verse": "Let the peace of Christ rule in your hearts.",
+        "chapter": "Colossians 3:15",
+        "version": "NIV"
+      }
+    },
+    {
+      "day": 18,
+      "morning": {
+        "verse": "Let your light shine before others.",
+        "chapter": "Matthew 5:16",
+        "version": "NIV"
+      },
+      "evening": {
+        "verse": "I will give you rest.",
+        "chapter": "Matthew 11:28",
+        "version": "NIV"
+      }
+    },
+    {
+      "day": 19,
+      "morning": {
+        "verse": "I will walk in freedom.",
+        "chapter": "Psalm 119:45",
+        "version": "NIV"
+      },
+      "evening": {
+        "verse": "The Lord is my refuge and my fortress.",
+        "chapter": "Psalm 91:2",
+        "version": "NIV"
+      }
+    },
+    {
+      "day": 20,
+      "morning": {
+        "verse": "The Lord is my shepherd, I lack nothing.",
+        "chapter": "Psalm 23:1",
+        "version": "NIV"
+      },
+      "evening": {
+        "verse": "Do not be afraid, for I am with you.",
+        "chapter": "Isaiah 43:5",
+        "version": "NIV"
+      }
+    },
+    {
+      "day": 21,
+      "morning": {
+        "verse": "Do not be anxious about anything.",
+        "chapter": "Philippians 4:6",
+        "version": "NIV"
+      },
+      "evening": {
+        "verse": "I will tell of all your wonderful deeds.",
+        "chapter": "Psalm 9:1",
+        "version": "NIV"
+      }
+    },
+    {
+      "day": 22,
+      "morning": {
+        "verse": "In me you may have peace.",
+        "chapter": "John 16:33",
+        "version": "NIV"
+      },
+      "evening": {
+        "verse": "The Lord is my shepherd; I shall not want.",
+        "chapter": "Psalm 23:1",
+        "version": "NIV"
+      }
+    },
+    {
+      "day": 23,
+      "morning": {
+        "verse": "Love the Lord your God with all your heart.",
+        "chapter": "Deuteronomy 6:5",
+        "version": "NIV"
+      },
+      "evening": {
+        "verse": "I will fear no evil.",
+        "chapter": "Psalm 23:4",
+        "version": "NIV"
+      }
+    },
+    {
+      "day": 24,
+      "morning": {
+        "verse": "The Lord is faithful, he will strengthen you.",
+        "chapter": "2 Thessalonians 3:3",
+        "version": "NIV"
+      },
+      "evening": {
+        "verse": "Surely your goodness and love will follow me.",
+        "chapter": "Psalm 23:6",
+        "version": "NIV"
+      }
+    },
+    {
+      "day": 25,
+      "morning": {
+        "verse": "I will praise you, Lord, with all my heart.",
+        "chapter": "Psalm 9:1",
+        "version": "NIV"
+      },
+      "evening": {
+        "verse": "The Lord is faithful to all his promises.",
+        "chapter": "Psalm 145:13",
+        "version": "NIV"
+      }
+    },
+    {
+      "day": 26,
+      "morning": {
+        "verse": "Under his wings you will find refuge.",
+        "chapter": "Psalm 91:4",
+        "version": "NIV"
+      },
+      "evening": {
+        "verse": "I will sleep and wake again, the Lord sustains me.",
+        "chapter": "Psalm 3:5",
+        "version": "NIV"
+      }
+    },
+    {
+      "day": 27,
+      "morning": {
+        "verse": "The Lord is my helper; I will not be afraid.",
+        "chapter": "Hebrews 13:6",
+        "version": "NIV"
+      },
+      "evening": {
+        "verse": "For God so loved the world.",
+        "chapter": "John 3:16",
+        "version": "NIV"
+      }
+    },
+    {
+      "day": 28,
+      "morning": {
+        "verse": "Let us run with perseverance the race marked out for us.",
+        "chapter": "Hebrews 12:1",
+        "version": "NIV"
+      },
+      "evening": {
+        "verse": "I will lie down in peace and sleep.",
+        "chapter": "Psalm 4:8",
+        "version": "NIV"
+      }
+    },
+    {
+      "day": 29,
+      "morning": {
+        "verse": "Your word is a lamp for my feet.",
+        "chapter": "Psalm 119:105",
+        "version": "NIV"
+      },
+      "evening": {
+        "verse": "I will trust in you alone, O Lord.",
+        "chapter": "Psalm 55:23",
+        "version": "NIV"
+      }
+    },
+    {
+      "day": 30,
+      "morning": {
+        "verse": "I am with you wherever you go.",
+        "chapter": "Genesis 28:15",
+        "version": "NIV"
+      },
+      "evening": {
+        "verse": "Thank you for your love that never fails.",
+        "chapter": "Psalm 136:1",
+        "version": "NIV"
+      }
+    }
+  ]
+}

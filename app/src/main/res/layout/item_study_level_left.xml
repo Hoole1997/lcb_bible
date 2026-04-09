@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_marginVertical="0dp">
+
+    <ImageView
+        android:id="@+id/path"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/svg_study_path_left"
+        android:scaleType="fitXY"
+        android:importantForAccessibility="no"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/gift_tag"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:importantForAccessibility="no"
+        android:src="@mipmap/img_level_gift"
+        app:layout_constraintStart_toStartOf="@id/level_icon"
+        app:layout_constraintTop_toTopOf="@id/level_icon"
+        app:layout_constraintEnd_toEndOf="@id/level_icon"
+        app:layout_constraintBottom_toBottomOf="@id/level_icon"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="1dp"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/level_icon"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="60dp"
+        android:src="@drawable/svg_level_locked"
+        android:importantForAccessibility="no"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/level_number"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/bg_study_level_unlocked"
+        app:layout_constraintStart_toStartOf="@id/level_icon"
+        app:layout_constraintTop_toTopOf="@id/level_icon"
+        app:layout_constraintEnd_toEndOf="@id/level_icon"
+        app:layout_constraintBottom_toBottomOf="@id/level_icon" />
+    
+    <ImageView
+        android:id="@+id/pass_tag"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/svg_level_passed"
+        app:layout_constraintTop_toTopOf="@id/level_number"
+        app:layout_constraintBottom_toBottomOf="@id/level_number"
+        app:layout_constraintStart_toStartOf="@id/level_number"
+        app:layout_constraintEnd_toEndOf="@id/level_number"
+        android:visibility="invisible"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_view"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@id/gift_tag"
+        app:layout_constraintTop_toTopOf="@id/gift_tag"
+        app:layout_constraintEnd_toEndOf="@id/gift_tag"
+        app:layout_constraintBottom_toBottomOf="@id/gift_tag"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

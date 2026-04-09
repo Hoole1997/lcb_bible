@@ -1,0 +1,402 @@
+[
+  {
+    "username": "SarahJohnson",
+    "content": "Lord Jesus, I lift up my mother, Mary, to You today. She is battling stage 2 breast cancer, and she is scared. Please wrap Your loving arms around her, give her strength for her treatments, and heal her body completely. Guide her doctors and nurses, and let her feel Your peace that surpasses all understanding. I trust in Your healing power. Amen.",
+    "likes": 42
+  },
+  {
+    "username": "MichaelThompson",
+    "content": "Dear Lord, I pray for my father who has been struggling with heart problems. He feels weak and worried about the future. Please touch his heart and restore his health. Give him comfort and hope each day, and help our family support him with love. In Jesus' name, amen.",
+    "likes": 38
+  },
+  {
+    "username": "EmilyRodriguez",
+    "content": "Heavenly Father, I come to You today feeling overwhelmed with anxiety. My mind is filled with worries about work, family, and the days ahead. Please calm my spirit and remind me that You are in control. Help me cast all my fears on You and trust Your perfect plan. Amen.",
+    "likes": 29
+  },
+  {
+    "username": "DavidWilson",
+    "content": "Lord, I pray for my marriage right now. My spouse and I have been arguing and growing distant. Please heal our communication, restore our love, and bind us together in Your grace. Help us forgive each other and choose kindness every day. In Jesus' name, amen.",
+    "likes": 35
+  },
+  {
+    "username": "LisaCarter",
+    "content": "Dear God, I am so grateful for Your provision in my life. This month, I was worried about bills and expenses, but You made a way when there seemed to be no way. Thank You for being my provider and protector. I praise You for Your faithfulness. Amen.",
+    "likes": 26
+  },
+  {
+    "username": "JamesMoore",
+    "content": "Jesus, I pray for my child who is struggling in school. They feel stressed and discouraged. Please give them wisdom, focus, and confidence. Help their teachers be kind and understanding, and guide them to do their best. Cover them with Your peace. Amen.",
+    "likes": 33
+  },
+  {
+    "username": "RebeccaTaylor",
+    "content": "Lord, I lift up my friend who has been feeling lonely and depressed. They have lost hope and feel forgotten. Please wrap them in Your love, send people to encourage them, and remind them they are never alone. Heal their heart, Lord. Amen.",
+    "likes": 41
+  },
+  {
+    "username": "DanielKing",
+    "content": "Heavenly Father, I have made many mistakes lately and I feel guilty. I ask for Your forgiveness and a fresh start. Cleanse my heart, change my ways, and help me live in a way that honors You. Thank You for Your endless mercy. Amen.",
+    "likes": 24
+  },
+  {
+    "username": "JessicaLewis",
+    "content": "Dear Lord, I have a big job interview soon and I am very nervous. Please give me clarity, calm nerves, and the right words to say. Let Your favor be upon me, and lead me to the job that fits Your plan for my life. In Jesus' name, amen.",
+    "likes": 28
+  },
+  {
+    "username": "RobertBrown",
+    "content": "Jesus, I pray for safe travels for my family as we go on a trip. Protect us on the roads, keep us healthy, and help us make wonderful memories together. Watch over our home while we are gone. Thank You for Your care. Amen.",
+    "likes": 19
+  },
+  {
+    "username": "MaryHill",
+    "content": "Lord, I am suffering from chronic pain and it has been hard to keep faith. Please ease my discomfort, heal my body, and give me strength to face each day. Help me trust that Your timing is perfect even when I don't understand. Amen.",
+    "likes": 44
+  },
+  {
+    "username": "JohnGreen",
+    "content": "Dear God, I pray for my siblings and me. We have grown apart and don't talk like we used to. Please heal our relationships, soften our hearts, and help us love and support one another again. Bring unity to our family. Amen.",
+    "likes": 25
+  },
+  {
+    "username": "JenniferScott",
+    "content": "Father, I thank You for waking me up this day. Even when life is hard, I am grateful for another chance to love, serve, and follow You. Help me live today in a way that brings glory to Your name. In Jesus' name, amen.",
+    "likes": 17
+  },
+  {
+    "username": "ChrisDavis",
+    "content": "Lord, I am holding onto anger toward someone who hurt me. Please help me release it and truly forgive. Free my heart from bitterness and fill me with Your love and peace. Teach me to love as You love. Amen.",
+    "likes": 31
+  },
+  {
+    "username": "AmandaFisher",
+    "content": "Jesus, I pray for my coworkers and boss. There is tension and stress at work. Please bring peace, patience, and understanding to our team. Help me be a light and a kind presence in my workplace. In Your name, amen.",
+    "likes": 22
+  },
+  {
+    "username": "BrianEvans",
+    "content": "Dear Lord, these days have been extremely difficult, and I feel weak. But I know You are my strength. Please carry me through this season, hold me close, and remind me that I can do all things through Christ who strengthens me. Amen.",
+    "likes": 37
+  },
+  {
+    "username": "KimberlyPerry",
+    "content": "Heavenly Father, I just want to say thank You. Thank You for loving me even when I'm not perfect. Thank You for never leaving me or giving up on me. Your love is deeper than I can understand, and I praise You. Amen.",
+    "likes": 18
+  },
+  {
+    "username": "JustinNelson",
+    "content": "Lord, I want to serve You more in my church and community. Please open doors for me to help others, share Your love, and use my gifts for Your glory. Give me courage to step out in faith. In Jesus' name, amen.",
+    "likes": 27
+  },
+  {
+    "username": "MichelleOwens",
+    "content": "Jesus, I pray for everyone who has lost a loved one recently. Their hearts are broken and they are grieving. Please wrap them in Your comfort, give them peace, and hold them close during this hard time. Heal their pain, Lord. Amen.",
+    "likes": 40
+  },
+  {
+    "username": "AnthonyVega",
+    "content": "Dear God, I am studying for important exams and I feel overwhelmed. Please give me focus, memory, and wisdom. Help me manage my time well and do my best. Calm my nerves and help me trust You. Amen.",
+    "likes": 16
+  },
+  {
+    "username": "AndreaJames",
+    "content": "Father, I have sinned against You and others, and I am truly sorry. I repent of my selfish choices and ask for Your forgiveness. Wash me clean and help me walk in Your light from this day forward. Thank You, Lord. Amen.",
+    "likes": 23
+  },
+  {
+    "username": "KevinQuinn",
+    "content": "Lord, protect my children each and every day. Keep them safe from harm, guide their steps, and help them grow to love and follow You. Watch over them when I cannot, and fill their hearts with joy. In Jesus' name, amen.",
+    "likes": 39
+  },
+  {
+    "username": "LauraKing",
+    "content": "Dear God, I am struggling with my finances and I don't know what to do. Please give me wisdom to manage my money, provide for my needs, and help me trust that You will take care of me. Teach me to be a good steward. Amen.",
+    "likes": 25
+  },
+  {
+    "username": "MarkRivera",
+    "content": "Jesus, I pray for my church family. Bring growth, unity, and passion for You. Help us reach people who are lost and alone, and share the good news of Your love. Bless our pastors and leaders. In Your name, amen.",
+    "likes": 30
+  },
+  {
+    "username": "StephanieYoung",
+    "content": "Lord, my friend's marriage is falling apart and they are heartbroken. Please intervene, heal their relationship, and restore love and trust between them. Help them turn to You during this difficult time. Amen.",
+    "likes": 34
+  },
+  {
+    "username": "PaulWhite",
+    "content": "Dear God, I want to share my faith with others but I am afraid. Please give me boldness, gentle words, and opportunities to tell others about You. Help me love people well and point them to Your grace. Amen.",
+    "likes": 14
+  },
+  {
+    "username": "MelissaUnderwood",
+    "content": "Father, I have been having trouble sleeping and I feel tired all the time. Please grant me peaceful rest through the night and renew my strength each morning. Help me trust You even in my weariness. Amen.",
+    "likes": 20
+  },
+  {
+    "username": "EricIrvine",
+    "content": "Jesus, I have many fears about the future, but I know You hold tomorrow. Please calm my fears, fill me with faith, and help me take one day at a time. I choose to trust You no matter what comes. Amen.",
+    "likes": 36
+  },
+  {
+    "username": "NicoleYoung",
+    "content": "Lord, I pray for all those who are homeless and hungry. Provide for their needs, send people to help them, and wrap them in Your love. Help me be more generous and aware of those around me who are suffering. Amen.",
+    "likes": 38
+  },
+  {
+    "username": "StevenPerry",
+    "content": "Dear God, I struggle with pride and thinking I am better than others. Please humble my heart, teach me to be gentle and kind, and help me love everyone equally. Change me from the inside out. In Jesus' name, amen.",
+    "likes": 13
+  },
+  {
+    "username": "KarenLee",
+    "content": "Father, thank You for the friends You have placed in my life. They encourage me, support me, and lift me up when I am down. Bless them and keep them close to You. I am so grateful for their friendship. Amen.",
+    "likes": 21
+  },
+  {
+    "username": "GeorgeDavis",
+    "content": "Jesus, my dad has been having severe back pain and it limits his daily life. Please touch his body, ease the pain, and restore his strength. Comfort him and help him feel Your healing presence. Amen.",
+    "likes": 43
+  },
+  {
+    "username": "PatriciaXu",
+    "content": "Lord, I am looking for a new church home and I feel lost. Please lead me to a place where I can grow, serve, and belong. Guide my steps and help me find community that loves You deeply. In Your name, amen.",
+    "likes": 19
+  },
+  {
+    "username": "RonaldMorris",
+    "content": "Dear God, I lose my temper easily and hurt people I love. Please help me control my anger, speak gently, and be slow to become angry. Fill me with patience and love. Change my heart, Lord. Amen.",
+    "likes": 27
+  },
+  {
+    "username": "BettyStewart",
+    "content": "Father, Your Word is my comfort and my strength. Thank You for speaking to me through Scripture. Help me hide it in my heart and live by it every single day. I trust Your promises completely. Amen.",
+    "likes": 24
+  },
+  {
+    "username": "KennethGreen",
+    "content": "Jesus, I pray for my pets that they stay healthy and safe. They bring so much joy to my life, and I am grateful for them. Watch over them and keep them well. In Your loving name, amen.",
+    "likes": 11
+  },
+  {
+    "username": "SandraBell",
+    "content": "Lord, I feel so alone right now, even when I'm around people. Please wrap me in Your presence, remind me I am never alone, and send someone into my life to encourage me. Heal my loneliness, Father. Amen.",
+    "likes": 32
+  },
+  {
+    "username": "BrandonClark",
+    "content": "Dear God, I am working on important projects and I want to do them well for Your glory. Please give me creativity, focus, and strength to finish strong. Help me do everything as if I am working for You. Amen.",
+    "likes": 21
+  },
+  {
+    "username": "PamelaThomas",
+    "content": "Father, thank You for the rain, the sunshine, and all of nature that shows how amazing You are. Your creation is beautiful, and it points directly to You. I praise You for the world around me. Amen.",
+    "likes": 18
+  },
+  {
+    "username": "RoyHall",
+    "content": "Jesus, I pray for peace in places around the world that are filled with violence and fear. Comfort those who are suffering, protect the innocent, and help leaders choose wisdom and compassion. In Your name, amen.",
+    "likes": 35
+  },
+  {
+    "username": "EvaFisher",
+    "content": "Lord, I have made so many mistakes lately and I feel like I've let You down. Please forgive me, give me a fresh start, and help me do better each day. Thank You for Your endless grace and mercy. Amen.",
+    "likes": 26
+  },
+  {
+    "username": "VictorNelson",
+    "content": "Dear God, I pray for my grandparents. Bless them with health, joy, and long life. Thank You for their wisdom and love. Watch over them and keep them safe in Your arms. In Jesus' name, amen.",
+    "likes": 37
+  },
+  {
+    "username": "GloriaVega",
+    "content": "Father, thank You for music that lifts my soul and draws me closer to You. It helps me worship and feel Your presence. Bless all those who create music to honor You. I am so grateful. Amen.",
+    "likes": 15
+  },
+  {
+    "username": "HenryJames",
+    "content": "Jesus, protect me from evil, bad choices, and negative influences. Help me walk on Your path and stay away from things that pull me from You. Guide my steps and keep me close to You always. Amen.",
+    "likes": 29
+  },
+  {
+    "username": "DianaKing",
+    "content": "Lord, I want to be more generous and help those in need. Open my eyes to people around me who are hurting, and give me a heart to give and serve. Help me love as You love. In Your name, amen.",
+    "likes": 23
+  },
+  {
+    "username": "CarlWhite",
+    "content": "Dear God, I have been having stomach and digestive problems, and it makes daily life hard. Please heal my body, ease my discomfort, and restore my health. I trust in Your healing power. Amen.",
+    "likes": 31
+  },
+  {
+    "username": "RuthOwens",
+    "content": "Father, thank You for warm, sunny days that lift my spirit. You make everything beautiful in Your time. I rejoice in the small blessings You give me each and every day. In Jesus' name, amen.",
+    "likes": 14
+  },
+  {
+    "username": "JoePerry",
+    "content": "Jesus, I struggle with bad dreams and restless sleep. Please give me peaceful nights, calm my mind, and help me rest safely in Your arms. I pray for deep, restful sleep each night. Amen.",
+    "likes": 33
+  },
+  {
+    "username": "TinaQuinn",
+    "content": "Lord, my friend has turned away from You and their heart is hard. Please soften their heart, draw them back to You, and send people to love them and share Your truth. I pray for their salvation. Amen.",
+    "likes": 36
+  },
+  {
+    "username": "AlanEvans",
+    "content": "Dear God, help me take good care of my body, which You have given me. Give me the discipline to exercise, rest, and eat well. Help me honor You with my health and strength. In Your name, amen.",
+    "likes": 20
+  },
+  {
+    "username": "WendyUnderwood",
+    "content": "Father, I fail so often, but Your grace is always enough. Thank You for not giving up on me, for forgiving me, and for loving me unconditionally. I praise You for Your amazing grace. Amen.",
+    "likes": 25
+  },
+  {
+    "username": "HowardIrvine",
+    "content": "Jesus, bless my neighbors and keep them safe. Help me be kind and friendly to them, and show them Your love through my words and actions. Watch over their homes and families. Amen.",
+    "likes": 17
+  },
+  {
+    "username": "JuliaYoung",
+    "content": "Lord, I pray for everyone who is sad, hopeless, or in pain. Comfort them, hold them close, and remind them that You are their healer and comforter. Bring hope into their dark days. In Your name, amen.",
+    "likes": 39
+  },
+  {
+    "username": "DylanMorris",
+    "content": "Dear God, I am taking important exams soon and I am nervous. Please give me clear thinking, good memory, and calm nerves. Help me do my best and trust the results to You. Amen.",
+    "likes": 22
+  },
+  {
+    "username": "NaomiStewart",
+    "content": "Father, thank You for providing food on my table every day. So many people go hungry, and I am grateful for Your provision. Help me remember to be thankful and generous to others. Amen.",
+    "likes": 16
+  },
+  {
+    "username": "GaryDavis",
+    "content": "Jesus, my vision has been getting worse, and I worry about it. Please touch my eyes, heal my sight, and help me see clearly. I trust You to take care of me, even in small things. Amen.",
+    "likes": 34
+  },
+  {
+    "username": "KathyGreen",
+    "content": "Lord, I want to be a better listener to the people around me. Help me pay attention, be patient, and care deeply about what others are saying. Teach me to love with my ears and my heart. Amen.",
+    "likes": 21
+  },
+  {
+    "username": "RogerBell",
+    "content": "Dear God, thank You for safe transportation and cars that help us travel. Keep everyone safe on the roads, and protect those who drive for work or to see family. In Your loving name, amen.",
+    "likes": 13
+  },
+  {
+    "username": "MeganClark",
+    "content": "Jesus, I feel so lonely and empty inside. Please fill my heart with Your joy and peace, and help me know how deeply I am loved. Remind me that I am never alone with You. Amen.",
+    "likes": 30
+  },
+  {
+    "username": "KeithThomas",
+    "content": "Lord, I pray for my students. Give them wisdom, joy, and a love for learning. Help them feel valued and loved, and guide them to grow into kind, smart, and faithful people. In Your name, amen.",
+    "likes": 28
+  },
+  {
+    "username": "HollyHall",
+    "content": "Father, thank You for flowers, trees, and all the beautiful things You created. They show how creative and wonderful You are. I stop today to appreciate the beauty around me. Amen.",
+    "likes": 19
+  },
+  {
+    "username": "JerryFisher",
+    "content": "Jesus, protect me from accidents, injuries, and harm. Keep me safe in all that I do, and watch over those I love. I put my safety in Your hands today and always. Amen.",
+    "likes": 27
+  },
+  {
+    "username": "LynnVega",
+    "content": "Dear God, I worry too much about tomorrow and forget to live today. Help me trust You one day at a time, cast my worries on You, and enjoy the moments You have given me. Amen.",
+    "likes": 35
+  },
+  {
+    "username": "AdamJames",
+    "content": "Father, thank You for clean, fresh water to drink. So many people do not have this basic need met. I am grateful for Your provision, and I pray for those who are in need. In Jesus' name, amen.",
+    "likes": 12
+  },
+  {
+    "username": "ClaraKing",
+    "content": "Jesus, I pray for all single parents who are trying their best. Give them strength, patience, and provision. Help them feel supported and loved, and wrap them in Your grace. Amen.",
+    "likes": 41
+  },
+  {
+    "username": "TerryWhite",
+    "content": "Lord, I complain too much and forget to be grateful. Please change my heart, help me see the blessings around me, and live with a thankful spirit in every situation. In Your name, amen.",
+    "likes": 24
+  },
+  {
+    "username": "IrisOwens",
+    "content": "Dear God, thank You for doctors, nurses, and medical workers who help sick people. Bless them, give them wisdom, and help them care well for those who are hurting. I am so grateful for them. Amen.",
+    "likes": 23
+  },
+  {
+    "username": "LawrencePerry",
+    "content": "Jesus, I have terrible joint pain that makes moving difficult. Please touch my body, ease the pain, and restore my strength. I believe in Your healing power and I trust in You. Amen.",
+    "likes": 32
+  },
+  {
+    "username": "NancyQuinn",
+    "content": "Lord, show me someone I can help today. Give me a kind word, a helping hand, or a loving gesture to share Your love with someone who is struggling. Use me today, Lord. Amen.",
+    "likes": 26
+  },
+  {
+    "username": "EarlEvans",
+    "content": "Father, thank You for laughter, happy moments, and good memories. They make life sweet and remind me of Your goodness. I praise You for the joy You put in my life. Amen.",
+    "likes": 15
+  },
+  {
+    "username": "MildredUnderwood",
+    "content": "Jesus, I pray for people who feel lost and without hope. Please shine Your light into their darkness, lead them to safety, and remind them that You are the way, the truth, and the life. Amen.",
+    "likes": 35
+  },
+  {
+    "username": "JesseIrvine",
+    "content": "Dear God, help me respect, honor, and love my parents. They have sacrificed so much for me. Give me patience and kindness with them, and help me cherish the time I have with them. Amen.",
+    "likes": 29
+  },
+  {
+    "username": "PriscillaYoung",
+    "content": "Father, thank You for rest and weekends to recover and spend time with family. Help me slow down, enjoy life, and focus on what matters most. I am grateful for times of refreshment. Amen.",
+    "likes": 18
+  },
+  {
+    "username": "ThomasMorris",
+    "content": "Jesus, keep my family united in love and peace. Help us support each other, forgive quickly, and love deeply. Protect our family and keep us close to You and each other. Amen.",
+    "likes": 31
+  },
+  {
+    "username": "LoisStewart",
+    "content": "Lord, help me be faithful and responsible in small things. I want to honor You even when no one is watching. Give me integrity and a heart that wants to please You. In Your name, amen.",
+    "likes": 20
+  },
+  {
+    "username": "WillieDavis",
+    "content": "Dear God, thank You for books and devotionals that teach me more about You. Help me grow in my faith, understand Your Word better, and live it out every day. Amen.",
+    "likes": 14
+  },
+  {
+    "username": "EdithGreen",
+    "content": "Jesus, comfort every hurting heart in this world. Whether they are sad, sick, lonely, or scared, let them feel Your loving arms around them. Heal their pain, Lord. Amen.",
+    "likes": 38
+  },
+  {
+    "username": "NormanBell",
+    "content": "Lord, I struggle with negative and anxious thoughts. Please help me take every thought captive and focus on what is good and true. Fill my mind with Your peace. In Jesus' name, amen.",
+    "likes": 25
+  },
+  {
+    "username": "MonaClark",
+    "content": "Dear God, thank You for second chances, new beginnings, and fresh starts. No matter how many times I fail, You are always ready to forgive and restore me. I praise You. Amen.",
+    "likes": 17
+  },
+  {
+    "username": "KurtThomas",
+    "content": "Jesus, I am traveling soon and I pray for safety. Protect me on my journey, keep me healthy, and help me have a good trip. Watch over me and bring me home safely. In Your name, amen.",
+    "likes": 28
+  }
+]

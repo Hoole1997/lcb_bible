@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_bible_adjust_text_size"
+    android:paddingStart="16dp"
+    android:paddingTop="30dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="40dp">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/prayer_wall_edit_visible_to"
+        android:textColor="#222222"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/option_anyone"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_prayer_visible_option_normal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:text="@string/prayer_wall_edit_visible_anyone"
+        android:textColor="#666666"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_title" />
+
+    <ImageView
+        android:id="@+id/option_anyone_check"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="16dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/svg_selected"
+        app:layout_constraintBottom_toBottomOf="@id/option_anyone"
+        app:layout_constraintEnd_toEndOf="@id/option_anyone"
+        app:layout_constraintTop_toTopOf="@id/option_anyone" />
+
+    <TextView
+        android:id="@+id/option_just_me"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_prayer_visible_option_normal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="12dp"
+        android:text="@string/prayer_wall_edit_visible_just_me"
+        android:textColor="#666666"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/option_anyone" />
+
+    <ImageView
+        android:id="@+id/option_just_me_check"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="16dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/svg_selected"
+        app:layout_constraintBottom_toBottomOf="@id/option_just_me"
+        app:layout_constraintEnd_toEndOf="@id/option_just_me"
+        app:layout_constraintTop_toTopOf="@id/option_just_me" />
+
+    <TextView
+        android:id="@+id/button_cancel"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_prayer_visible_cancel"
+        android:gravity="center"
+        android:text="@string/prayer_wall_edit_visible_cancel"
+        android:textColor="#666666"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/button_ok"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/option_just_me"
+        app:layout_constraintWidth_percent="0.48" />
+
+    <TextView
+        android:id="@+id/button_ok"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_prayer_visible_ok"
+        android:gravity="center"
+        android:text="@string/prayer_wall_edit_visible_ok"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_cancel"
+        app:layout_constraintTop_toTopOf="@id/button_cancel"
+        app:layout_constraintWidth_percent="0.48" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_notification_dialog">
+
+    <ImageView
+        android:id="@+id/image_bless"
+        android:layout_width="314dp"
+        android:layout_height="244dp"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/img_bless_b"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/verse_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/verse_position"
+        app:layout_constraintStart_toStartOf="@id/image_bless"
+        app:layout_constraintEnd_toEndOf="@id/image_bless"
+        android:text="@string/notification_dialog_verse"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginHorizontal="20dp" />
+
+    <TextView
+        android:id="@+id/verse_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:text="@string/notification_dialog_verse_position"
+        app:layout_constraintBottom_toBottomOf="@id/image_bless"
+        app:layout_constraintEnd_toEndOf="@id/image_bless"/>
+
+    <TextView
+        android:id="@+id/turn_on_notification"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_bless"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="@string/turn_on_notification"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#333333"/>
+
+    <TextView
+        android:id="@+id/turn_on_notification_reason"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/turn_on_notification"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="@string/turn_on_notification_reason"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:textColor="#666666"/>
+
+    <TextView
+        android:id="@+id/btn_open"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="@string/go_to_open"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/bg_float_window_dialog_btn"
+        app:layout_constraintTop_toBottomOf="@id/turn_on_notification_reason"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

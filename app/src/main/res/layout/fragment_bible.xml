@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_bible_fragment">
+
+        <LinearLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <HorizontalScrollView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tag_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#333333"
+                        tools:text="Genesis"
+                        android:textSize="14sp"
+                        android:layout_marginStart="10dp"
+                        android:paddingHorizontal="12dp"
+                        android:paddingVertical="8dp"
+                        android:background="@drawable/bg_bible_fragment_tag"/>
+
+                    <TextView
+                        android:id="@+id/tag_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#333333"
+                        android:text="@string/KJV"
+                        android:textSize="14sp"
+                        android:layout_marginStart="10dp"
+                        android:paddingHorizontal="12dp"
+                        android:paddingVertical="8dp"
+                        android:background="@drawable/bg_bible_fragment_tag"/>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+            
+            <ImageView
+                android:id="@+id/btn_select_book"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/svg_select_book"
+                android:layout_marginEnd="20dp"/>
+
+            <ImageView
+                android:id="@+id/btn_adjust_text_size"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/svg_adjust_text_size"
+                android:layout_marginEnd="16dp" />
+            
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcy_verse"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:clipToPadding="false"
+            android:paddingBottom="120dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="86dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/player_controls"
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guide_a"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/bg_bible_player_controls"
+            android:elevation="1dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/btn_player_previous"
+                android:layout_width="46dp"
+                android:layout_height="match_parent"
+                android:importantForAccessibility="no"
+                android:src="@drawable/svg_previous"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="14dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/bg_player_button_ripple"/>
+
+            <ImageView
+                android:id="@+id/btn_player_play"
+                android:layout_width="46dp"
+                android:layout_height="match_parent"
+                android:importantForAccessibility="no"
+                android:src="@drawable/svg_play_bible"
+                app:layout_constraintStart_toEndOf="@id/btn_player_previous"
+                app:layout_constraintEnd_toStartOf="@id/btn_player_next"
+                app:layout_constraintTop_toTopOf="@id/btn_player_previous"
+                app:layout_constraintBottom_toBottomOf="@id/btn_player_previous"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="14dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/bg_player_button_ripple"/>
+
+            <ImageView
+                android:id="@+id/btn_player_next"
+                android:layout_width="46dp"
+                android:layout_height="match_parent"
+                android:importantForAccessibility="no"
+                android:src="@drawable/svg_next"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/btn_player_previous"
+                app:layout_constraintBottom_toBottomOf="@id/btn_player_previous"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="14dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/bg_player_button_ripple"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/player_controls_ex"
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guide_a"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/bg_bible_player_controls"
+            android:elevation="1dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/btn_player_previous_ex"
+                android:layout_width="46dp"
+                android:layout_height="match_parent"
+                android:importantForAccessibility="no"
+                android:src="@drawable/svg_previous"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="14dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/bg_player_button_ripple"/>
+
+            <ImageView
+                android:id="@+id/btn_player_play_ex"
+                android:layout_width="46dp"
+                android:layout_height="match_parent"
+                android:importantForAccessibility="no"
+                android:src="@drawable/svg_play_bible"
+                app:layout_constraintStart_toEndOf="@id/btn_player_previous_ex"
+                app:layout_constraintEnd_toStartOf="@id/btn_player_next_ex"
+                app:layout_constraintTop_toTopOf="@id/btn_player_previous_ex"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="14dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/bg_player_button_ripple"/>
+
+            <ImageView
+                android:id="@+id/btn_player_next_ex"
+                android:layout_width="46dp"
+                android:layout_height="match_parent"
+                android:importantForAccessibility="no"
+                android:src="@drawable/svg_next"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/btn_player_previous_ex"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="14dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/bg_player_button_ripple"/>
+
+            <ProgressBar
+                android:id="@+id/progressbar_ex"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:max="100"
+                android:progress="30"
+                android:progressTint="#F5B553"
+                android:progressBackgroundTint="#EDEDED"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_player_previous_ex"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="14dp"
+                android:layout_marginHorizontal="12dp"
+                android:visibility="visible"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/bible_toast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Autoscroll: On"
+            app:layout_constraintBottom_toTopOf="@id/guide_a"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_bible_toast"
+            android:paddingVertical="12dp"
+            android:paddingHorizontal="16dp"
+            android:textSize="14sp"
+            android:visibility="gone"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

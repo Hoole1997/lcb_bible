@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_listen_learn_card">
+
+    <ImageView
+        android:id="@+id/cover"
+        android:layout_width="68dp"
+        android:layout_height="80dp"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginVertical="12dp"
+        android:layout_marginStart="12dp"
+        tools:src="@mipmap/img_today_journey_item_a"/>
+
+    <ImageView
+        android:id="@+id/icon_listen"
+        android:layout_width="32dp"
+        android:layout_height="14dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/svg_listen"
+        android:background="@drawable/bg_listen_learn_tag"
+        app:layout_constraintTop_toTopOf="@id/cover"
+        app:layout_constraintEnd_toEndOf="@id/cover"
+        android:paddingVertical="3dp"
+        android:paddingHorizontal="6dp"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintStart_toStartOf="@id/subtitle"
+        app:layout_constraintEnd_toEndOf="@id/subtitle"
+        app:layout_constraintBottom_toTopOf="@id/subtitle"
+        android:layout_marginBottom="8dp"
+        tools:text="The SermonThe SermonThe Sermon"/>
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintTop_toTopOf="@id/cover"
+        app:layout_constraintStart_toEndOf="@id/cover"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/cover"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="6dp"
+        tools:text="The Sermon Series - Ep. 12"/>
+
+    <TextView
+        android:id="@+id/badge_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="4dp"
+        android:background="@drawable/bg_listen_learn_btn"
+        android:textColor="#C6832D"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@id/subtitle"
+        app:layout_constraintTop_toBottomOf="@id/subtitle"
+        android:layout_marginTop="8dp"
+        tools:text="28 Min · Audio"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
