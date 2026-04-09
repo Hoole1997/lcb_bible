@@ -35,22 +35,10 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:importantForAccessibility="no"
-                android:src="@mipmap/img_player_creating"
+                android:src="@mipmap/img_pw_publish"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>
-
-            <ImageView
-                android:id="@+id/icon_small"
-                android:layout_width="42dp"
-                android:layout_height="36dp"
-                android:importantForAccessibility="no"
-                android:src="@drawable/svg_tab_pw"
-                app:tint="#ffffff"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@id/icon_big"
-                app:layout_constraintBottom_toBottomOf="@id/icon_big"/>
 
             <TextView
                 android:id="@+id/text_title"

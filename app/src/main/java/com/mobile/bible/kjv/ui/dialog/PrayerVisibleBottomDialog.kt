@@ -44,7 +44,7 @@ class PrayerVisibleBottomDialog : BottomSheetDialogFragment() {
                 else R.drawable.bg_prayer_visible_option_normal
             )
             optionAnyone.setTextColor(
-                if (anyoneSelected) Color.parseColor("#DF9C67")
+                if (anyoneSelected) Color.parseColor("#DCB888")
                 else Color.parseColor("#666666")
             )
             optionAnyoneCheck.visibility = if (anyoneSelected) View.VISIBLE else View.GONE
@@ -55,7 +55,7 @@ class PrayerVisibleBottomDialog : BottomSheetDialogFragment() {
             )
             optionJustMe.setTextColor(
                 if (anyoneSelected) Color.parseColor("#666666")
-                else Color.parseColor("#DF9C67")
+                else Color.parseColor("#DCB888")
             )
             optionJustMeCheck.visibility = if (anyoneSelected) View.GONE else View.VISIBLE
         }

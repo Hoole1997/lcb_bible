@@ -48,7 +48,7 @@ class PlayerCreateLoadingActivity : AppCompatActivity() {
         val density = resources.displayMetrics.density
         val radius = (16 * density).toInt()
         Glide.with(this)
-            .load(R.mipmap.img_player_creating)
+            .load(R.mipmap.img_pw_publish)
             .transform(CenterCrop(), RoundedCorners(radius))
             .into(binding.iconBig)
 
