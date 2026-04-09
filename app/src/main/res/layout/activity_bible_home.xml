@@ -49,8 +49,9 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:importantForAccessibility="no"
-                    android:src="@drawable/svg_home"
-                    app:tint="#DF9C67" />
+                    android:src="@drawable/svg_tab_toady"
+                    android:paddingVertical="1dp"
+                    app:tint="#000000" />
 
                 <TextView
                     android:id="@+id/text_today"
@@ -58,7 +59,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/today"
                     android:layout_marginTop="2dp"
-                    android:textColor="#DF9C67"
+                    android:textColor="#000000"
                     android:textSize="11sp" />
             </LinearLayout>
 
@@ -76,10 +77,9 @@
                     android:id="@+id/image_bible"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:paddingHorizontal="3dp"
-                    android:paddingTop="2dp"
+
                     android:importantForAccessibility="no"
-                    android:src="@drawable/svg_bible"
+                    android:src="@drawable/svg_tab_bible"
                     app:tint="#CCCCCC" />
 
                 <TextView
@@ -106,7 +106,7 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:importantForAccessibility="no"
-                    android:src="@drawable/svg_player_wall"
+                    android:src="@drawable/svg_tab_pw"
                     android:padding="1dp"
                     app:tint="#CCCCCC" />
 
@@ -134,7 +134,7 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:importantForAccessibility="no"
-                    android:src="@drawable/svg_study"
+                    android:src="@drawable/svg_tab_study"
                     app:tint="#CCCCCC" />
 
                 <TextView

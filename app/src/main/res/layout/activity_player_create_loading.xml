@@ -45,7 +45,7 @@
                 android:layout_width="42dp"
                 android:layout_height="36dp"
                 android:importantForAccessibility="no"
-                android:src="@drawable/svg_player_wall"
+                android:src="@drawable/svg_tab_pw"
                 app:tint="#ffffff"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

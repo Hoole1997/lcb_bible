@@ -31,7 +31,7 @@ class KjvHomeActivity : AppCompatActivity() {
     private var hasShownFirstFloatingWindowDialog by KvBoolDelegate(PrefKeys.HAS_SHOWN_FIRST_FLOATING_WINDOW_DIALOG, false)
 
 
-    private val selectedColor = "#DF9C67".toColorInt()
+    private val selectedColor = "#000000".toColorInt()
     private val defaultColor = "#CCCCCC".toColorInt()
 
     companion object {
