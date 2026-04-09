@@ -55,7 +55,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:importantForAccessibility="no"
-            android:src="@drawable/svg_player_fab"
+            android:src="@drawable/svg_pw_post"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginBottom="98dp"

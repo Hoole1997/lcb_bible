@@ -76,7 +76,7 @@ class PlayerWallAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
                 holder.content.text = item.content
                 holder.timeLeft.text = item.timeLeft
                 holder.likeCount.text = item.likeCount.toString()
-                holder.likeIcon.setImageResource(if (item.isLiked) R.drawable.svg_liked else R.drawable.svg_like)
+                holder.likeIcon.setImageResource(if (item.isLiked) R.drawable.svg_pw_header_like_selected else R.drawable.svg_pw_header_like)
                 holder.likeIcon.isEnabled = !item.isLiked
                 holder.likeIcon.setOnClickListener {
                     if (!item.isLiked) {
@@ -86,7 +86,7 @@ class PlayerWallAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
                 val density = holder.itemView.resources.displayMetrics.density
                 val radius = (16 * density).toInt()
                 Glide.with(holder.itemView)
-                    .load(R.mipmap.img_player_card)
+                    .load(R.mipmap.img_pw_header_bg)
                     .transform(CenterCrop(), RoundedCorners(radius))
                     .into(holder.bg)
             }

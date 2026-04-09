@@ -21,7 +21,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:src="@mipmap/img_player_card" />
+        tools:src="@mipmap/img_pw_header_bg" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/image_bg"
+        app:layout_constraintBottom_toBottomOf="@id/image_bg"
+        app:layout_constraintStart_toStartOf="@id/image_bg"
+        app:layout_constraintEnd_toEndOf="@id/image_bg"
+        android:background="#33000000"/>
 
     <TextView
         android:id="@+id/tv_user_name"
@@ -70,7 +79,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="24dp"
         android:importantForAccessibility="no"
-        android:src="@drawable/svg_like"
+        android:src="@drawable/svg_pw_header_like"
         app:layout_constraintTop_toBottomOf="@id/tv_prayer_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/tv_like_count"/>
