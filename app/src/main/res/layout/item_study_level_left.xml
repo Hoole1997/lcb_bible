@@ -22,7 +22,7 @@
         android:layout_width="56dp"
         android:layout_height="56dp"
         android:importantForAccessibility="no"
-        android:src="@mipmap/img_level_gift"
+        android:src="@mipmap/img_gift_light"
         app:layout_constraintStart_toStartOf="@id/level_icon"
         app:layout_constraintTop_toTopOf="@id/level_icon"
         app:layout_constraintEnd_toEndOf="@id/level_icon"

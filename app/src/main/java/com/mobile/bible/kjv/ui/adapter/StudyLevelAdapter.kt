@@ -71,7 +71,7 @@ class StudyLevelAdapter(
         when {
             !item.unlocked && !item.isCurrent -> {
                 // 未解锁关卡
-                giftTagView.setImageResource(R.mipmap.img_locked_gift)
+                giftTagView.setImageResource(R.mipmap.img_gift_dark)
                 passTagView.visibility = View.INVISIBLE
                 numberView.visibility = View.INVISIBLE
                 iconView.visibility = View.VISIBLE
@@ -118,7 +118,7 @@ class StudyLevelAdapter(
             }
             else -> {
                 // 已通过的关卡
-                giftTagView.setImageResource(R.mipmap.img_level_gift)
+                giftTagView.setImageResource(R.mipmap.img_gift_dark)
                 iconView.visibility = View.INVISIBLE
                 numberView.visibility = View.VISIBLE
                 passTagView.visibility = View.VISIBLE
