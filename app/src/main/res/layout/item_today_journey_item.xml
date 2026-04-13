@@ -17,7 +17,7 @@
         android:clipToOutline="true"
         android:importantForAccessibility="no"
         android:scaleType="matrix"
-        tools:src="@mipmap/img_today_journey_item_a"/>
+        tools:src="@mipmap/img_today_journey_a"/>
 
     <ImageView
         android:id="@+id/icon"

@@ -12,62 +12,85 @@
         android:importantForAccessibility="no"
         app:layout_constraintTop_toTopOf="parent"
         android:scaleType="centerCrop"
-        android:src="@mipmap/img_today_appbar"/>
+        android:src="@mipmap/img_home_header_bg"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/today_fixed_info"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:background="@drawable/bg_bible_today_fixed_info">
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/info_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="66dp"
+            android:fontFamily="sans-serif-medium"
+            android:includeFontPadding="false"
+            android:shadowColor="#40000000"
+            android:shadowDx="0"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:text="@string/today_verse_title"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/info_verse"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
-            android:textColor="#633800"
+            android:layout_marginTop="54dp"
+            android:layout_marginHorizontal="50dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:shadowColor="#802C1900"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="4"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
             android:textSize="20sp"
-            android:layout_marginHorizontal="16dp"
-            android:layout_marginTop="20dp"
-            android:textStyle="bold"
-            tools:text="For it pleased the Father that inhim should all fulness dwell."/>
-
-        <ImageView
-            android:id="@+id/icon_verse_position"
-            android:layout_width="18dp"
-            android:layout_height="18dp"
-            android:importantForAccessibility="no"
-            android:src="@drawable/svg_colossians"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/info_verse"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="32dp"/>
+            app:layout_constraintTop_toBottomOf="@id/info_title"
+            tools:text="For it pleased the Father that inhim should all fulness dwell."/>
 
         <TextView
             android:id="@+id/info_verse_position"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            tools:text="Colossians 1:19 (NIV)"
             android:layout_marginStart="6dp"
-            android:textColor="#A4855D"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:shadowColor="#802C1900"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="4"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
             android:textSize="12sp"
-            app:layout_constraintTop_toTopOf="@id/icon_verse_position"
-            app:layout_constraintBottom_toBottomOf="@id/icon_verse_position"
-            app:layout_constraintStart_toEndOf="@id/icon_verse_position"/>
+            app:layout_constraintTop_toBottomOf="@id/info_verse"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="26dp"
+            tools:text="Colossians 1:19 (NIV)"/>
 
         <ImageView
             android:id="@+id/icon_verse_share"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:importantForAccessibility="no"
-            android:src="@drawable/svg_share"
+            android:src="@drawable/svg_app_share"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/icon_verse_position"
-            app:layout_constraintBottom_toBottomOf="@id/icon_verse_position"
-            android:layout_marginEnd="16dp"/>
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="28dp"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

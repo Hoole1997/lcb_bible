@@ -36,6 +36,8 @@
     <string name="read">Read</string>
     <string name="more">More</string>
     <string name="new_reading_plans">New Reading Plans</string>
+    <string name="today_verse_title">Verse of the day</string>
+    <string name="today_verse_position_format">—— %1$s</string>
     <string name="today_prayer_wall_title">Prayer Wall</string>
     <string name="today_view_more">View more</string>
     <string name="guide_next">Continue</string>

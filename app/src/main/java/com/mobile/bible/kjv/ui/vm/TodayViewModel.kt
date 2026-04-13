@@ -168,12 +168,11 @@ class TodayViewModel(application: Application) : AndroidViewModel(application) {
                     val dayData = allDays.find { it.index == planIndex } ?: allDays.firstOrNull()
                     
             val completedIds = repository.getCompletedStepIds()
-
                     dayData?.steps?.map { step ->
                         val (iconRes, bgRes) = when (step.stepId) {
-                            1 -> R.drawable.svg_journey_guide to R.mipmap.img_today_journey_item_a
-                            2 -> R.drawable.svg_journey_devotional to R.mipmap.img_today_journey_item_b
-                            else -> R.drawable.svg_journey_daily to R.mipmap.img_today_journey_item_c
+                            1 -> R.drawable.svg_journey_guide to R.mipmap.img_today_journey_a
+                            2 -> R.drawable.svg_journey_devotional to R.mipmap.img_today_journey_b
+                            else -> R.drawable.svg_journey_daily to R.mipmap.img_today_journey_c
                         }
                         
                         val subtitle = when(step.stepId) {

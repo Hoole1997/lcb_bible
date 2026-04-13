@@ -11,7 +11,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import android.content.Intent
 import android.net.Uri
 import com.mobile.bible.kjv.R
-import androidx.core.graphics.toColorInt
 import com.mobile.bible.kjv.ui.vm.PrayerWallItem
 
 sealed class TodayItem {
@@ -82,16 +81,18 @@ class TodayAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         when (holder) {
             is FixedVH -> {
                 val bg = holder.itemView.findViewById<ImageView>(R.id.today_fix_bg)
-                val info = holder.itemView.findViewById<View>(R.id.today_fixed_info)
                 val verse = holder.itemView.findViewById<TextView>(R.id.info_verse)
                 val versePosition = holder.itemView.findViewById<TextView>(R.id.info_verse_position)
-                bg.setImageResource(R.mipmap.img_today_appbar)
-                info.setBackgroundResource(R.drawable.bg_bible_today_fixed_info)
-                verse.setTextColor("#633800".toColorInt())
+                bg.setImageResource(R.mipmap.img_home_header_bg)
                 
                 // 显示每日经文
                 dailyVerseText?.let { verse.text = it }
-                dailyVersePosition?.let { versePosition.text = it }
+                dailyVersePosition?.let {
+                    versePosition.text = holder.itemView.context.getString(
+                        R.string.today_verse_position_format,
+                        normalizeVersePosition(it)
+                    )
+                }
                 
                 holder.itemView.findViewById<View>(R.id.icon_verse_share)?.setOnClickListener { v ->
                     val packageName = "com.kjv.bible.audio.verse.read.study.tool"
@@ -174,19 +175,19 @@ class TodayAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
                             "The Sermon ……",
                             "The Sermon Series - Ep. 12",
                             "28 Min · Audio",
-                            R.mipmap.img_today_journey_item_a
+                            R.mipmap.img_today_journey_a
                         ),
                         ListenLearnItem(
                             "Morning Devotional",
                             "Daily Devotion - Ep. 35",
                             "15 Min · Audio",
-                            R.mipmap.img_today_journey_item_b
+                            R.mipmap.img_today_journey_b
                         ),
                         ListenLearnItem(
                             "Guided Prayer",
                             "Prayer Sessions - Ep. 9",
                             "12 Min · Audio",
-                            R.mipmap.img_today_journey_item_c
+                            R.mipmap.img_today_journey_c
                         )
                     )
                 )
@@ -205,6 +206,10 @@ class TodayAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         private const val VIEW_TYPE_TODAYS_JOURNEY = 2
         private const val VIEW_TYPE_NEWS_READING_PLANS = 3
         private const val VIEW_TYPE_LISTEN_LEARN = 4
+    }
+
+    private fun normalizeVersePosition(position: String): String {
+        return position.trim().trimStart('—', '-', ' ')
     }
 
 
