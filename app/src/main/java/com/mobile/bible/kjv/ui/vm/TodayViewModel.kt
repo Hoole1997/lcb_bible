@@ -169,10 +169,10 @@ class TodayViewModel(application: Application) : AndroidViewModel(application) {
                     
             val completedIds = repository.getCompletedStepIds()
                     dayData?.steps?.map { step ->
-                        val (iconRes, bgRes) = when (step.stepId) {
-                            1 -> R.drawable.svg_journey_guide to R.mipmap.img_today_journey_a
-                            2 -> R.drawable.svg_journey_devotional to R.mipmap.img_today_journey_b
-                            else -> R.drawable.svg_journey_daily to R.mipmap.img_today_journey_c
+                        val bgRes = when (step.stepId) {
+                            1 -> R.mipmap.img_today_journey_a
+                            2 -> R.mipmap.img_today_journey_b
+                            else -> R.mipmap.img_today_journey_c
                         }
                         
                         val subtitle = when(step.stepId) {
@@ -195,7 +195,6 @@ class TodayViewModel(application: Application) : AndroidViewModel(application) {
                             title = "${step.entryTitle} (${step.entryDuration})",
                             subtitle = subtitle,
                             status = status, 
-                            iconRes = iconRes,
                             bgRes = bgRes,
                             tags = step.content.keywords ?: emptyList(),
                             quoteText = quoteText,

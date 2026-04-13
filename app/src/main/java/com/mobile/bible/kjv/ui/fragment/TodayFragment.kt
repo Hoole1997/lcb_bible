@@ -199,9 +199,9 @@ class TodayFragment : Fragment() {
         val offset = binding.toadyRcy.computeVerticalScrollOffset()
         val fraction = (offset.toFloat() / toolbarThresholdPx).coerceIn(0f, 1f)
         val alpha = (fraction * 255).toInt()
-        val r = 250
-        val g = 245
-        val b = 232
+        val r = 255
+        val g = 255
+        val b = 255
         binding.toolbar.setBackgroundColor(Color.argb(alpha, r, g, b))
     }
 

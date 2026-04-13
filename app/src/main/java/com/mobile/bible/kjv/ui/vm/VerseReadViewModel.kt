@@ -53,6 +53,10 @@ class ReadViewModel(application: android.app.Application) : androidx.lifecycle.A
                 _uiState.value = _uiState.value.copy(taskOrder = currentStepIndex)
             }
         }
+
+        if (stepId != null) {
+            markStepAsComplete(stepId)
+        }
     }
 
     fun markStepAsComplete(stepId: Int) {

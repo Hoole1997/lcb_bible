@@ -39,7 +39,6 @@ data class JourneyItem(
     val title: String,
     val subtitle: String,
     val status: JourneyStatus,
-    val iconRes: Int,
     val bgRes: Int,
     val tags: List<String> = emptyList(),
     val expanded: Boolean = false,
@@ -65,10 +64,18 @@ class JourneyAdapter : RecyclerView.Adapter<JourneyAdapter.JourneyVH>() {
 
     override fun onBindViewHolder(holder: JourneyVH, position: Int) {
         val item = items[position]
-        holder.title.text = item.title
-        holder.subtitle.text = item.subtitle
-        holder.icon.setImageResource(item.iconRes)
-        val radius = (16 * holder.itemView.resources.displayMetrics.density).toInt()
+        val (displayTitle, durationText) = splitTitleAndDuration(item.title)
+        holder.title.text = displayTitle
+        holder.subtitle.text = displayTitle
+        holder.chapter.text = item.subtitle
+        holder.timeText.text = durationText
+        holder.timeBadge.visibility = if (durationText.isBlank()) View.GONE else View.VISIBLE
+        holder.doneBadge.visibility = if (item.status == JourneyStatus.DONE) View.VISIBLE else View.GONE
+        holder.expandArrow.setImageResource(
+            if (item.expanded) R.drawable.svg_coll_arrow else R.drawable.svg_expand_arrow
+        )
+        holder.title.visibility = if (item.expanded) View.GONE else View.VISIBLE
+        holder.chapter.visibility = if (item.subtitle.isBlank()) View.GONE else View.VISIBLE
         Glide.with(holder.itemView)
             .load(item.bgRes)
             .listener(object : RequestListener<Drawable> {
@@ -94,27 +101,15 @@ class JourneyAdapter : RecyclerView.Adapter<JourneyAdapter.JourneyVH>() {
 
             })
             .into(holder.bg)
-        holder.bg.post {
-            applyFitWidthMatrix(holder.bg, holder.bg.width, holder.root.layoutParams.height)
-        }
-        when (item.status) {
-            JourneyStatus.START -> {
-                holder.action.text = "START"
-                holder.action.setBackgroundResource(R.drawable.bg_journey_button_start)
-                holder.action.setTextColor(0xFF433100.toInt())
-            }
-            JourneyStatus.DONE -> {
-                holder.action.text = "Done"
-                holder.action.setBackgroundResource(R.drawable.bg_journey_button_done)
-                holder.action.setTextColor(0xFFFFFFFF.toInt())
-            }
-        }
         val density = holder.itemView.resources.displayMetrics.density
-        val heightPx = if (item.expanded) (220 * density).toInt() else (80 * density).toInt()
+        val heightPx = if (item.expanded) (206 * density).toInt() else (122 * density).toInt()
         val lp = holder.root.layoutParams
         lp.height = heightPx
         holder.root.layoutParams = lp
         holder.expandPanel.visibility = if (item.expanded) View.VISIBLE else View.GONE
+        holder.bg.post {
+            applyFitWidthMatrix(holder.bg, holder.bg.width, holder.root.layoutParams.height)
+        }
         val tagsLayout = holder.chapterTags
         tagsLayout.removeAllViews()
         val density2 = holder.itemView.resources.displayMetrics.density
@@ -122,22 +117,7 @@ class JourneyAdapter : RecyclerView.Adapter<JourneyAdapter.JourneyVH>() {
         val padV = (4 * density2).toInt()
         val marginEnd = (5 * density2).toInt()
         if (item.tags.isEmpty()) {
-            tagsLayout.visibility = View.VISIBLE
-            val tv = TextView(holder.itemView.context)
-            tv.text = "TAG"
-            tv.setTextColor(0xFFFFFFFF.toInt())
-            tv.setTextSize(TypedValue.COMPLEX_UNIT_SP, 11f)
-            tv.setPadding(padH, padV, padH, padV)
-            tv.gravity = Gravity.CENTER
-            tv.setBackgroundResource(R.drawable.bg_journey_tag)
-            tv.visibility = View.INVISIBLE
-            val lpTag = LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.WRAP_CONTENT,
-                LinearLayout.LayoutParams.WRAP_CONTENT
-            )
-            lpTag.setMargins(0, 0, 0, 0)
-            tv.layoutParams = lpTag
-            tagsLayout.addView(tv)
+            tagsLayout.visibility = View.GONE
         } else {
             tagsLayout.visibility = View.VISIBLE
             for (t in item.tags) {
@@ -172,9 +152,12 @@ class JourneyAdapter : RecyclerView.Adapter<JourneyAdapter.JourneyVH>() {
                             items[i] = items[i].copy(expanded = false)
                             val vh = recyclerView?.findViewHolderForAdapterPosition(i) as? JourneyVH
                             if (vh != null) {
+                                vh.expandArrow.setImageResource(R.drawable.svg_expand_arrow)
+                                vh.title.visibility = View.VISIBLE
+                                vh.expandPanel.visibility = View.INVISIBLE
                                 val d2 = vh.itemView.resources.displayMetrics.density
                                 val startH2 = vh.root.layoutParams.height
-                                val endH2 = (80 * d2).toInt()
+                                val endH2 = (122 * d2).toInt()
                                 val anim2 = ValueAnimator.ofInt(startH2, endH2)
                                 anim2.duration = 200
                                 anim2.addUpdateListener {
@@ -196,9 +179,14 @@ class JourneyAdapter : RecyclerView.Adapter<JourneyAdapter.JourneyVH>() {
                     }
                 }
                 items[p] = cur.copy(expanded = expanding)
+                holder.expandArrow.setImageResource(
+                    if (expanding) R.drawable.svg_coll_arrow else R.drawable.svg_expand_arrow
+                )
+                holder.title.visibility = if (expanding) View.GONE else View.VISIBLE
+                if (!expanding) holder.expandPanel.visibility = View.INVISIBLE
                 val d = holder.itemView.resources.displayMetrics.density
                 val startH = holder.root.layoutParams.height
-                val endH = if (expanding) (220 * d).toInt() else (80 * d).toInt()
+                val endH = if (expanding) (206 * d).toInt() else (122 * d).toInt()
                 if (expanding) holder.expandPanel.visibility = View.VISIBLE
                 val anim = ValueAnimator.ofInt(startH, endH)
                 anim.duration = 200
@@ -303,10 +291,13 @@ class JourneyAdapter : RecyclerView.Adapter<JourneyAdapter.JourneyVH>() {
 
     class JourneyVH(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val bg: ImageView = itemView.findViewById(R.id.image_bg)
-        val icon: ImageView = itemView.findViewById(R.id.icon)
+        val timeBadge: View = itemView.findViewById(R.id.time_badge)
+        val timeText: TextView = itemView.findViewById(R.id.time_text)
+        val doneBadge: View = itemView.findViewById(R.id.done_badge)
+        val expandArrow: ImageView = itemView.findViewById(R.id.expand_arrow)
         val title: TextView = itemView.findViewById(R.id.title)
         val subtitle: TextView = itemView.findViewById(R.id.subtitle)
-        val action: TextView = itemView.findViewById(R.id.action)
+        val chapter: TextView = itemView.findViewById(R.id.chapter)
         val root: View = itemView.findViewById(R.id.journey_item_root)
         val expandPanel: View = itemView.findViewById(R.id.expand_panel)
         val listen: View = itemView.findViewById(R.id.listen)
@@ -331,5 +322,14 @@ class JourneyAdapter : RecyclerView.Adapter<JourneyAdapter.JourneyVH>() {
         m.postTranslate(dx, dy)
         v.scaleType = ImageView.ScaleType.MATRIX
         v.imageMatrix = m
+    }
+
+    private fun splitTitleAndDuration(rawTitle: String): Pair<String, String> {
+        val match = TITLE_DURATION_REGEX.matchEntire(rawTitle.trim()) ?: return rawTitle to ""
+        return match.groupValues[1].trim() to match.groupValues[2].trim()
+    }
+
+    companion object {
+        private val TITLE_DURATION_REGEX = Regex("^(.*)\\s*\\(([^()]*)\\)$")
     }
 }
