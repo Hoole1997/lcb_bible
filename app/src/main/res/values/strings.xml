@@ -65,6 +65,17 @@
     <string name="bible_name">Bible - Daily Bible Verse KJV</string>
     <string name="your_journey">Your Journey</string>
     <string name="progress_today">Progress today</string>
+    <string name="progress_percent">%1$d%%</string>
+    <string name="listen_learn_title">Listen &amp; Learn</string>
+    <string name="listen_learn_item_1_title">The Sermon ……</string>
+    <string name="listen_learn_item_1_subtitle">The Sermon Series - Ep. 12</string>
+    <string name="listen_learn_item_1_meta">28 Min · Audio</string>
+    <string name="listen_learn_item_2_title">Morning Devotional</string>
+    <string name="listen_learn_item_2_subtitle">Daily Devotion - Ep. 35</string>
+    <string name="listen_learn_item_2_meta">15 Min · Audio</string>
+    <string name="listen_learn_item_3_title">Guided Prayer</string>
+    <string name="listen_learn_item_3_subtitle">Prayer Sessions - Ep. 9</string>
+    <string name="listen_learn_item_3_meta">12 Min · Audio</string>
     <string name="chat_to_learn_more">Chat to learn more</string>
     <string name="adjust_text_size_title">Adjust the font size</string>
     <string name="player_create_loading_title">Creating your prayer...</string>

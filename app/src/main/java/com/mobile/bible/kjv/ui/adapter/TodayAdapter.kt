@@ -109,18 +109,16 @@ class TodayAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
                 val title = holder.itemView.findViewById<TextView>(R.id.journey_title)
                 val progressbar = holder.itemView.findViewById<ProgressBar>(R.id.progressbar)
                 val progressValue = holder.itemView.findViewById<TextView>(R.id.progress_value)
-                val progress = holder.itemView.findViewById<TextView>(R.id.journey_progress)
                 val rcy = holder.itemView.findViewById<RecyclerView>(R.id.journey_rcy)
-                title.text = "Today's Journey"
+                title.text = holder.itemView.context.getString(R.string.your_journey)
                 
                 // 更新进度显示
                 val journeyItems = (items[position] as TodayItem.TodaysJourney).items
                 val total = journeyItems.size
                 val current = journeyItems.count { it.status == JourneyStatus.DONE }
-                progress.text = "($current/$total)"
                 val percent = if (total > 0) (current.toFloat() / total * 100).toInt() else 0
                 progressbar.progress = percent
-                progressValue.text = "$percent%"
+                progressValue.text = holder.itemView.context.getString(R.string.progress_percent, percent)
                 
                 rcy.layoutManager = LinearLayoutManager(holder.itemView.context)
                 val adapter = JourneyAdapter()
@@ -164,29 +162,29 @@ class TodayAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
                 val title = holder.itemView.findViewById<TextView>(R.id.title)
                 val more = holder.itemView.findViewById<TextView>(R.id.more)
                 val rcy = holder.itemView.findViewById<RecyclerView>(R.id.rcy)
-                title.text = "Listen & Learn"
-                more.text = "More"
+                title.text = holder.itemView.context.getString(R.string.listen_learn_title)
+                more.text = holder.itemView.context.getString(R.string.more)
                 rcy.layoutManager = LinearLayoutManager(holder.itemView.context, LinearLayoutManager.HORIZONTAL, false)
                 val adapter = ListenLearnAdapter()
                 rcy.adapter = adapter
                 adapter.submit(
                     listOf(
                         ListenLearnItem(
-                            "The Sermon ……",
-                            "The Sermon Series - Ep. 12",
-                            "28 Min · Audio",
+                            holder.itemView.context.getString(R.string.listen_learn_item_1_title),
+                            holder.itemView.context.getString(R.string.listen_learn_item_1_subtitle),
+                            holder.itemView.context.getString(R.string.listen_learn_item_1_meta),
                             R.mipmap.img_today_journey_a
                         ),
                         ListenLearnItem(
-                            "Morning Devotional",
-                            "Daily Devotion - Ep. 35",
-                            "15 Min · Audio",
+                            holder.itemView.context.getString(R.string.listen_learn_item_2_title),
+                            holder.itemView.context.getString(R.string.listen_learn_item_2_subtitle),
+                            holder.itemView.context.getString(R.string.listen_learn_item_2_meta),
                             R.mipmap.img_today_journey_b
                         ),
                         ListenLearnItem(
-                            "Guided Prayer",
-                            "Prayer Sessions - Ep. 9",
-                            "12 Min · Audio",
+                            holder.itemView.context.getString(R.string.listen_learn_item_3_title),
+                            holder.itemView.context.getString(R.string.listen_learn_item_3_subtitle),
+                            holder.itemView.context.getString(R.string.listen_learn_item_3_meta),
                             R.mipmap.img_today_journey_c
                         )
                     )
