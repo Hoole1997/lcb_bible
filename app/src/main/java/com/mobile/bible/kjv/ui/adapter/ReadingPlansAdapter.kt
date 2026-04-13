@@ -29,36 +29,15 @@ class ReadingPlansAdapter : RecyclerView.Adapter<ReadingPlansAdapter.PlanVH>() {
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PlanVH {
-        val v = LayoutInflater.from(parent.context).inflate(R.layout.item_news_reading_plan_card, parent, false)
+        val v = LayoutInflater.from(parent.context).inflate(R.layout.item_prayer_wall_card, parent, false)
         return PlanVH(v)
     }
 
     override fun onBindViewHolder(holder: PlanVH, position: Int) {
         val item = items[position]
-        holder.planName.text = item.planName
-        holder.planTitle.text = item.planTitle
-        holder.planDesc.text = item.planDesc
-        holder.badge.text = item.badgeText
-        val d = holder.itemView.resources.displayMetrics.density
-        val params = holder.itemView.layoutParams as ViewGroup.MarginLayoutParams
-        params.marginStart = if (position == 0) (16 * d).toInt() else 0
-        params.marginEnd = if (position == items.size - 1) (16 * d).toInt() else (12 * d).toInt()
-        holder.itemView.layoutParams = params
-        when (position % 3) {
-            0 -> {
-                holder.badge.setBackgroundResource(R.drawable.bg_plan_btn_red)
-                holder.planIcon.setImageResource(R.drawable.bg_plan_avatar_red)
-            }
-            1 -> {
-                holder.badge.setBackgroundResource(R.drawable.bg_plan_btn_orange)
-                holder.planIcon.setImageResource(R.drawable.bg_plan_avatar_orange)
-            }
-            else -> {
-                holder.badge.setBackgroundResource(R.drawable.bg_plan_btn_green)
-                holder.planIcon.setImageResource(R.drawable.bg_plan_avatar_green)
-            }
-        }
-        holder.badge.setOnClickListener {
+        holder.username.text = item.planName
+        holder.content.text = item.planTitle
+        holder.viewMore.setOnClickListener {
             onBadgeClick?.invoke(item)
         }
     }
@@ -66,11 +45,10 @@ class ReadingPlansAdapter : RecyclerView.Adapter<ReadingPlansAdapter.PlanVH>() {
     override fun getItemCount(): Int = items.size
 
     class PlanVH(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val planIcon: ImageView = itemView.findViewById(R.id.icon_plan)
-        val planName: TextView = itemView.findViewById(R.id.plan_name)
-        val planTitle: TextView = itemView.findViewById(R.id.plan_title)
-        val planDesc: TextView = itemView.findViewById(R.id.plan_desc)
-        val badge: TextView = itemView.findViewById(R.id.badge)
+        val avatar: ImageView = itemView.findViewById(R.id.iv_avatar)
+        val username: TextView = itemView.findViewById(R.id.tv_username)
+        val content: TextView = itemView.findViewById(R.id.tv_content)
+        val viewMore: TextView = itemView.findViewById(R.id.btn_view_more)
     }
 
     companion object {

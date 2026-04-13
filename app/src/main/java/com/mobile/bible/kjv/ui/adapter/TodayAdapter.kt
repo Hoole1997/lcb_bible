@@ -133,14 +133,14 @@ class TodayAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
                 val icMore = holder.itemView.findViewById<ImageView>(R.id.ic_more)
                 val rcy = holder.itemView.findViewById<RecyclerView>(R.id.rcy)
                 title.text = holder.itemView.context.getString(R.string.today_prayer_wall_title)
-                more.text = holder.itemView.context.getString(R.string.today_view_more)
+                more.text = holder.itemView.context.getString(R.string.more)
                 more.setOnClickListener {
                     onPrayerWallBadgeClick?.invoke()
                 }
                 icMore.setOnClickListener {
                     onPrayerWallBadgeClick?.invoke()
                 }
-                rcy.layoutManager = LinearLayoutManager(holder.itemView.context, LinearLayoutManager.HORIZONTAL, false)
+                rcy.layoutManager = LinearLayoutManager(holder.itemView.context)
                 val adapter = ReadingPlansAdapter()
                 rcy.adapter = adapter
                 adapter.onBadgeClick = {
