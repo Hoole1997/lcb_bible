@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/noti_big_root"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -12,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="240dp"
         android:scaleType="centerCrop"
-        android:src="@mipmap/img_noti_bg_large" />
+        android:src="@mipmap/img_large_noti_bg" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,7 +32,8 @@
             android:maxLines="4"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:text="If anyone is in Christ, he is a new creation;the old has gone, the new has come!"/>
 
         <TextView
             android:id="@+id/noti_big_chapter"
@@ -43,7 +45,8 @@
             android:maxLines="1"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:text="2 Corinthians 5:17"/>
 
         <TextView
             android:id="@+id/noti_big_action"
@@ -55,6 +58,7 @@
             android:gravity="center"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:text="Morning Prayer"/>
     </LinearLayout>
 </FrameLayout>

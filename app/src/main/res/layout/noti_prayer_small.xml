@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/noti_small_root"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -18,7 +19,7 @@
             android:layout_width="50dp"
             android:layout_height="34dp"
             android:scaleType="centerCrop"
-            android:src="@mipmap/img_noti_bg_small" />
+            android:src="@mipmap/img_small_noti_bg" />
 
         <TextView
             android:id="@+id/noti_small_verse"
@@ -30,7 +31,8 @@
             android:maxLines="2"
             android:textColor="#333333"
             android:ellipsize="end"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            tools:text="If anyone is in Christ, he is a new creation……"/>
 
         <TextView
             android:id="@+id/noti_small_chip"
@@ -38,11 +40,15 @@
             android:layout_height="wrap_content"
             android:background="@drawable/bg_noti_prayer_chip"
             android:gravity="center"
+            android:textAlignment="center"
+            android:paddingVertical="4dp"
             android:paddingStart="14dp"
             android:paddingEnd="14dp"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:text="Prayer"/>
+
     </LinearLayout>
 
 </RelativeLayout>

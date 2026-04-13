@@ -11,7 +11,7 @@
         android:layout_height="244dp"
         android:importantForAccessibility="no"
         android:scaleType="centerCrop"
-        android:src="@mipmap/img_bless_b"
+        android:src="@mipmap/img_noti_guide"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -27,6 +27,10 @@
         android:textSize="14sp"
         android:textStyle="bold"
         android:textColor="#FFFFFF"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowColor="#40000000"
+        android:shadowRadius="2"
         android:layout_marginHorizontal="20dp" />
 
     <TextView

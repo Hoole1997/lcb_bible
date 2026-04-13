@@ -119,27 +119,27 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     android:layout_marginEnd="16dp" />
                 
-<!--                <ImageView-->
-<!--                    android:id="@+id/icon_switch"-->
-<!--                    android:layout_width="44dp"-->
-<!--                    android:layout_height="24dp"-->
-<!--                    android:importantForAccessibility="no"-->
-<!--                    android:src="@drawable/svg_switch"-->
-<!--                    app:layout_constraintTop_toTopOf="parent"-->
-<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                    app:layout_constraintEnd_toEndOf="parent"-->
-<!--                    android:layout_marginEnd="16dp"/>-->
+                <ImageView
+                    android:id="@+id/icon_switch"
+                    android:layout_width="44dp"
+                    android:layout_height="24dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/svg_switch"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="16dp"/>
 
-<!--                <ImageView-->
-<!--                    android:id="@+id/icon_finger"-->
-<!--                    android:layout_width="32dp"-->
-<!--                    android:layout_height="32dp"-->
-<!--                    android:importantForAccessibility="no"-->
-<!--                    android:src="@mipmap/img_swipe"-->
-<!--                    app:layout_constraintStart_toStartOf="@id/icon_switch"-->
-<!--                    app:layout_constraintEnd_toEndOf="@id/icon_switch"-->
-<!--                    app:layout_constraintTop_toBottomOf="@id/icon_switch"-->
-<!--                    android:layout_marginTop="-16dp"/>-->
+                <ImageView
+                    android:id="@+id/icon_finger"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:importantForAccessibility="no"
+                    android:src="@mipmap/img_switch_guide"
+                    app:layout_constraintStart_toStartOf="@id/icon_switch"
+                    app:layout_constraintEnd_toEndOf="@id/icon_switch"
+                    app:layout_constraintTop_toBottomOf="@id/icon_switch"
+                    android:layout_marginTop="-16dp"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

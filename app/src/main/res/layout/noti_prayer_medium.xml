@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/noti_medium_root"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/bg_noti_prayer_card"
-    android:padding="14dp">
+    android:paddingHorizontal="14dp"
+    android:paddingVertical="6dp">
 
     <LinearLayout
         android:id="@+id/noti_medium_content"
@@ -18,7 +20,7 @@
             android:layout_width="50dp"
             android:layout_height="28dp"
             android:scaleType="fitStart"
-            android:src="@mipmap/img_noti_bg_small" />
+            android:src="@mipmap/img_small_noti_bg" />
 
         <TextView
             android:id="@+id/noti_medium_verse"
@@ -29,7 +31,9 @@
             android:maxLines="2"
             android:ellipsize="end"
             android:textColor="#333333"
-            android:textSize="14sp" />
+            android:textSize="12sp"
+            tools:text="Here is the description Here is the description"/>
+
     </LinearLayout>
 
     <TextView
@@ -37,12 +41,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/noti_medium_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="6dp"
         android:background="@drawable/bg_noti_prayer_button"
         android:gravity="center"
+        android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="14sp"
-        android:paddingVertical="2dp"
-        android:textStyle="bold" />
+        android:textSize="12sp"
+        android:paddingVertical="6dp"
+        android:textStyle="bold"
+        tools:text="Morning Prayer"/>
 
 </RelativeLayout>

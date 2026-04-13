@@ -30,7 +30,7 @@ class NotificationPermissionDialog : DialogFragment() {
         val d = bless.resources.displayMetrics.density
         val r = 16f * d
         Glide.with(this)
-            .load(R.mipmap.img_bless_b)
+            .load(R.mipmap.img_noti_guide)
             .transform(CenterCrop(), GranularRoundedCorners(r, r, 0f, 0f))
             .into(bless)
         return view
