@@ -22,16 +22,15 @@
             android:paddingTop="16dp"
             android:paddingBottom="16dp">
 
-            <com.airbnb.lottie.LottieAnimationView
-                android:id="@+id/lottie_loading"
+            <ImageView
+                android:id="@+id/iv_ad_loading"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
-                app:lottie_autoPlay="true"
-                app:lottie_fileName="lottie/ad/ad_loading.json"
-                app:lottie_loop="true"
-                android:scaleY="2"
-                android:scaleX="2"/>
+                android:contentDescription="@null"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/img_ad_loading" />
 
             <TextView
                 android:id="@+id/tv_ad_loading"

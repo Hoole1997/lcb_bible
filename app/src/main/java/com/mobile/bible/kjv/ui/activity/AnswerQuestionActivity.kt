@@ -3,6 +3,7 @@ package com.mobile.bible.kjv.ui.activity
 import android.app.Activity
 import android.content.Intent
 import android.content.res.AssetFileDescriptor
+import android.content.res.ColorStateList
 import android.graphics.Color
 import android.media.MediaPlayer
 import android.os.Bundle
@@ -10,9 +11,6 @@ import android.os.CountDownTimer
 import android.os.Handler
 import android.os.Looper
 import android.widget.Toast
-import android.text.Spannable
-import android.text.SpannableString
-import android.text.style.AbsoluteSizeSpan
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
@@ -20,6 +18,7 @@ import android.widget.TextView
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.widget.ImageViewCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
@@ -146,6 +145,7 @@ class AnswerQuestionActivity : AppCompatActivity() {
         loadQuestions()
         loadPropsCount()
         loadRemoteConfig()
+        binding.textLevel.text = getString(R.string.answer_level_format, currentLevel)
         updateCountdown(30)
         setupOptionClickListeners()
         setupAdClickListener()
@@ -511,7 +511,7 @@ class AnswerQuestionActivity : AppCompatActivity() {
         
         binding.countdownProgress.max = 10000
         val initialProgress = (duration * 10000 / currentCountdownTotal).toInt()
-        binding.countdownProgress.progress = initialProgress
+        binding.countdownProgress.setProgressCompat(initialProgress, false)
         
         countDownTimer = object : CountDownTimer(duration, COUNTDOWN_INTERVAL) {
             override fun onTick(millisUntilFinished: Long) {
@@ -520,7 +520,7 @@ class AnswerQuestionActivity : AppCompatActivity() {
                 updateCountdown(secondsRemaining)
                 
                 val progress = (millisUntilFinished * 10000 / currentCountdownTotal).toInt()
-                binding.countdownProgress.progress = progress
+                binding.countdownProgress.setProgressCompat(progress, false)
                 
                 if (millisUntilFinished <= COUNTDOWN_AUDIO_THRESHOLD && mediaPlayer == null) {
                     playCountdownAudio()
@@ -530,7 +530,7 @@ class AnswerQuestionActivity : AppCompatActivity() {
             override fun onFinish() {
                 remainingCountdownTime = 0
                 updateCountdown(0)
-                binding.countdownProgress.progress = 0
+                binding.countdownProgress.setProgressCompat(0, false)
                 releaseMediaPlayer()
                 
                 if (isAnswering) {
@@ -817,15 +817,16 @@ class AnswerQuestionActivity : AppCompatActivity() {
 
         if (isCorrect) {
             optionLayout.setBackgroundResource(R.drawable.bg_answer_option_correct)
-            optionText.setTextColor(Color.parseColor("#00D047"))
+            optionText.setTextColor(Color.WHITE)
             optionIcon.setImageResource(R.drawable.svg_select_true)
             playCorrectAudio()
         } else {
             optionLayout.setBackgroundResource(R.drawable.bg_answer_option_wrong)
-            optionText.setTextColor(Color.parseColor("#FF8220"))
+            optionText.setTextColor(Color.WHITE)
             optionIcon.setImageResource(R.drawable.svg_select_false)
             playErrorAudio()
         }
+        ImageViewCompat.setImageTintList(optionIcon, ColorStateList.valueOf(Color.WHITE))
         optionIcon.visibility = View.VISIBLE
     }
 
@@ -839,8 +840,9 @@ class AnswerQuestionActivity : AppCompatActivity() {
         for ((layout, text, icon) in options) {
             layout.visibility = View.VISIBLE
             layout.alpha = 1f
-            layout.setBackgroundResource(R.drawable.bg_answer_card_item)
+            layout.setBackgroundResource(R.drawable.bg_answer_option_pill)
             text.setTextColor(Color.parseColor("#333333"))
+            ImageViewCompat.setImageTintList(icon, null)
             icon.visibility = View.GONE
         }
     }
@@ -872,7 +874,11 @@ class AnswerQuestionActivity : AppCompatActivity() {
         )
 
         // 更新进度显示 (当前题目/总题目数)
-        binding.textProgress.text = "${currentQuestionIndex + 1}/$totalQuestions"
+        binding.textProgress.text = getString(
+            R.string.answer_progress_format,
+            currentQuestionIndex + 1,
+            totalQuestions
+        )
 
         // 显示问题和选项
         binding.textQuestion.text = question.questionText
@@ -883,20 +889,7 @@ class AnswerQuestionActivity : AppCompatActivity() {
     }
 
     private fun updateCountdown(seconds: Int) {
-        val text = getString(R.string.answer_countdown_template, seconds)
-        val spannable = SpannableString(text)
-        val numberString = seconds.toString()
-        val numberStart = text.indexOf(numberString)
-        if (numberStart >= 0) {
-            val numberEnd = numberStart + numberString.length
-            spannable.setSpan(
-                AbsoluteSizeSpan(18, true),
-                numberStart,
-                numberEnd,
-                Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
-            )
-        }
-        binding.textCountdown.text = spannable
+        binding.textCountdown.text = (if (seconds > 0) seconds else 0).toString()
     }
 
     private fun loadPropsCount() {

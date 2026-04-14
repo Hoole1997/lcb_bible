@@ -85,6 +85,8 @@
     <string name="player_added_hint_subtitle">Skip the line by watching an ad.</string>
     <string name="player_added_hint_button">Do It Now</string>
     <string name="answer_countdown_template">Countdown: %1$ds</string>
+    <string name="answer_level_format">Level %1$d</string>
+    <string name="answer_progress_format">%1$d/%2$d Question</string>
     <string name="answer_failed_title">FAILED</string>
     <string name="answer_failed_message">Sorry, you failed to pass&#10;the trivia</string>
     <string name="answer_try_again">Try Again</string>

@@ -68,6 +68,7 @@
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
                 android:textStyle="bold"
+                android:layout_marginTop="30dp"
                 app:layout_constraintBottom_toTopOf="@id/layout_dots"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
