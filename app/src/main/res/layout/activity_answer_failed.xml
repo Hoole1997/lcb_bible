@@ -120,11 +120,10 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/native_ad_shell"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/native_ad_slot_height"
             android:layout_marginHorizontal="16dp"
             android:layout_marginBottom="20dp"
-            android:visibility="gone"
-            app:cardBackgroundColor="#E62A231E"
+            app:cardBackgroundColor="@android:color/transparent"
             app:cardCornerRadius="20dp"
             app:cardElevation="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -134,8 +133,7 @@
             <FrameLayout
                 android:id="@+id/native_ad_container"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:minHeight="100dp" />
+                android:layout_height="match_parent" />
 
         </androidx.cardview.widget.CardView>
 

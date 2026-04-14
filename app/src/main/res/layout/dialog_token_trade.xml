@@ -134,22 +134,19 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/native_ad_shell"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/native_ad_slot_height"
         android:layout_marginTop="12dp"
-        android:visibility="gone"
-        app:cardBackgroundColor="#FF000000"
+        app:cardBackgroundColor="@android:color/transparent"
         app:cardCornerRadius="12dp"
         app:cardElevation="0dp"
-        app:layout_constraintTop_toBottomOf="@id/card_container"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_container">
 
         <FrameLayout
             android:id="@+id/native_ad_container"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="100dp" />
+            android:layout_height="match_parent" />
 
     </androidx.cardview.widget.CardView>
 

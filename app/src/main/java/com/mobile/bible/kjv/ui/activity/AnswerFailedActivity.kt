@@ -1,13 +1,13 @@
 package com.mobile.bible.kjv.ui.activity
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.core.view.WindowCompat
-import androidx.core.view.isVisible
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.lifecycleScope
 import com.android.common.bill.ads.ext.AdShowExt
@@ -92,7 +92,9 @@ class AnswerFailedActivity : AppCompatActivity() {
                 binding.nativeAdContainer,
                 NativeAdStyleType.LARGE
             )
-            binding.nativeAdShell.isVisible = shown
+            if (shown) {
+                binding.nativeAdShell.setCardBackgroundColor(Color.parseColor("#E62A231E"))
+            }
         }
     }
 
