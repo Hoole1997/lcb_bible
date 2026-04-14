@@ -52,7 +52,7 @@ class CircularCountdownView @JvmOverloads constructor(
         progressPaint.strokeWidth = strokeWidthPx
 
         backgroundPaint.color = 0x33FFFFFF
-        progressPaint.color = 0xFFF0BE8A.toInt()
+        progressPaint.color = 0xFFFFFFFFF.toInt()
 
         textPaint.color = ResourcesCompat.getColor(resources, android.R.color.white, null)
         textPaint.textSize = 46f * density

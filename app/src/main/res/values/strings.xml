@@ -98,7 +98,6 @@
     <string name="answer_pause_quit">Quit</string>
     <string name="answer_pause_resume">Resume</string>
     <string name="recovery_with_Ad">Recovery with Ad</string>
-    <string name="level_failed_title">LEVEL FAILED</string>
     <string name="level_failed_subtitle">The winning streak was interrupted!</string>
     <string name="level_failed_skip_level">Skip Level</string>
     <string name="lottery_message_prefix">You\'ve earned </string>

@@ -13,7 +13,7 @@
             android:layout_height="match_parent"
             android:importantForAccessibility="no"
             android:scaleType="centerCrop"
-            android:src="@mipmap/img_answer_failed_page_bg" />
+            android:src="@mipmap/img_study_blur_bg" />
 
         <LinearLayout
             android:id="@+id/layout_coin"
@@ -89,13 +89,13 @@
                     android:layout_marginEnd="8dp"
                     android:importantForAccessibility="no"
                     android:src="@drawable/svg_rewarded_ad"
-                    app:tint="#DF9C67" />
+                    app:tint="#000000" />
 
                 <TextView
                     android:id="@+id/text_recovery_action"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#DF9C67"
+                    android:textColor="#000000"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:text="@string/recovery_with_Ad" />

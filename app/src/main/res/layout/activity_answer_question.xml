@@ -12,7 +12,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:importantForAccessibility="no"
-            android:src="@mipmap/img_answer_bg"
+            android:src="@mipmap/img_study_blur_bg"
             android:scaleType="centerCrop"/>
 
         <LinearLayout
