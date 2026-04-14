@@ -13,6 +13,10 @@ import com.android.common.bill.ads.PreloadController
 import com.android.common.bill.ads.bidding.AppOpenBiddingInitializer
 import com.android.common.bill.ads.log.AdLogger
 import com.android.common.bill.ads.renderer.AdLoadingDialogRenderer
+import com.mobile.bible.kjv.ads.KjvAdmobNativeAdRenderer
+import com.mobile.bible.kjv.ads.KjvMaxNativeAdRenderer
+import com.mobile.bible.kjv.ads.KjvPangleNativeAdRenderer
+import com.mobile.bible.kjv.ads.KjvToponNativeAdRenderer
 import com.mobile.bible.kjv.BuildConfig
 import com.mobile.bible.kjv.R
 import kotlinx.coroutines.CoroutineScope
@@ -81,6 +85,10 @@ class KjvApp : Application() {
                     fullNativeId = BuildConfig.MAX_FULL_NATIVE_ID,
                     rewardedId = BuildConfig.MAX_REWARDED_ID
                 )
+                admobNativeRenderer = KjvAdmobNativeAdRenderer()
+                pangleNativeRenderer = KjvPangleNativeAdRenderer()
+                toponNativeRenderer = KjvToponNativeAdRenderer()
+                maxNativeRenderer = KjvMaxNativeAdRenderer()
                 adLoadingDialogRenderer = object : AdLoadingDialogRenderer {
                     override fun getLayoutResId(): Int = R.layout.dialog_ad_loading
 

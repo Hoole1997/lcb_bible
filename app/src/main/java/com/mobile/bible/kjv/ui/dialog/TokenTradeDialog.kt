@@ -8,9 +8,15 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.cardview.widget.CardView
+import androidx.core.view.isVisible
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.FragmentActivity
+import androidx.lifecycle.lifecycleScope
+import com.android.common.bill.ads.ext.AdShowExt
+import com.android.common.bill.ui.NativeAdStyleType
 import com.mobile.bible.kjv.R
+import kotlinx.coroutines.launch
 import java.util.Locale
 
 class TokenTradeDialog : DialogFragment() {
@@ -78,6 +84,20 @@ class TokenTradeDialog : DialogFragment() {
         updateQuantityDisplay()
 
         return view
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val nativeAdShell = view.findViewById<CardView>(R.id.native_ad_shell)
+        val nativeAdContainer = view.findViewById<ViewGroup>(R.id.native_ad_container)
+        viewLifecycleOwner.lifecycleScope.launch {
+            val shown = AdShowExt.showNativeAdInContainer(
+                requireContext(),
+                nativeAdContainer,
+                NativeAdStyleType.STANDARD
+            )
+            nativeAdShell.isVisible = shown
+        }
     }
 
     override fun onStart() {

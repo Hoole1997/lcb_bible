@@ -7,8 +7,11 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.core.view.WindowCompat
+import androidx.core.view.isVisible
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.lifecycleScope
+import com.android.common.bill.ads.ext.AdShowExt
+import com.android.common.bill.ui.NativeAdStyleType
 import com.mobile.bible.kjv.R
 import com.mobile.bible.kjv.databinding.ActivityAnswerFailedBinding
 import com.mobile.bible.kjv.data.repository.KjvRepository
@@ -17,7 +20,6 @@ import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 import android.util.Log
 import com.android.common.bill.ads.AdResult
-import com.android.common.bill.ads.ext.AdShowExt
 import net.corekit.core.report.ReportDataManager
 
 class AnswerFailedActivity : AppCompatActivity() {
@@ -80,6 +82,18 @@ class AnswerFailedActivity : AppCompatActivity() {
         setupCountdownTimer()
         setupClickListeners()
         loadCoins()
+        loadNativeAd()
+    }
+
+    private fun loadNativeAd() {
+        lifecycleScope.launch {
+            val shown = AdShowExt.showNativeAdInContainer(
+                this@AnswerFailedActivity,
+                binding.nativeAdContainer,
+                NativeAdStyleType.LARGE
+            )
+            binding.nativeAdShell.isVisible = shown
+        }
     }
 
     private fun loadCoins() {
