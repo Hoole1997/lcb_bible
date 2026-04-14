@@ -87,7 +87,7 @@
                     android:layout_marginEnd="6dp"
                     android:layout_marginVertical="10dp"
                     android:importantForAccessibility="no"
-                    android:src="@mipmap/img_coin" />
+                    android:src="@mipmap/img_kjv_coin" />
 
                 <TextView
                     android:id="@+id/text_bonus"
@@ -180,7 +180,7 @@
         android:layout_width="110dp"
         android:layout_height="110dp"
         android:importantForAccessibility="no"
-        android:src="@mipmap/img_dialog_noti"
+        android:src="@mipmap/img_dialog_alarm"
         app:layout_constraintBottom_toTopOf="@id/card_container"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

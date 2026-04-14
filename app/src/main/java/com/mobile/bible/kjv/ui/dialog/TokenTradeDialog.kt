@@ -16,7 +16,7 @@ import java.util.Locale
 class TokenTradeDialog : DialogFragment() {
 
     enum class PropType(val imageRes: Int, val labelRes: Int) {
-        DELAY(R.mipmap.img_lottery_delay, R.string.prop_delay),
+        DELAY(R.mipmap.img_gift_delay, R.string.prop_delay),
         ERASER(R.mipmap.img_eraser, R.string.prop_eraser)
     }
 

@@ -1,5 +1,6 @@
 package com.mobile.bible.kjv.ui.adapter
 
+import android.util.TypedValue
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -66,17 +67,24 @@ class StudyLevelAdapter(
         val passTagView = root.findViewById<ImageView>(R.id.pass_tag)
         val lottieView = root.findViewById<LottieAnimationView>(R.id.lottie_view)
 
+        setViewSizeDp(iconView, 42f, 42f)
+
         giftTagView.visibility = if (item.showGift) View.VISIBLE else View.INVISIBLE
 
         when {
             !item.unlocked && !item.isCurrent -> {
-                // 未解锁关卡
+                // 未解锁关卡（有礼物时 level_icon 用礼物锁图标，尺寸 22×24dp）
                 giftTagView.setImageResource(R.mipmap.img_gift_dark)
                 passTagView.visibility = View.INVISIBLE
                 numberView.visibility = View.INVISIBLE
                 iconView.visibility = View.VISIBLE
                 lottieView.visibility = View.INVISIBLE
-                iconView.setImageResource(R.drawable.svg_level_locked)
+                if (item.showGift) {
+                    iconView.setImageResource(R.drawable.svg_gift_lock)
+                    setViewSizeDp(iconView, 22f, 24f)
+                } else {
+                    iconView.setImageResource(R.drawable.svg_level_locked)
+                }
             }
             item.isCurrent -> {
                 // 当前进行中的关卡
@@ -144,5 +152,13 @@ class StudyLevelAdapter(
     companion object {
         private const val VIEW_TYPE_LEFT = 1
         private const val VIEW_TYPE_RIGHT = 2
+
+        private fun setViewSizeDp(view: View, widthDp: Float, heightDp: Float) {
+            val dm = view.context.resources.displayMetrics
+            view.layoutParams = view.layoutParams.apply {
+                width = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, widthDp, dm).toInt()
+                height = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, heightDp, dm).toInt()
+            }
+        }
     }
 }

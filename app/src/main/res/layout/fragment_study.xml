@@ -41,7 +41,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:importantForAccessibility="no"
-            android:src="@mipmap/img_coin"/>
+            android:src="@mipmap/img_kjv_coin"/>
 
         <TextView
             android:id="@+id/tv_coin"

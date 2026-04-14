@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.text.SpannableString
 import android.text.Spanned
 import android.text.style.ForegroundColorSpan
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -125,15 +126,15 @@ class LotteryDialog : DialogFragment() {
             }
             LotteryType.ERASER_DOUBLE -> {
                 coinDoubleLayout.visibility = View.VISIBLE
-                imageCoinSmall.setImageResource(R.mipmap.img_lottery_eraser)
-                imageCoinLarge.setImageResource(R.mipmap.img_lottery_eraser)
+                imageCoinSmall.setImageResource(R.mipmap.img_gift_eraser)
+                imageCoinLarge.setImageResource(R.mipmap.img_gift_eraser)
                 textCoinSmallAmount.text = "x${amount / 2}"
                 textCoinLargeAmount.text = "x$amount"
             }
             LotteryType.DELAY_DOUBLE -> {
                 coinDoubleLayout.visibility = View.VISIBLE
-                imageCoinSmall.setImageResource(R.mipmap.img_lottery_delay)
-                imageCoinLarge.setImageResource(R.mipmap.img_lottery_delay)
+                imageCoinSmall.setImageResource(R.mipmap.img_gift_delay)
+                imageCoinLarge.setImageResource(R.mipmap.img_gift_delay)
                 textCoinSmallAmount.text = "x${amount / 2}"
                 textCoinLargeAmount.text = "x$amount"
             }
@@ -146,8 +147,8 @@ class LotteryDialog : DialogFragment() {
                 imageView.visibility = View.VISIBLE
                 val iconRes = when (lotteryType) {
                     LotteryType.COIN -> R.mipmap.img_lottery_coins
-                    LotteryType.ERASER -> R.mipmap.img_lottery_eraser
-                    LotteryType.DELAY -> R.mipmap.img_lottery_delay
+                    LotteryType.ERASER -> R.mipmap.img_gift_eraser
+                    LotteryType.DELAY -> R.mipmap.img_gift_delay
                     LotteryType.COIN_MORE -> R.mipmap.img_lottery_coins
                     else -> R.mipmap.img_lottery_coins
                 }
@@ -223,6 +224,11 @@ class LotteryDialog : DialogFragment() {
             val marginPx = (30 * metrics.density).toInt()
             val width = metrics.widthPixels - marginPx * 2
             window.setLayout(width, ViewGroup.LayoutParams.WRAP_CONTENT)
+            val params = window.attributes
+            params.gravity = Gravity.TOP or Gravity.CENTER_HORIZONTAL
+            // Place below status bar area; keeps the gift dialog visually upper on screen vs. default center.
+            params.y = (20 * metrics.density).toInt()
+            window.attributes = params
         }
     }
 

@@ -3,19 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:layout_marginHorizontal="30dp">
-
-    <ImageView
-        android:id="@+id/image_ribbon"
-        android:layout_width="206dp"
-        android:layout_height="83dp"
-        android:importantForAccessibility="no"
-        android:src="@mipmap/img_lottery_tag"
-        android:scaleType="fitCenter"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/card_container"
@@ -26,14 +15,14 @@
         app:layout_constraintTop_toBottomOf="@id/image_ribbon"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="-28dp">
+        android:layout_marginTop="-118dp">
 
         <ImageView
             android:id="@+id/button_cancel"
             android:layout_width="28dp"
             android:layout_height="28dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
             android:importantForAccessibility="no"
             android:src="@drawable/svg_cancel"
             app:tint="#BBB7AD"
@@ -46,7 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="36dp"
             android:text="@string/lottery_title"
-            android:textColor="#673C0F"
+            android:textColor="#815425"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintTop_toTopOf="parent"
@@ -82,7 +71,7 @@
                 android:layout_width="66dp"
                 android:layout_height="66dp"
                 android:importantForAccessibility="no"
-                android:src="@mipmap/img_lottery_eraser"
+                android:src="@mipmap/img_gift_eraser"
                 android:scaleType="fitCenter" />
 
             <ImageView
@@ -99,7 +88,7 @@
                 android:layout_width="66dp"
                 android:layout_height="66dp"
                 android:importantForAccessibility="no"
-                android:src="@mipmap/img_lottery_delay"
+                android:src="@mipmap/img_gift_delay"
                 android:scaleType="fitCenter" />
 
         </LinearLayout>
@@ -253,7 +242,7 @@
                     android:layout_height="22dp"
                     android:layout_marginTop="16dp"
                     android:importantForAccessibility="no"
-                    android:src="@mipmap/img_lottery_eraser"
+                    android:src="@mipmap/img_gift_eraser"
                     android:scaleType="fitCenter"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintEnd_toStartOf="@id/image_add_small_double"
@@ -278,7 +267,7 @@
                     android:layout_height="22dp"
                     android:layout_marginTop="16dp"
                     android:importantForAccessibility="no"
-                    android:src="@mipmap/img_lottery_delay"
+                    android:src="@mipmap/img_gift_delay"
                     android:scaleType="fitCenter"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toEndOf="@id/image_add_small_double"
@@ -339,7 +328,7 @@
                     android:layout_height="32dp"
                     android:layout_marginTop="20dp"
                     android:importantForAccessibility="no"
-                    android:src="@mipmap/img_lottery_eraser"
+                    android:src="@mipmap/img_gift_eraser"
                     android:scaleType="fitCenter"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintEnd_toStartOf="@id/image_add_large_double"
@@ -364,7 +353,7 @@
                     android:layout_height="32dp"
                     android:layout_marginTop="20dp"
                     android:importantForAccessibility="no"
-                    android:src="@mipmap/img_lottery_delay"
+                    android:src="@mipmap/img_gift_delay"
                     android:scaleType="fitCenter"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toEndOf="@id/image_add_large_double"
@@ -401,7 +390,7 @@
             android:layout_marginHorizontal="20dp"
             android:gravity="center"
             android:lineSpacingExtra="4dp"
-            android:textColor="#A4855D"
+            android:textColor="#a4855d"
             android:textSize="14sp"
             app:layout_constraintTop_toBottomOf="@id/barrier_icons"
             app:layout_constraintStart_toStartOf="parent"
@@ -440,7 +429,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/lottery_claim_2x"
-                android:textColor="#673C0F"
+                android:textColor="#000000"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintTop_toTopOf="parent"
@@ -458,10 +447,22 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@id/text_claim_2x"
-                app:tint="#DF9C67"/>
+                app:tint="#000000"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/image_ribbon"
+        android:layout_width="314dp"
+        android:layout_height="294dp"
+        android:importantForAccessibility="no"
+        android:src="@mipmap/img_dialog_gift_tag"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="0dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

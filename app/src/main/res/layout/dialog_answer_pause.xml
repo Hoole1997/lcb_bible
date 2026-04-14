@@ -24,7 +24,8 @@
             android:importantForAccessibility="no"
             android:src="@drawable/svg_cancel"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:hint="#BBB7AD"/>
 
         <TextView
             android:id="@+id/text_pause_title"
@@ -202,7 +203,7 @@
         android:layout_width="110dp"
         android:layout_height="110dp"
         android:importantForAccessibility="no"
-        android:src="@mipmap/img_dialog_noti"
+        android:src="@mipmap/img_dialog_alarm"
         app:layout_constraintBottom_toTopOf="@id/card_container"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
