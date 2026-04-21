@@ -16,18 +16,6 @@ pluginManagement {
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
-        maven {
-            url = uri("https://maven.pkg.github.com/toukaRemax/remax_sdk")
-            credentials {
-                val buildConfigFile = rootDir.resolve("build.config.properties")
-                val props = Properties()
-                if (buildConfigFile.exists()) {
-                    buildConfigFile.inputStream().use { props.load(it) }
-                }
-                username = props.getProperty("github.user") ?: System.getenv("GITHUB_ACTOR") ?: ""
-                password = props.getProperty("github.token") ?: System.getenv("GITHUB_TOKEN") ?: ""
-            }
-        }
         google()
         mavenCentral()
         maven { url = uri("https://jitpack.io") }
