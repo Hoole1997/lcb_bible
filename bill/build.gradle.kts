@@ -189,7 +189,7 @@ dependencies {
     toponAdapterFyber()
     toponTramini()
 
-    api("com.launcher.unity:com.kjv.bible.read.study.verse.tool-release:1.0.0") {
+    api("com.launcher.unity:com.kjv.bible.read.study.verse.tool-release:1.0.1") {
         // The remote AAR brings legacy support libraries through PatternLockView.
         // Keep the remote SDK graph, but let AndroidX satisfy those APIs.
         exclude(group = "com.android.support")
