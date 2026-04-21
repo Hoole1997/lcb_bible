@@ -31,6 +31,7 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven { url = uri("https://jitpack.io") }
+        maven { url = uri("https://repo.itextsupport.com/android") }
         // Pangle SDK
         maven {
             url = uri("https://artifact.bytedance.com/repository/pangle")
@@ -74,6 +75,8 @@ dependencyResolutionManagement {
                 includeGroup("com.vungle")
             }
         }
+        maven { url = uri("https://artifacts.applovin.com/android") }
+        maven { url = uri("https://repo.dgtverse.cn/repository/maven-public/") }
     }
 }
 
@@ -82,3 +85,6 @@ include(":app")
 
 include(":base")
 include(":analytics")
+include(":core")
+include(":bill")
+

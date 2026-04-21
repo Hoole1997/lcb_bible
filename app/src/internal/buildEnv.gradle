@@ -1,14 +1,14 @@
 ext {
     // 应用版本配置
-    setting = [applicationId: "com.internal.bible",
+    setting = [applicationId: "com.leafmotivation.quizguessoncolor",
                compileSdk   : 36,
                minSdk       : 26,
                targetSdk    : 36,
                versionCode  : 1,
                versionName  : "1.0.0"]
 
-    link = [privacyUrl: "",
-            teamUrl   : "",
+    link = [privacyUrl: "https://www.baidu.com",
+            teamUrl   : "https://www.baidu.com",
             fcmLink   : ""
     ]
 

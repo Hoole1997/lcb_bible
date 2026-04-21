@@ -7,39 +7,39 @@ ext {
                versionCode  : 1,
                versionName  : "1.0.0"]
 
-    link = [privacyUrl: "",
-            teamUrl   : "",
+    link = [privacyUrl: "https://liminatope.com/privacy.html",
+            teamUrl   : "https://liminatope.com/privacy.html",
             fcmLink   : ""
     ]
 
     // AdMob配置
-    admob = [applicationId: "ca-app-pub-8468697989886586~4575500093",
+    admob = [applicationId: "ca-app-pub-7869168547621070~7036463087",
              adUnitIds    : [banner      : "",
-                             interstitial: "",
-                             splash      : "",
-                             native      : "",
-                             full_native : "",
-                             rewarded    : ""
+                             interstitial: "ca-app-pub-7869168547621070/4290271433",
+                             splash      : "ca-app-pub-7869168547621070/9242169037",
+                             native      : "ca-app-pub-7869168547621070/9841981014",
+                             full_native : "ca-app-pub-7869168547621070/6863417705",
+                             rewarded    : "ca-app-pub-7869168547621070/7435309529"
              ]]
 
     // Pangle配置 (测试ID)
-    pangle = [applicationId: "",
-              adUnitIds    : [splash      : "",
+    pangle = [applicationId: "8810705",
+              adUnitIds    : [splash      : "890141235",
                               banner      : "",
-                              interstitial: "",
-                              native      : "",
-                              full_native : "",
-                              rewarded    : ""
+                              interstitial: "983019308",
+                              native      : "983019195",
+                              full_native : "983019298",
+                              rewarded    : "983019311"
               ]]
 
     // TopOn配置
-    topon = [applicationId: "",
-             appKey       : "",
-             adUnitIds    : [interstitial: "",
-                             rewarded    : "",
-                             native      : "",
-                             splash      : "",
-                             full_native : "",
+    topon = [applicationId: "h1h9hebl338n5a",
+             appKey       : "a26997d588b018b352f3154462d01997c",
+             adUnitIds    : [interstitial: "n1h9hebl52216v",
+                             rewarded    : "n1h9hebl4m675q",
+                             native      : "n1h9hebl5n304d",
+                             splash      : "n1h9hebl60rt96",
+                             full_native : "n1h9hebl6aggjv",
                              banner      : ""]
     ]
 

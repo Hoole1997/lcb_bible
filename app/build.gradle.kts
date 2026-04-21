@@ -7,6 +7,25 @@ plugins {
     kotlin("kapt")
 }
 
+fun secretValue(name: String): String =
+    (findProperty(name) as? String).orEmpty().ifBlank {
+        System.getenv(name).orEmpty()
+    }
+
+fun resolveSigningFile(path: String): File {
+    val configuredFile = File(path)
+    if (configuredFile.isAbsolute) {
+        return configuredFile
+    }
+
+    val rootRelativeFile = rootProject.file(path)
+    if (rootRelativeFile.exists()) {
+        return rootRelativeFile
+    }
+
+    return file(path.removePrefix("app/"))
+}
+
 val configSetting = findProperty("setting") as Map<*, *>
 val link = findProperty("link") as Map<*, *>
 val adMobConfig = findProperty("admob") as? Map<*, *> ?: emptyMap<Any, Any>()
@@ -18,6 +37,34 @@ val toponUnitConfig = toponConfig["adUnitIds"] as? Map<*, *> ?: emptyMap<Any, An
 val maxConfig = findProperty("max") as? Map<*, *> ?: emptyMap<Any, Any>()
 val maxUnitConfig = maxConfig["adUnitIds"] as? Map<*, *> ?: emptyMap<Any, Any>()
 val analyticsConfig = findProperty("analytics") as? Map<*, *> ?: emptyMap<Any, Any>()
+val resolvedVersionName = configSetting["versionName"] as? String ?: "1.0.0"
+val onlineReleaseVersionName = "$resolvedVersionName-online"
+val onlineReleaseApkName = "lcb_KJVBible - online-release - $onlineReleaseVersionName.apk"
+val onlineReleaseAabName = "lcb_kjv_bible_online_release_${onlineReleaseVersionName}.aab"
+val onlineReleaseKeystorePath = secretValue("ANDROID_SIGNING_STORE_FILE").ifBlank {
+    "app/src/online/bible-online.keystore"
+}
+val onlineReleaseKeystoreFile = resolveSigningFile(onlineReleaseKeystorePath)
+val onlineReleaseStorePassword = secretValue("ANDROID_SIGNING_STORE_PASSWORD").ifBlank {
+    "bible123"
+}
+val onlineReleaseKeyAlias = secretValue("ANDROID_SIGNING_KEY_ALIAS").ifBlank {
+    "bible"
+}
+val onlineReleaseKeyPassword = secretValue("ANDROID_SIGNING_KEY_PASSWORD").ifBlank {
+    "bible123"
+}
+val releaseTaskPrefixes = listOf("assemble", "bundle", "package", "publish")
+val requiresOnlineReleaseSigning = gradle.startParameter.taskNames.any { taskName ->
+    taskName.contains("online", ignoreCase = true) &&
+        taskName.contains("release", ignoreCase = true) &&
+        releaseTaskPrefixes.any { prefix -> taskName.contains(prefix, ignoreCase = true) }
+}
+val hasOnlineReleaseSigning = onlineReleaseKeystoreFile.isFile &&
+    onlineReleaseKeystoreFile.length() > 0L &&
+    onlineReleaseStorePassword.isNotBlank() &&
+    onlineReleaseKeyAlias.isNotBlank() &&
+    onlineReleaseKeyPassword.isNotBlank()
 
 android {
     namespace = "com.mobile.bible.kjv"
@@ -90,10 +137,12 @@ android {
         }
 
         create("online") {
-            // storeFile = file("src/online/bible-online.keystore")
-            storePassword = "bible123"
-            keyAlias = "bible"
-            keyPassword = "bible123"
+            if (hasOnlineReleaseSigning) {
+                storeFile = onlineReleaseKeystoreFile
+                storePassword = onlineReleaseStorePassword
+                keyAlias = onlineReleaseKeyAlias
+                keyPassword = onlineReleaseKeyPassword
+            }
         }
     }
 
@@ -119,6 +168,9 @@ android {
             applicationId = configSetting["applicationId"] as String
             versionNameSuffix = "-online"
             signingConfig = signingConfigs.getByName("online")
+            check(hasOnlineReleaseSigning || !requiresOnlineReleaseSigning) {
+                "Missing online release signing config. Ensure app/src/online/bible-online.keystore exists or set ANDROID_SIGNING_STORE_FILE, ANDROID_SIGNING_STORE_PASSWORD, ANDROID_SIGNING_KEY_ALIAS, and ANDROID_SIGNING_KEY_PASSWORD."
+            }
 
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
@@ -130,7 +182,7 @@ android {
 
     buildTypes {
         release {
-            isShrinkResources = true
+            isShrinkResources = false
             isMinifyEnabled = true
         }
     }
@@ -140,7 +192,7 @@ android {
         variant.outputs
             .map { it as com.android.build.gradle.internal.api.BaseVariantOutputImpl }
             .forEach { output ->
-                val outputFileName = "KJVBible - ${variant.baseName} - ${variant.versionName}.apk"
+                val outputFileName = "lcb_KJVBible - ${variant.baseName} - ${variant.versionName}.apk"
                 output.outputFileName = outputFileName
             }
     }
@@ -179,11 +231,35 @@ android {
     }
 }
 
+tasks.register("printOnlineReleaseVersionName") {
+    group = "help"
+    description = "Prints the versionName used for online release builds."
+    doLast {
+        println(onlineReleaseVersionName)
+    }
+}
+
+tasks.register("printOnlineReleaseApkName") {
+    group = "help"
+    description = "Prints the expected output file name for online release APK builds."
+    doLast {
+        println(onlineReleaseApkName)
+    }
+}
+
+tasks.register("printOnlineReleaseAabName") {
+    group = "help"
+    description = "Prints the expected output file name for online release AAB builds."
+    doLast {
+        println(onlineReleaseAabName)
+    }
+}
+
 dependencies {
     api(project(":base"))
     api(project(":analytics"))
-    implementation("com.github.toukaremax:core:1.0.9")
-    implementation("com.github.toukaremax:bill:1.0.17")
+    api(project(":core"))
+    api(project(":bill"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
@@ -199,4 +275,8 @@ dependencies {
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)
     kapt(libs.androidx.room.compiler)
+
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.espresso.core)
 }

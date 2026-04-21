@@ -21,10 +21,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.KJVBible">
-        <meta-data
-            android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="${ADMOB_APPLICATION_ID}" />
+        android:theme="@style/Theme.KJVBible"
+        tools:replace="android:label,android:name">
 
         <activity
             android:name="com.mobile.bible.kjv.ui.activity.KjvSplashActivity"
@@ -32,10 +30,7 @@
             android:screenOrientation="portrait"
             android:launchMode="standard"
             android:theme="@style/Base.Theme.MaterialThemeBuilder">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
         </activity>
 
         <activity

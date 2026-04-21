@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Bible - Daily Bible Verse KJV</string>
+    <string name="app_name">Bible Verse KJV</string>
     <string name="player_wall">Player Wall</string>
     <string name="my_posts">My Posts</string>
     <string name="my_posts_empty_message">No date</string>

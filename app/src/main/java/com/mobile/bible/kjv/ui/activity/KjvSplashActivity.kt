@@ -13,6 +13,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.core.view.WindowCompat
+import com.blankj.utilcode.util.LogUtils
 import com.mobile.bible.kjv.permission.NotificationPermission
 import com.mobile.bible.kjv.ui.vm.KjvSplashViewModel
 import com.mobile.bible.kjv.R

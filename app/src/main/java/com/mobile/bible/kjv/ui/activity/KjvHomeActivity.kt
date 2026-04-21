@@ -3,6 +3,7 @@ package com.mobile.bible.kjv.ui.activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.graphics.toColorInt
 import androidx.core.view.ViewCompat
@@ -20,6 +21,7 @@ import com.mobile.bible.kjv.ui.fragment.PlayerWallFragment
 import com.mobile.bible.kjv.ui.vm.KjvHomeViewModel
 import com.mobile.bible.kjv.constant.PrefKeys
 import com.mobile.bible.kjv.BuildConfig
+import com.mobile.bible.kjv.KjvApp
 import com.mobile.bible.kjv.R
 import com.mobile.bible.kjv.databinding.ActivityBibleHomeBinding
 import com.remax.base.ext.KvBoolDelegate
@@ -47,6 +49,11 @@ class KjvHomeActivity : AppCompatActivity() {
         fitSystemUI()
         initPageUI()
         bindFlow()
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                KjvApp.kjvApp?.quickcleanlitehub()
+            }
+        })
     }
 
     private fun fitSystemUI() {

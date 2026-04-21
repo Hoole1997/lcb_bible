@@ -33,7 +33,7 @@ class AnalyticsModuleProvider : ContentProvider() {
         applicationContext?.let { ctx ->
             try {
                 // 初始化数数SDK控制器
-                ThinkingDataController.initialize(ctx)
+//                ThinkingDataController.initialize(ctx)
 
                 // 初始化基础数据上报器，保证 Adjust 初始化阶段事件可被上报
                 DataReportManager.setReporters(
@@ -44,7 +44,7 @@ class AnalyticsModuleProvider : ContentProvider() {
                 )
 
                 // 初始化Adjust控制器
-                AdjustController.initialize(ctx)
+//                AdjustController.initialize(ctx)
                 
                 // 注册广告收益上报器
                 AdRevenueManager.setReporters(

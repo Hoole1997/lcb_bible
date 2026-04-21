@@ -235,8 +235,7 @@ class JourneyAdapter : RecyclerView.Adapter<JourneyAdapter.JourneyVH>() {
                         var rewardEarned = false
                         val result = AdShowExt.showRewardedAd(
                             activity = context,
-                            onRewardEarned = { rewardEarned = true },
-                            competeWithInterstitial = false
+                            onRewardEarned = { rewardEarned = true }
                         )
                         if (rewardEarned) {
                             navigateAction()

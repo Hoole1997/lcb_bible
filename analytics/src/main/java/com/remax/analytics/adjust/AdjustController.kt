@@ -36,7 +36,7 @@ object AdjustController {
      * 初始化Adjust SDK
      * @param context 应用上下文
      */
-    fun initialize(context: Context) {
+    fun initialize(context: Context,network: String?,campaign: String?,adgroup: String?,creative: String?,jsonResponse: String?) {
         if (isInitialized) {
             AnalyticsLogger.w("Adjust SDK 已经初始化过了")
             return
@@ -60,109 +60,110 @@ object AdjustController {
         // 初始化埋点
         DataReportManager.reportData("adjust_init", mapOf())
         try {
-            val appToken = BuildConfig.ADJUST_APP_TOKEN
-            if (appToken.isBlank() || appToken == "your_adjust_app_token_here") {
-                AnalyticsLogger.e("Adjust App Token 未配置或使用默认值")
-                return
+            // 设置公共参数，并限制长度
+            CommonParamsManager.adNetwork = (network ?: "").take(10)
+            CommonParamsManager.campaign = (campaign ?: "").take(20)
+            CommonParamsManager.adgroup = (adgroup ?: "").take(10)
+            CommonParamsManager.creative = (creative ?: "").take(20)
+
+            AnalyticsLogger.d("公共参数设置完成 - ad_network: ${CommonParamsManager.adNetwork}, campaign: ${CommonParamsManager.campaign}, adgroup: ${CommonParamsManager.adgroup}, creative: ${CommonParamsManager.creative}")
+
+            // 将公共参数设置到DataReportManager
+            val commonParams = CommonParamsManager.getAllCommonParams()
+            val userParams = CommonParamsManager.getUserCommonParams()
+            DataReportManager.setCommonParams(commonParams)
+            DataReportManager.setUserParams(userParams)
+            AnalyticsLogger.d("公共参数已设置到DataReportManager: $commonParams")
+
+            // 计算从初始化开始到归因回调的总耗时（秒数，向上取整）
+            val totalDurationSeconds = kotlin.math.ceil((System.currentTimeMillis() - initStartTime) / 1000.0).toInt()
+            AnalyticsLogger.d("Adjust初始化到归因回调总耗时: ${totalDurationSeconds}秒")
+            DataReportManager.reportData("adjust_get_success", mapOf("pass_time" to totalDurationSeconds))
+
+            // 设置当前用户渠道类型
+            val userChannelType = if (AnalyticsLogger.isLogEnabled()) {
+                // 内部版本强制设置为买量类型
+                AnalyticsLogger.d("内部版本强制设置为买量类型")
+                UserChannelController.UserChannelType.PAID
+            } else {
+                determineUserChannelType(network,campaign,adgroup,creative,jsonResponse)
             }
+            AnalyticsLogger.d("根据归因数据判断用户渠道类型: $userChannelType")
+
+            // 设置用户渠道类型
+            val success = UserChannelController.setChannel(userChannelType)
+            if (success) {
+                AnalyticsLogger.i("用户渠道类型设置成功: $userChannelType")
+            } else {
+                AnalyticsLogger.w("用户渠道类型已经设置过，无法修改")
+            }
+//            val appToken = BuildConfig.ADJUST_APP_TOKEN
+//            if (appToken.isBlank() || appToken == "your_adjust_app_token_here") {
+//                AnalyticsLogger.e("Adjust App Token 未配置或使用默认值")
+//                return
+//            }
 
             // 创建Adjust配置
-            val adjustConfig = AdjustConfig(
-                context,
-                appToken,
-                if (AnalyticsLogger.isLogEnabled()) AdjustConfig.ENVIRONMENT_SANDBOX else AdjustConfig.ENVIRONMENT_PRODUCTION
-            )
-            adjustConfig.setLogLevel(LogLevel.VERBOSE)
+//            val adjustConfig = AdjustConfig(
+//                context,
+//                appToken,
+//                if (AnalyticsLogger.isLogEnabled()) AdjustConfig.ENVIRONMENT_SANDBOX else AdjustConfig.ENVIRONMENT_PRODUCTION
+//            )
+//            adjustConfig.setLogLevel(LogLevel.VERBOSE)
 
             // 启用成本数据在归因信息中
-            adjustConfig.enableCostDataInAttribution()
+//            adjustConfig.enableCostDataInAttribution()
 
             // 设置归因回调
-            adjustConfig.setOnAttributionChangedListener(object : OnAttributionChangedListener {
-                override fun onAttributionChanged(attribution: AdjustAttribution?) {
-
-                    attributionData = attribution
-                    AnalyticsLogger.d("Adjust归因数据更新: $attribution")
-
-                    // 设置公共参数
-                    attribution?.let { attr ->
-                        // 设置公共参数，并限制长度
-                        CommonParamsManager.adNetwork = (attr.network ?: "").take(10)
-                        CommonParamsManager.campaign = (attr.campaign ?: "").take(20)
-                        CommonParamsManager.adgroup = (attr.adgroup ?: "").take(10)
-                        CommonParamsManager.creative = (attr.creative ?: "").take(20)
-
-                        AnalyticsLogger.d("公共参数设置完成 - ad_network: ${CommonParamsManager.adNetwork}, campaign: ${CommonParamsManager.campaign}, adgroup: ${CommonParamsManager.adgroup}, creative: ${CommonParamsManager.creative}")
-
-                        // 将公共参数设置到DataReportManager
-                        val commonParams = CommonParamsManager.getAllCommonParams()
-                        val userParams = CommonParamsManager.getUserCommonParams()
-                        DataReportManager.setCommonParams(commonParams)
-                        DataReportManager.setUserParams(userParams)
-                        AnalyticsLogger.d("公共参数已设置到DataReportManager: $commonParams")
-
-                        // 计算从初始化开始到归因回调的总耗时（秒数，向上取整）
-                        val totalDurationSeconds = kotlin.math.ceil((System.currentTimeMillis() - initStartTime) / 1000.0).toInt()
-                        AnalyticsLogger.d("Adjust初始化到归因回调总耗时: ${totalDurationSeconds}秒")
-                        DataReportManager.reportData("adjust_get_success", mapOf("pass_time" to totalDurationSeconds))
-
-                        // 设置当前用户渠道类型
-                        val userChannelType = if (AnalyticsLogger.isLogEnabled()) {
-                            // 内部版本强制设置为买量类型
-                            AnalyticsLogger.d("内部版本强制设置为买量类型")
-                            UserChannelController.UserChannelType.PAID
-                        } else {
-                            determineUserChannelType(attr)
-                        }
-                        AnalyticsLogger.d("根据归因数据判断用户渠道类型: $userChannelType")
-
-                        // 设置用户渠道类型
-                        val success = UserChannelController.setChannel(userChannelType)
-                        if (success) {
-                            AnalyticsLogger.i("用户渠道类型设置成功: $userChannelType")
-                        } else {
-                            AnalyticsLogger.w("用户渠道类型已经设置过，无法修改")
-                        }
-                    }
-                }
-            })
-
-            // 设置事件跟踪成功回调
-            adjustConfig.setOnEventTrackingSucceededListener(object :
-                OnEventTrackingSucceededListener {
-                override fun onEventTrackingSucceeded(eventSuccessResponseData: AdjustEventSuccess?) {
-                    AnalyticsLogger.d("Adjust事件跟踪成功: ${eventSuccessResponseData?.message}")
-                }
-            })
-
-            // 设置事件跟踪失败回调
-            adjustConfig.setOnEventTrackingFailedListener(object : OnEventTrackingFailedListener {
-                override fun onEventTrackingFailed(eventFailureResponseData: AdjustEventFailure?) {
-                    AnalyticsLogger.e("Adjust事件跟踪失败: ${eventFailureResponseData?.message}")
-                }
-            })
-
-            // 设置会话跟踪成功回调
-            adjustConfig.setOnSessionTrackingSucceededListener(object :
-                OnSessionTrackingSucceededListener {
-                override fun onSessionTrackingSucceeded(sessionSuccessResponseData: AdjustSessionSuccess?) {
-                    AnalyticsLogger.d("Adjust会话跟踪成功: ${sessionSuccessResponseData?.message}")
-                }
-            })
-
-            // 设置会话跟踪失败回调
-            adjustConfig.setOnSessionTrackingFailedListener(object :
-                OnSessionTrackingFailedListener {
-                override fun onSessionTrackingFailed(sessionFailureResponseData: AdjustSessionFailure?) {
-                    AnalyticsLogger.e("Adjust会话跟踪失败: ${sessionFailureResponseData?.message}")
-                }
-            })
-
-            // 启动Adjust SDK
-            Adjust.initSdk(adjustConfig)
+//            adjustConfig.setOnAttributionChangedListener(object : OnAttributionChangedListener {
+//                override fun onAttributionChanged(attribution: AdjustAttribution?) {
+//
+//                    attributionData = attribution
+//                    AnalyticsLogger.d("Adjust归因数据更新: $attribution")
+//
+//                    // 设置公共参数
+//                    attribution?.let { attr ->
+//
+//                    }
+//                }
+//            })
+//
+//            // 设置事件跟踪成功回调
+//            adjustConfig.setOnEventTrackingSucceededListener(object :
+//                OnEventTrackingSucceededListener {
+//                override fun onEventTrackingSucceeded(eventSuccessResponseData: AdjustEventSuccess?) {
+//                    AnalyticsLogger.d("Adjust事件跟踪成功: ${eventSuccessResponseData?.message}")
+//                }
+//            })
+//
+//            // 设置事件跟踪失败回调
+//            adjustConfig.setOnEventTrackingFailedListener(object : OnEventTrackingFailedListener {
+//                override fun onEventTrackingFailed(eventFailureResponseData: AdjustEventFailure?) {
+//                    AnalyticsLogger.e("Adjust事件跟踪失败: ${eventFailureResponseData?.message}")
+//                }
+//            })
+//
+//            // 设置会话跟踪成功回调
+//            adjustConfig.setOnSessionTrackingSucceededListener(object :
+//                OnSessionTrackingSucceededListener {
+//                override fun onSessionTrackingSucceeded(sessionSuccessResponseData: AdjustSessionSuccess?) {
+//                    AnalyticsLogger.d("Adjust会话跟踪成功: ${sessionSuccessResponseData?.message}")
+//                }
+//            })
+//
+//            // 设置会话跟踪失败回调
+//            adjustConfig.setOnSessionTrackingFailedListener(object :
+//                OnSessionTrackingFailedListener {
+//                override fun onSessionTrackingFailed(sessionFailureResponseData: AdjustSessionFailure?) {
+//                    AnalyticsLogger.e("Adjust会话跟踪失败: ${sessionFailureResponseData?.message}")
+//                }
+//            })
+//
+//            // 启动Adjust SDK
+//            Adjust.initSdk(adjustConfig)
 
             isInitialized = true
-            AnalyticsLogger.i("Adjust SDK 初始化成功，App Token: $appToken")
+            AnalyticsLogger.i("Adjust SDK 初始化成功")
 
         } catch (e: Exception) {
             AnalyticsLogger.e("Adjust SDK 初始化失败", e)
@@ -174,13 +175,12 @@ object AdjustController {
      * @param attribution Adjust归因数据
      * @return 用户渠道类型
      */
-    private fun determineUserChannelType(attribution: AdjustAttribution): UserChannelController.UserChannelType {
+    private fun determineUserChannelType(network: String?,campaign: String?,adgroup: String?,creative: String?,jsonResponse: String?): UserChannelController.UserChannelType {
         // 获取归因数据的关键字段
-        val network = attribution.network?.lowercase()
-        val trackerName = attribution.trackerName?.lowercase()
-        val campaign = attribution.campaign?.lowercase()
+        val network = network?.lowercase()
+        val campaign = campaign?.lowercase()
 
-        AnalyticsLogger.d("归因数据 - network: $network, trackerName: $trackerName, campaign: $campaign")
+        AnalyticsLogger.d("归因数据 - network: $network, campaign: $campaign")
 
         // 判断是否为自然渠道的条件
         val isOrganic = when {

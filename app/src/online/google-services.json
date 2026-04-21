@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1041258982335",
+    "project_id": "ag99a0e4139e-e4d00-gp",
+    "storage_bucket": "ag99a0e4139e-e4d00-gp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1041258982335:android:0b5d619a65900749da8f0a",
+        "android_client_info": {
+          "package_name": "com.kjv.bible.read.study.verse.tool"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmUe84hD6vyy-PPXNJY1kg7pWMVh0Q-xk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

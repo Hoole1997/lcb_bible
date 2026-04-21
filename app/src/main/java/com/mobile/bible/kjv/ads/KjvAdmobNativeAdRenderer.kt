@@ -5,9 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
-import com.google.android.libraries.ads.mobile.sdk.nativead.NativeAd
-import com.google.android.libraries.ads.mobile.sdk.nativead.NativeAdView
 import com.android.common.bill.ads.renderer.AdmobNativeAdRenderer
+import com.google.android.gms.ads.nativead.NativeAd
+import com.google.android.gms.ads.nativead.NativeAdView
 import com.mobile.bible.kjv.R
 
 /**
@@ -17,39 +17,36 @@ import com.mobile.bible.kjv.R
 class KjvAdmobNativeAdRenderer : AdmobNativeAdRenderer {
 
     override fun createLayout(context: Context): NativeAdView {
-        return LayoutInflater.from(context).inflate(R.layout.bill_admob_native_ad, null, false) as NativeAdView
+        return LayoutInflater.from(context)
+            .inflate(R.layout.bill_admob_native_ad, null) as NativeAdView
     }
 
     override fun bindData(adView: NativeAdView, nativeAd: NativeAd) {
-        val headline = adView.findViewById<TextView>(R.id.ad_headline)
-        val body = adView.findViewById<TextView>(R.id.ad_body)
-        val cta = adView.findViewById<TextView>(R.id.ad_call_to_action)
-        val advertiser = adView.findViewById<TextView>(R.id.ad_advertiser)
-        val icon = adView.findViewById<ImageView>(R.id.ad_app_icon)
-        val media = adView.findViewById<com.google.android.libraries.ads.mobile.sdk.nativead.MediaView>(R.id.ad_media)
+        val titleView = adView.findViewById<TextView>(R.id.tv_ad_title)
+        val ctaButton = adView.findViewById<TextView>(R.id.btn_ad_cta)
+        val iconView = adView.findViewById<ImageView>(R.id.iv_ad_icon)
+        val descView = adView.findViewById<TextView>(R.id.tv_ad_description)
 
-        adView.headlineView = headline
-        adView.bodyView = body
-        adView.callToActionView = cta
-        adView.advertiserView = advertiser
-        adView.iconView = icon
+        titleView?.text = nativeAd.headline ?: "Test Google Ads"
+        ctaButton?.text = nativeAd.callToAction ?: "INSTALL"
+        descView?.text = nativeAd.body
 
-        headline.text = nativeAd.headline
-        body.text = nativeAd.body
-        cta.text = nativeAd.callToAction
-        advertiser.text = nativeAd.advertiser
+        nativeAd.icon?.let { icon ->
+            iconView?.setImageDrawable(icon.drawable)
+            iconView?.visibility = View.VISIBLE
+        } ?: run {
+            iconView?.setImageResource(android.R.drawable.ic_menu_info_details)
+            iconView?.visibility = View.VISIBLE
+        }
 
-        nativeAd.icon?.drawable?.let { icon.setImageDrawable(it) }
+        adView.headlineView = titleView
+        adView.callToActionView = ctaButton
+        adView.iconView = iconView
+        adView.bodyView = descView
+        adView.advertiserView = null
+        adView.priceView = null
+        adView.storeView = null
 
-        headline.visibility = assetVisibility(nativeAd.headline)
-        body.visibility = assetVisibility(nativeAd.body)
-        cta.visibility = assetVisibility(nativeAd.callToAction)
-        advertiser.visibility = assetVisibility(nativeAd.advertiser)
-        icon.visibility = if (nativeAd.icon != null) View.VISIBLE else View.GONE
-
-        adView.registerNativeAd(nativeAd, media)
+        adView.setNativeAd(nativeAd)
     }
-
-    private fun assetVisibility(text: String?): Int =
-        if (text.isNullOrBlank()) View.GONE else View.VISIBLE
 }
