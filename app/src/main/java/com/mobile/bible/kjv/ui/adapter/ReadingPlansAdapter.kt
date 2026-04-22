@@ -11,10 +11,10 @@ import com.mobile.bible.kjv.R
 enum class PlanBadge { PRIMARY, FREE, TODAY }
 
 data class ReadingPlanItem(
-    val planName: String,
-    val planTitle: String,
-    val planDesc: String,
-    val badgeText: String,
+    val planName: String? = null,
+    val planTitle: String? = null,
+    val planDesc: String? = null,
+    val badgeText: String? = null,
     val badgeType: PlanBadge
 )
 
@@ -35,8 +35,8 @@ class ReadingPlansAdapter : RecyclerView.Adapter<ReadingPlansAdapter.PlanVH>() {
 
     override fun onBindViewHolder(holder: PlanVH, position: Int) {
         val item = items[position]
-        holder.username.text = item.planName
-        holder.content.text = item.planTitle
+        holder.username.text = item.planName.orEmpty()
+        holder.content.text = item.planTitle.orEmpty()
         holder.viewMore.setOnClickListener {
             onBadgeClick?.invoke(item)
         }

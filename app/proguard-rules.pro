@@ -10,6 +10,9 @@
     @com.google.gson.annotations.Expose <fields>;
     @com.google.gson.annotations.Expose <methods>;
 }
+-keepclassmembers,allowobfuscation class * {
+    @com.google.gson.annotations.SerializedName <fields>;
+}
 
 # Gson 类型适配器
 -keep class * implements com.google.gson.TypeAdapterFactory

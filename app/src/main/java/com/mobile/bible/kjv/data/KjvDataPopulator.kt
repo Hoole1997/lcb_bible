@@ -7,6 +7,7 @@ import com.mobile.bible.kjv.data.entity.LevelEntity
 import com.mobile.bible.kjv.data.entity.QuestionEntity
 import com.mobile.bible.kjv.data.entity.VerseEntity
 import com.google.gson.Gson
+import com.google.gson.annotations.SerializedName
 import com.google.gson.reflect.TypeToken
 
 /**
@@ -190,44 +191,44 @@ object KjvDataPopulator {
 
     // JSON 解析数据类 - 书籍目录 (bible.json)
     private data class BookJson(
-        val id: Int,
-        val testament: String,
-        val name: String,
-        val chapters: Int
+        @SerializedName("id") val id: Int,
+        @SerializedName("testament") val testament: String,
+        @SerializedName("name") val name: String,
+        @SerializedName("chapters") val chapters: Int
     )
 
     // JSON 解析数据类 - 经文内容 (bible_content.json)
     private data class BibleContentJson(
-        val books: List<ContentBookJson>
+        @SerializedName("books") val books: List<ContentBookJson>
     )
 
     private data class ContentBookJson(
-        val name: String,
-        val chapters: List<ContentChapterJson>
+        @SerializedName("name") val name: String,
+        @SerializedName("chapters") val chapters: List<ContentChapterJson>
     )
 
     private data class ContentChapterJson(
-        val chapter: Int,
-        val verses: List<ContentVerseJson>
+        @SerializedName("chapter") val chapter: Int,
+        @SerializedName("verses") val verses: List<ContentVerseJson>
     )
 
     private data class ContentVerseJson(
-        val verse: Int,
-        val text: String
+        @SerializedName("verse") val verse: Int,
+        @SerializedName("text") val text: String
     )
 
     // 答题 JSON 解析数据类
     private data class AnswerLevelJson(
-        val level: Int,
-        val theme: String,
-        val questions: List<AnswerQuestionJson>
+        @SerializedName("level") val level: Int,
+        @SerializedName("theme") val theme: String,
+        @SerializedName("questions") val questions: List<AnswerQuestionJson>
     )
 
     private data class AnswerQuestionJson(
-        val question_id: String,
-        val question_text: String,
-        val options: List<String>,
-        val answer_index: String,
-        val reference: String
+        @SerializedName("question_id") val question_id: String,
+        @SerializedName("question_text") val question_text: String,
+        @SerializedName("options") val options: List<String>,
+        @SerializedName("answer_index") val answer_index: String,
+        @SerializedName("reference") val reference: String
     )
 }

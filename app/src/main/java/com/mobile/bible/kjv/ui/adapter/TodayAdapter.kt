@@ -149,8 +149,8 @@ class TodayAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
                 adapter.submit(
                     prayerWallItems.map { prayer ->
                         ReadingPlanItem(
-                            planName = prayer.username,
-                            planTitle = prayer.content,
+                            planName = runCatching { prayer.username }.getOrNull(),
+                            planTitle = runCatching { prayer.content }.getOrNull(),
                             planDesc = "",
                             badgeText = holder.itemView.context.getString(R.string.today_view_more),
                             badgeType = PlanBadge.PRIMARY

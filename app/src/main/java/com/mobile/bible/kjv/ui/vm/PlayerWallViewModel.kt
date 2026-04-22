@@ -7,6 +7,7 @@ import com.mobile.bible.kjv.data.entity.MyPrayerEntity
 import com.mobile.bible.kjv.data.repository.KjvRepository
 import com.mobile.bible.kjv.prefs.PlayerWallSettings
 import com.google.gson.Gson
+import com.google.gson.annotations.SerializedName
 import com.google.gson.reflect.TypeToken
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.collect
@@ -22,6 +23,12 @@ data class PrayerWallItem(
     val content: String,
     val likes: Int,
     val localPrayerId: Long? = null
+)
+
+private data class PrayerWallAssetItem(
+    @SerializedName("username") val username: String? = null,
+    @SerializedName("content") val content: String? = null,
+    @SerializedName("likes") val likes: Int? = 0
 )
 
 data class PrayerWallWindow(
@@ -147,8 +154,18 @@ class PlayerWallViewModel(application: Application) : AndroidViewModel(applicati
     private fun readItemsFromAsset(): List<PrayerWallItem> {
         return try {
             val json = getApplication<Application>().assets.open(ASSET_PATH).bufferedReader().use { it.readText() }
-            val type = object : TypeToken<List<PrayerWallItem>>() {}.type
-            gson.fromJson<List<PrayerWallItem>>(json, type).orEmpty()
+            val type = object : TypeToken<List<PrayerWallAssetItem>>() {}.type
+            gson.fromJson<List<PrayerWallAssetItem>>(json, type)
+                .orEmpty()
+                .mapNotNull { item ->
+                    val username = item.username?.takeIf { it.isNotBlank() } ?: return@mapNotNull null
+                    val content = item.content?.takeIf { it.isNotBlank() } ?: return@mapNotNull null
+                    PrayerWallItem(
+                        username = username,
+                        content = content,
+                        likes = item.likes ?: 0
+                    )
+                }
         } catch (_: Exception) {
             emptyList()
         }
